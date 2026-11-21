@@ -32,10 +32,20 @@ jobs:
           set -euo pipefail
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add ranklab/research-data.json ranklab/production-suggestions.json ranklab/seo-feed.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Refresh RankLab research and production proposals"
+          # Preserve completed research while refreshing the base checkout; this prevents
+          # stale checkout / non-fast-forward conflicts with dashboard edits.
+          SNAP="$(mktemp -d)"
+          cp ranklab/research-data.json ranklab/production-suggestions.json ranklab/seo-feed.json "$SNAP"/
+          pushed=false
+          for attempt in 1 2 3; do
             git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+            git reset --hard origin/main
+            cp "$SNAP"/research-data.json "$SNAP"/production-suggestions.json "$SNAP"/seo-feed.json ranklab/
+            git add ranklab/research-data.json ranklab/production-suggestions.json ranklab/seo-feed.json
+            if git diff --cached --quiet; then pushed=true; break; fi
+            git commit -m "Refresh RankLab research, SEO feed and production proposals"
+            if git push origin HEAD:main; then pushed=true; break; fi
+            echo "Concurrent repository update; retrying proposal-only commit: $attempt"
+          done
+          rm -rf "$SNAP"
+          if [[ "$pushed" != true ]]; then exit 1; fi
