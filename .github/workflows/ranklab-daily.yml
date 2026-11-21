@@ -4,7 +4,7 @@ on:
     branches: [main]
     paths:
       - "ranklab/collect_research.py"
-      - "ranklab/generate_production_suggestions.py"
+      - "ranklab/build_keyword_feed.py"
       - ".github/workflows/ranklab-daily.yml"
   schedule:
     - cron: "19 20 * * *"
@@ -24,8 +24,8 @@ jobs:
           persist-credentials: true
       - name: Collect publicly available autocomplete and competitor video data
         run: python3 -u ranklab/collect_research.py
-      - name: Convert ranked keywords to production proposals
-        run: python3 -u ranklab/generate_production_suggestions.py
+      - name: Build keyword-only SEO data
+        run: python3 -u ranklab/build_keyword_feed.py
       - name: Commit source-backed measurements
         shell: bash
         run: |
@@ -35,17 +35,17 @@ jobs:
           # Preserve completed research while refreshing the base checkout; this prevents
           # stale checkout / non-fast-forward conflicts with dashboard edits.
           SNAP="$(mktemp -d)"
-          cp ranklab/research-data.json ranklab/production-suggestions.json ranklab/seo-feed.json "$SNAP"/
+          cp ranklab/research-data.json ranklab/seo-feed.json "$SNAP"/
           pushed=false
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
-            cp "$SNAP"/research-data.json "$SNAP"/production-suggestions.json "$SNAP"/seo-feed.json ranklab/
-            git add ranklab/research-data.json ranklab/production-suggestions.json ranklab/seo-feed.json
+            cp "$SNAP"/research-data.json "$SNAP"/"$SNAP"/seo-feed.json ranklab/
+            git add ranklab/research-data.json ranklab/seo-feed.json
             if git diff --cached --quiet; then pushed=true; break; fi
-            git commit -m "Refresh RankLab research, SEO feed and production proposals"
+            git commit -m "Refresh RankLab research and keyword-only SEO feed"
             if git push origin HEAD:main; then pushed=true; break; fi
-            echo "Concurrent repository update; retrying proposal-only commit: $attempt"
+            echo "Concurrent repository update; retrying keyword-only data commit: $attempt"
           done
           rm -rf "$SNAP"
           if [[ "$pushed" != true ]]; then exit 1; fi
