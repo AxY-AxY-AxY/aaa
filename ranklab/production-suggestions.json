@@ -1,0 +1,1491 @@
+{
+  "schema": "xday.ranklab.production-proposals.v1",
+  "generated_at": "2026-11-21T21:04:36+00:00",
+  "source_snapshot_at": "2026-11-21T21:04:32+00:00",
+  "note": "Autocompletion is a relative discoverability signal, NOT monthly search volume.",
+  "status": "research_only_not_published",
+  "handoff": {
+    "coordinator": "tools/xday_daily_supply.py",
+    "qc": "tools/xday_daily_batch_qc.py",
+    "publisher": "tools/xday_daily_publisher.py",
+    "profiles": [
+      "4",
+      "5"
+    ],
+    "profile_assignment_required": true,
+    "daily_caps": {
+      "long": 1,
+      "shorts": 2
+    },
+    "no_direct_delivery_ledger_writes": true
+  },
+  "counts": {
+    "this_week": 3,
+    "build_long_term": 2,
+    "measure_first": 47
+  },
+  "markets": {
+    "JP": [
+      {
+        "proposal_id": "ranklab-82ca3dafe07b",
+        "stage": "proposal",
+        "priority_group": "this_week",
+        "keyword": "ヴァロラント チート",
+        "region": "JP",
+        "product": "VALORANT",
+        "intent": "overview",
+        "suggested_title": "ヴァロラント チート｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": 65,
+        "reason": "検索候補と競合を計測済み",
+        "evidence": {
+          "autocomplete_confirmed": true,
+          "suggestion_hits": 1,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 44,
+          "median_competitor_views": 1444,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 1
+      },
+      {
+        "proposal_id": "ranklab-7a791715418d",
+        "stage": "proposal",
+        "priority_group": "this_week",
+        "keyword": "VALORANT カラーボット",
+        "region": "JP",
+        "product": "Colorbot",
+        "intent": "overview",
+        "suggested_title": "VALORANT カラーボット｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": 65,
+        "reason": "検索候補と競合を計測済み",
+        "evidence": {
+          "autocomplete_confirmed": true,
+          "suggestion_hits": 1,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 50,
+          "median_competitor_views": 250,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 2
+      },
+      {
+        "proposal_id": "ranklab-d84ca653d483",
+        "stage": "proposal",
+        "priority_group": "build_long_term",
+        "keyword": "VALORANT HWID BAN",
+        "region": "JP",
+        "product": "Spoofer",
+        "intent": "troubleshooting",
+        "suggested_title": "VALORANT HWID BAN｜原因と仕組みを解説",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": 65,
+        "reason": "検索候補を確認、競合強め",
+        "evidence": {
+          "autocomplete_confirmed": true,
+          "suggestion_hits": 2,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 67,
+          "median_competitor_views": 966,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 3
+      },
+      {
+        "proposal_id": "ranklab-f8eb1c59b512",
+        "stage": "proposal",
+        "priority_group": "build_long_term",
+        "keyword": "フォートナイト チート",
+        "region": "JP",
+        "product": "Fortnite",
+        "intent": "overview",
+        "suggested_title": "フォートナイト チート｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": 55,
+        "reason": "検索候補を確認、競合強め",
+        "evidence": {
+          "autocomplete_confirmed": true,
+          "suggestion_hits": 1,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 65,
+          "median_competitor_views": 43970,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 4
+      },
+      {
+        "proposal_id": "ranklab-477920aab86a",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "VALORANT VEXION",
+        "region": "JP",
+        "product": "VALORANT",
+        "intent": "overview",
+        "suggested_title": "VALORANT VEXION｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 28,
+          "median_competitor_views": 89,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 5
+      },
+      {
+        "proposal_id": "ranklab-52e857d2641b",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "色認識 チート 設定",
+        "region": "JP",
+        "product": "Colorbot",
+        "intent": "setup",
+        "suggested_title": "色認識 チート 設定｜導入の流れ",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 41,
+          "median_competitor_views": 1366,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 6
+      },
+      {
+        "proposal_id": "ranklab-596f4c8f98b1",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "HWID スプーファー",
+        "region": "JP",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "HWID スプーファー｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 42,
+          "median_competitor_views": 242,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 7
+      },
+      {
+        "proposal_id": "ranklab-9024edf3c343",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "フォートナイト チート 購入",
+        "region": "JP",
+        "product": "Fortnite",
+        "intent": "purchase",
+        "suggested_title": "フォートナイト チート 購入｜機能と価格を整理",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 45,
+          "median_competitor_views": 1150,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 8
+      },
+      {
+        "proposal_id": "ranklab-45b4f84209c6",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "APEX チート 2026",
+        "region": "JP",
+        "product": "APEX",
+        "intent": "overview",
+        "suggested_title": "APEX チート 2026｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 52,
+          "median_competitor_views": 6079,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 9
+      },
+      {
+        "proposal_id": "ranklab-60860edf34bf",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "フォートナイト チート 比較",
+        "region": "JP",
+        "product": "Fortnite",
+        "intent": "comparison",
+        "suggested_title": "フォートナイト チート 比較｜比較と選び方",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 54,
+          "median_competitor_views": 67412,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 10
+      },
+      {
+        "proposal_id": "ranklab-259a5181b726",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "APEX チート",
+        "region": "JP",
+        "product": "APEX",
+        "intent": "overview",
+        "suggested_title": "APEX チート｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 61,
+          "median_competitor_views": 8978,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 11
+      },
+      {
+        "proposal_id": "ranklab-29fd8c5486fb",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "APEX BAN解除",
+        "region": "JP",
+        "product": "APEX",
+        "intent": "troubleshooting",
+        "suggested_title": "APEX BAN解除｜原因と仕組みを解説",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 12
+      },
+      {
+        "proposal_id": "ranklab-8e32ff8d0b07",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "APEX チート 動画",
+        "region": "JP",
+        "product": "APEX",
+        "intent": "overview",
+        "suggested_title": "APEX チート 動画｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 13
+      },
+      {
+        "proposal_id": "ranklab-83e054e6147a",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "HWID BAN とは",
+        "region": "JP",
+        "product": "Spoofer",
+        "intent": "troubleshooting",
+        "suggested_title": "HWID BAN とは｜原因と仕組みを解説",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 14
+      },
+      {
+        "proposal_id": "ranklab-7b202135ec64",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "カラーボット レビュー",
+        "region": "JP",
+        "product": "Colorbot",
+        "intent": "comparison",
+        "suggested_title": "カラーボット レビュー｜比較と選び方",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 15
+      },
+      {
+        "proposal_id": "ranklab-fba21ee23efa",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "フォートナイト エイムボット",
+        "region": "JP",
+        "product": "Fortnite",
+        "intent": "overview",
+        "suggested_title": "フォートナイト エイムボット｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": true,
+          "suggestion_hits": 1,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 16
+      },
+      {
+        "proposal_id": "ranklab-7b2ee9fb83b9",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "ヴァロラント エイムボット",
+        "region": "JP",
+        "product": "VALORANT",
+        "intent": "overview",
+        "suggested_title": "ヴァロラント エイムボット｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 17
+      },
+      {
+        "proposal_id": "ranklab-3205c06cf225",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "ヴァロラント チート 販売",
+        "region": "JP",
+        "product": "VALORANT",
+        "intent": "purchase",
+        "suggested_title": "ヴァロラント チート 販売｜機能と価格を整理",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 18
+      },
+      {
+        "proposal_id": "ranklab-844cab513556",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "一時 スプーファー",
+        "region": "JP",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "一時 スプーファー｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 1,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 19
+      },
+      {
+        "proposal_id": "ranklab-ed001852ac52",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "色認識 エイムボット",
+        "region": "JP",
+        "product": "Colorbot",
+        "intent": "overview",
+        "suggested_title": "色認識 エイムボット｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 20
+      }
+    ],
+    "KR": [
+      {
+        "proposal_id": "ranklab-dce7cbfbd7fd",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "에이펙스 치트 구매",
+        "region": "KR",
+        "product": "APEX",
+        "intent": "purchase",
+        "suggested_title": "에이펙스 치트 구매｜機能と価格を整理",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 40,
+          "median_competitor_views": 900,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 1
+      },
+      {
+        "proposal_id": "ranklab-2380e768b191",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "발로란트 색상 인식 에임봇",
+        "region": "KR",
+        "product": "VALORANT",
+        "intent": "overview",
+        "suggested_title": "발로란트 색상 인식 에임봇｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 48,
+          "median_competitor_views": 10554,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 2
+      },
+      {
+        "proposal_id": "ranklab-8dbf3b234640",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "포트나이트 치트 구매",
+        "region": "KR",
+        "product": "Fortnite",
+        "intent": "purchase",
+        "suggested_title": "포트나이트 치트 구매｜機能と価格を整理",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 48,
+          "median_competitor_views": 2677,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 3
+      },
+      {
+        "proposal_id": "ranklab-00c7fa6bd038",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "발로란트 스푸퍼",
+        "region": "KR",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "발로란트 스푸퍼｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 55,
+          "median_competitor_views": 2399,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 4
+      },
+      {
+        "proposal_id": "ranklab-a32208a164f7",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "발로란트 치트",
+        "region": "KR",
+        "product": "VALORANT",
+        "intent": "overview",
+        "suggested_title": "발로란트 치트｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 63,
+          "median_competitor_views": 7423,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 5
+      },
+      {
+        "proposal_id": "ranklab-183f530f6d4d",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "발로란트 핵",
+        "region": "KR",
+        "product": "VALORANT",
+        "intent": "overview",
+        "suggested_title": "발로란트 핵｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 1,
+          "competitor_sample": 10,
+          "competitor_strength": 65,
+          "median_competitor_views": 159299,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 6
+      },
+      {
+        "proposal_id": "ranklab-065d7a10515f",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "포트나이트 핵",
+        "region": "KR",
+        "product": "Fortnite",
+        "intent": "overview",
+        "suggested_title": "포트나이트 핵｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 1,
+          "competitor_sample": 10,
+          "competitor_strength": 67,
+          "median_competitor_views": 3505,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 7
+      },
+      {
+        "proposal_id": "ranklab-2ace022c60f2",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "HWID 스푸퍼",
+        "region": "KR",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "HWID 스푸퍼｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 8
+      },
+      {
+        "proposal_id": "ranklab-21513d67410c",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "발로란트 치트 구매",
+        "region": "KR",
+        "product": "VALORANT",
+        "intent": "purchase",
+        "suggested_title": "발로란트 치트 구매｜機能と価格を整理",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 9
+      },
+      {
+        "proposal_id": "ranklab-acdfef13c542",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "발로란트 컬러봇",
+        "region": "KR",
+        "product": "Colorbot",
+        "intent": "overview",
+        "suggested_title": "발로란트 컬러봇｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 10
+      },
+      {
+        "proposal_id": "ranklab-3ba360e5cdc0",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "발로란트 하드웨어 밴",
+        "region": "KR",
+        "product": "VALORANT",
+        "intent": "overview",
+        "suggested_title": "발로란트 하드웨어 밴｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": true,
+          "suggestion_hits": 1,
+          "suggestion_probes": 1,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 11
+      },
+      {
+        "proposal_id": "ranklab-5ab6f73fba49",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "에이펙스 에임봇",
+        "region": "KR",
+        "product": "APEX",
+        "intent": "overview",
+        "suggested_title": "에이펙스 에임봇｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": true,
+          "suggestion_hits": 1,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 12
+      },
+      {
+        "proposal_id": "ranklab-87e87f848253",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "에이펙스 치트",
+        "region": "KR",
+        "product": "APEX",
+        "intent": "overview",
+        "suggested_title": "에이펙스 치트｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 13
+      },
+      {
+        "proposal_id": "ranklab-88353faaee33",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "포트나이트 에임봇",
+        "region": "KR",
+        "product": "Fortnite",
+        "intent": "overview",
+        "suggested_title": "포트나이트 에임봇｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 14
+      },
+      {
+        "proposal_id": "ranklab-add9cf083a4e",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "포트나이트 치트",
+        "region": "KR",
+        "product": "Fortnite",
+        "intent": "overview",
+        "suggested_title": "포트나이트 치트｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 15
+      }
+    ],
+    "US": [
+      {
+        "proposal_id": "ranklab-3d7f4e7dede3",
+        "stage": "proposal",
+        "priority_group": "this_week",
+        "keyword": "fortnite cheat gameplay",
+        "region": "US",
+        "product": "Fortnite",
+        "intent": "overview",
+        "suggested_title": "fortnite cheat gameplay｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": 63,
+        "reason": "検索候補と競合を計測済み",
+        "evidence": {
+          "autocomplete_confirmed": true,
+          "suggestion_hits": 1,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 55,
+          "median_competitor_views": 4898,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 1
+      },
+      {
+        "proposal_id": "ranklab-66d190bdbf2b",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "apex legends cheat",
+        "region": "US",
+        "product": "APEX",
+        "intent": "overview",
+        "suggested_title": "apex legends cheat｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 51,
+          "median_competitor_views": 5008,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 2
+      },
+      {
+        "proposal_id": "ranklab-2174521a9a43",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "permanent hwid spoofer",
+        "region": "US",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "permanent hwid spoofer｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 57,
+          "median_competitor_views": 2445,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 3
+      },
+      {
+        "proposal_id": "ranklab-10a18aaa6412",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "apex legends aimbot",
+        "region": "US",
+        "product": "APEX",
+        "intent": "overview",
+        "suggested_title": "apex legends aimbot｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 71,
+          "median_competitor_views": 86347,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 4
+      },
+      {
+        "proposal_id": "ranklab-24b2305e114f",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "valorant colorbot",
+        "region": "US",
+        "product": "Colorbot",
+        "intent": "overview",
+        "suggested_title": "valorant colorbot｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 72,
+          "median_competitor_views": 1554,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 5
+      },
+      {
+        "proposal_id": "ranklab-f4d36997329a",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "colorbot valorant",
+        "region": "US",
+        "product": "Colorbot",
+        "intent": "overview",
+        "suggested_title": "colorbot valorant｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 74,
+          "median_competitor_views": 1745,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 6
+      },
+      {
+        "proposal_id": "ranklab-9e39bcbd5b9d",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "valorant cheat",
+        "region": "US",
+        "product": "VALORANT",
+        "intent": "overview",
+        "suggested_title": "valorant cheat｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 75,
+          "median_competitor_views": 1593,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 7
+      },
+      {
+        "proposal_id": "ranklab-da6190477982",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "hwid spoofer",
+        "region": "US",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "hwid spoofer｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 78,
+          "median_competitor_views": 2528,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 8
+      },
+      {
+        "proposal_id": "ranklab-25d4d12396b2",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "fortnite cheat",
+        "region": "US",
+        "product": "Fortnite",
+        "intent": "overview",
+        "suggested_title": "fortnite cheat｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 79,
+          "median_competitor_views": 3752,
+          "checked_at": "2026-11-21T21:04:32+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 9
+      },
+      {
+        "proposal_id": "ranklab-4b68b1ff27cf",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "apex legends cheats settings",
+        "region": "US",
+        "product": "APEX",
+        "intent": "setup",
+        "suggested_title": "apex legends cheats settings｜導入の流れ",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 10
+      },
+      {
+        "proposal_id": "ranklab-8071d0759bab",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "apex legends controller cheat",
+        "region": "US",
+        "product": "APEX",
+        "intent": "overview",
+        "suggested_title": "apex legends controller cheat｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 11
+      },
+      {
+        "proposal_id": "ranklab-715639b6b0d1",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "fortnite full cheat",
+        "region": "US",
+        "product": "Fortnite",
+        "intent": "overview",
+        "suggested_title": "fortnite full cheat｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 12
+      },
+      {
+        "proposal_id": "ranklab-f62f2408fba2",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "perm v1 spoofer",
+        "region": "US",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "perm v1 spoofer｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 13
+      },
+      {
+        "proposal_id": "ranklab-1a653f069603",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "spoofer windows 11 25h2",
+        "region": "US",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "spoofer windows 11 25h2｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 14
+      },
+      {
+        "proposal_id": "ranklab-a0ddbe43d310",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "valorant aimbot settings",
+        "region": "US",
+        "product": "VALORANT",
+        "intent": "setup",
+        "suggested_title": "valorant aimbot settings｜導入の流れ",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 15
+      },
+      {
+        "proposal_id": "ranklab-1c1f2f04c13d",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "valorant colorbot setup",
+        "region": "US",
+        "product": "Colorbot",
+        "intent": "setup",
+        "suggested_title": "valorant colorbot setup｜導入の流れ",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": true,
+          "suggestion_hits": 1,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 16
+      },
+      {
+        "proposal_id": "ranklab-0ecbb6965470",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "valorant triggerbot vs colorbot",
+        "region": "US",
+        "product": "Colorbot",
+        "intent": "comparison",
+        "suggested_title": "valorant triggerbot vs colorbot｜比較と選び方",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 0,
+          "competitor_strength": null,
+          "median_competitor_views": null,
+          "checked_at": "2026-11-21T20:35:50+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 17
+      }
+    ]
+  }
+}
