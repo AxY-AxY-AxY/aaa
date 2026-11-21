@@ -1,7 +1,7 @@
 {
   "schema": "xday.ranklab.production-proposals.v1",
-  "generated_at": "2026-11-21T21:04:36+00:00",
-  "source_snapshot_at": "2026-11-21T21:04:32+00:00",
+  "generated_at": "2026-11-21T21:17:48+00:00",
+  "source_snapshot_at": "2026-11-21T21:17:26+00:00",
   "note": "Autocompletion is a relative discoverability signal, NOT monthly search volume.",
   "status": "research_only_not_published",
   "handoff": {
@@ -49,7 +49,7 @@
           "competitor_sample": 10,
           "competitor_strength": 44,
           "median_competitor_views": 1444,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 1
@@ -68,16 +68,16 @@
           "shorts": 2
         },
         "target_channel_profile": null,
-        "priority_proxy": 65,
+        "priority_proxy": 64,
         "reason": "検索候補と競合を計測済み",
         "evidence": {
           "autocomplete_confirmed": true,
           "suggestion_hits": 1,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 50,
+          "competitor_strength": 53,
           "median_competitor_views": 250,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 2
@@ -96,16 +96,16 @@
           "shorts": 2
         },
         "target_channel_profile": null,
-        "priority_proxy": 65,
+        "priority_proxy": 66,
         "reason": "検索候補を確認、競合強め",
         "evidence": {
           "autocomplete_confirmed": true,
           "suggestion_hits": 2,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 67,
-          "median_competitor_views": 966,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 64,
+          "median_competitor_views": 609,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 3
@@ -124,16 +124,16 @@
           "shorts": 2
         },
         "target_channel_profile": null,
-        "priority_proxy": 55,
+        "priority_proxy": 56,
         "reason": "検索候補を確認、競合強め",
         "evidence": {
           "autocomplete_confirmed": true,
           "suggestion_hits": 1,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 65,
-          "median_competitor_views": 43970,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 63,
+          "median_competitor_views": 8332,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 4
@@ -161,7 +161,7 @@
           "competitor_sample": 10,
           "competitor_strength": 28,
           "median_competitor_views": 89,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 5
@@ -187,40 +187,12 @@
           "suggestion_hits": 0,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 41,
-          "median_competitor_views": 1366,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 38,
+          "median_competitor_views": 475,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 6
-      },
-      {
-        "proposal_id": "ranklab-596f4c8f98b1",
-        "stage": "proposal",
-        "priority_group": "measure_first",
-        "keyword": "HWID スプーファー",
-        "region": "JP",
-        "product": "Spoofer",
-        "intent": "overview",
-        "suggested_title": "HWID スプーファー｜特徴・操作感を紹介",
-        "suggested_package": {
-          "long": 1,
-          "shorts": 2
-        },
-        "target_channel_profile": null,
-        "priority_proxy": null,
-        "reason": "検索候補・競合を追加計測",
-        "evidence": {
-          "autocomplete_confirmed": false,
-          "suggestion_hits": 0,
-          "suggestion_probes": 2,
-          "competitor_sample": 10,
-          "competitor_strength": 42,
-          "median_competitor_views": 242,
-          "checked_at": "2026-11-21T21:04:32+00:00",
-          "age_days": 0.0
-        },
-        "market_rank": 7
       },
       {
         "proposal_id": "ranklab-9024edf3c343",
@@ -245,20 +217,20 @@
           "competitor_sample": 10,
           "competitor_strength": 45,
           "median_competitor_views": 1150,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
-        "market_rank": 8
+        "market_rank": 7
       },
       {
-        "proposal_id": "ranklab-45b4f84209c6",
+        "proposal_id": "ranklab-596f4c8f98b1",
         "stage": "proposal",
         "priority_group": "measure_first",
-        "keyword": "APEX チート 2026",
+        "keyword": "HWID スプーファー",
         "region": "JP",
-        "product": "APEX",
+        "product": "Spoofer",
         "intent": "overview",
-        "suggested_title": "APEX チート 2026｜特徴・操作感を紹介",
+        "suggested_title": "HWID スプーファー｜特徴・操作感を紹介",
         "suggested_package": {
           "long": 1,
           "shorts": 2
@@ -271,12 +243,12 @@
           "suggestion_hits": 0,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 52,
-          "median_competitor_views": 6079,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 46,
+          "median_competitor_views": 618,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
-        "market_rank": 9
+        "market_rank": 8
       },
       {
         "proposal_id": "ranklab-60860edf34bf",
@@ -301,7 +273,35 @@
           "competitor_sample": 10,
           "competitor_strength": 54,
           "median_competitor_views": 67412,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 9
+      },
+      {
+        "proposal_id": "ranklab-45b4f84209c6",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "APEX チート 2026",
+        "region": "JP",
+        "product": "APEX",
+        "intent": "overview",
+        "suggested_title": "APEX チート 2026｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 55,
+          "median_competitor_views": 6079,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 10
@@ -327,9 +327,9 @@
           "suggestion_hits": 0,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 61,
-          "median_competitor_views": 8978,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 66,
+          "median_competitor_views": 17274,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 11
@@ -611,10 +611,38 @@
           "competitor_sample": 10,
           "competitor_strength": 40,
           "median_competitor_views": 900,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 1
+      },
+      {
+        "proposal_id": "ranklab-00c7fa6bd038",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "발로란트 스푸퍼",
+        "region": "KR",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "발로란트 스푸퍼｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 44,
+          "median_competitor_views": 3635,
+          "checked_at": "2026-11-21T21:17:26+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 2
       },
       {
         "proposal_id": "ranklab-2380e768b191",
@@ -639,10 +667,38 @@
           "competitor_sample": 10,
           "competitor_strength": 48,
           "median_competitor_views": 10554,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
-        "market_rank": 2
+        "market_rank": 3
+      },
+      {
+        "proposal_id": "ranklab-acdfef13c542",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "발로란트 컬러봇",
+        "region": "KR",
+        "product": "Colorbot",
+        "intent": "overview",
+        "suggested_title": "발로란트 컬러봇｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 48,
+          "median_competitor_views": 2450,
+          "checked_at": "2026-11-21T21:17:26+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 4
       },
       {
         "proposal_id": "ranklab-8dbf3b234640",
@@ -667,38 +723,10 @@
           "competitor_sample": 10,
           "competitor_strength": 48,
           "median_competitor_views": 2677,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
-        "market_rank": 3
-      },
-      {
-        "proposal_id": "ranklab-00c7fa6bd038",
-        "stage": "proposal",
-        "priority_group": "measure_first",
-        "keyword": "발로란트 스푸퍼",
-        "region": "KR",
-        "product": "Spoofer",
-        "intent": "overview",
-        "suggested_title": "발로란트 스푸퍼｜特徴・操作感を紹介",
-        "suggested_package": {
-          "long": 1,
-          "shorts": 2
-        },
-        "target_channel_profile": null,
-        "priority_proxy": null,
-        "reason": "検索候補・競合を追加計測",
-        "evidence": {
-          "autocomplete_confirmed": false,
-          "suggestion_hits": 0,
-          "suggestion_probes": 2,
-          "competitor_sample": 10,
-          "competitor_strength": 55,
-          "median_competitor_views": 2399,
-          "checked_at": "2026-11-21T21:04:32+00:00",
-          "age_days": 0.0
-        },
-        "market_rank": 4
+        "market_rank": 5
       },
       {
         "proposal_id": "ranklab-a32208a164f7",
@@ -721,12 +749,12 @@
           "suggestion_hits": 0,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 63,
+          "competitor_strength": 62,
           "median_competitor_views": 7423,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
-        "market_rank": 5
+        "market_rank": 6
       },
       {
         "proposal_id": "ranklab-183f530f6d4d",
@@ -749,12 +777,12 @@
           "suggestion_hits": 0,
           "suggestion_probes": 1,
           "competitor_sample": 10,
-          "competitor_strength": 65,
-          "median_competitor_views": 159299,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 64,
+          "median_competitor_views": 192469,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
-        "market_rank": 6
+        "market_rank": 7
       },
       {
         "proposal_id": "ranklab-065d7a10515f",
@@ -777,12 +805,12 @@
           "suggestion_hits": 0,
           "suggestion_probes": 1,
           "competitor_sample": 10,
-          "competitor_strength": 67,
-          "median_competitor_views": 3505,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 68,
+          "median_competitor_views": 2520,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
-        "market_rank": 7
+        "market_rank": 8
       },
       {
         "proposal_id": "ranklab-2ace022c60f2",
@@ -810,7 +838,7 @@
           "checked_at": "2026-11-21T20:35:50+00:00",
           "age_days": 0.0
         },
-        "market_rank": 8
+        "market_rank": 9
       },
       {
         "proposal_id": "ranklab-21513d67410c",
@@ -821,34 +849,6 @@
         "product": "VALORANT",
         "intent": "purchase",
         "suggested_title": "발로란트 치트 구매｜機能と価格を整理",
-        "suggested_package": {
-          "long": 1,
-          "shorts": 2
-        },
-        "target_channel_profile": null,
-        "priority_proxy": null,
-        "reason": "検索候補・競合を追加計測",
-        "evidence": {
-          "autocomplete_confirmed": false,
-          "suggestion_hits": 0,
-          "suggestion_probes": 2,
-          "competitor_sample": 0,
-          "competitor_strength": null,
-          "median_competitor_views": null,
-          "checked_at": "2026-11-21T20:35:50+00:00",
-          "age_days": 0.0
-        },
-        "market_rank": 9
-      },
-      {
-        "proposal_id": "ranklab-acdfef13c542",
-        "stage": "proposal",
-        "priority_group": "measure_first",
-        "keyword": "발로란트 컬러봇",
-        "region": "KR",
-        "product": "Colorbot",
-        "intent": "overview",
-        "suggested_title": "발로란트 컬러봇｜特徴・操作感を紹介",
         "suggested_package": {
           "long": 1,
           "shorts": 2
@@ -1033,7 +1033,7 @@
           "competitor_sample": 10,
           "competitor_strength": 55,
           "median_competitor_views": 4898,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 1
@@ -1060,39 +1060,11 @@
           "suggestion_probes": 2,
           "competitor_sample": 10,
           "competitor_strength": 51,
-          "median_competitor_views": 5008,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "median_competitor_views": 4859,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 2
-      },
-      {
-        "proposal_id": "ranklab-2174521a9a43",
-        "stage": "proposal",
-        "priority_group": "measure_first",
-        "keyword": "permanent hwid spoofer",
-        "region": "US",
-        "product": "Spoofer",
-        "intent": "overview",
-        "suggested_title": "permanent hwid spoofer｜特徴・操作感を紹介",
-        "suggested_package": {
-          "long": 1,
-          "shorts": 2
-        },
-        "target_channel_profile": null,
-        "priority_proxy": null,
-        "reason": "検索候補・競合を追加計測",
-        "evidence": {
-          "autocomplete_confirmed": false,
-          "suggestion_hits": 0,
-          "suggestion_probes": 2,
-          "competitor_sample": 10,
-          "competitor_strength": 57,
-          "median_competitor_views": 2445,
-          "checked_at": "2026-11-21T21:04:32+00:00",
-          "age_days": 0.0
-        },
-        "market_rank": 3
       },
       {
         "proposal_id": "ranklab-10a18aaa6412",
@@ -1115,9 +1087,37 @@
           "suggestion_hits": 0,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 71,
-          "median_competitor_views": 86347,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 60,
+          "median_competitor_views": 2470,
+          "checked_at": "2026-11-21T21:17:26+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 3
+      },
+      {
+        "proposal_id": "ranklab-2174521a9a43",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "permanent hwid spoofer",
+        "region": "US",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "permanent hwid spoofer｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 60,
+          "median_competitor_views": 2445,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 4
@@ -1143,9 +1143,9 @@
           "suggestion_hits": 0,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 72,
+          "competitor_strength": 73,
           "median_competitor_views": 1554,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 5
@@ -1173,20 +1173,20 @@
           "competitor_sample": 10,
           "competitor_strength": 74,
           "median_competitor_views": 1745,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 6
       },
       {
-        "proposal_id": "ranklab-9e39bcbd5b9d",
+        "proposal_id": "ranklab-25d4d12396b2",
         "stage": "proposal",
         "priority_group": "measure_first",
-        "keyword": "valorant cheat",
+        "keyword": "fortnite cheat",
         "region": "US",
-        "product": "VALORANT",
+        "product": "Fortnite",
         "intent": "overview",
-        "suggested_title": "valorant cheat｜特徴・操作感を紹介",
+        "suggested_title": "fortnite cheat｜特徴・操作感を紹介",
         "suggested_package": {
           "long": 1,
           "shorts": 2
@@ -1199,9 +1199,9 @@
           "suggestion_hits": 0,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 75,
-          "median_competitor_views": 1593,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 77,
+          "median_competitor_views": 2809,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 7
@@ -1227,22 +1227,22 @@
           "suggestion_hits": 0,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 78,
-          "median_competitor_views": 2528,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 77,
+          "median_competitor_views": 2367,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 8
       },
       {
-        "proposal_id": "ranklab-25d4d12396b2",
+        "proposal_id": "ranklab-9e39bcbd5b9d",
         "stage": "proposal",
         "priority_group": "measure_first",
-        "keyword": "fortnite cheat",
+        "keyword": "valorant cheat",
         "region": "US",
-        "product": "Fortnite",
+        "product": "VALORANT",
         "intent": "overview",
-        "suggested_title": "fortnite cheat｜特徴・操作感を紹介",
+        "suggested_title": "valorant cheat｜特徴・操作感を紹介",
         "suggested_package": {
           "long": 1,
           "shorts": 2
@@ -1255,9 +1255,9 @@
           "suggestion_hits": 0,
           "suggestion_probes": 2,
           "competitor_sample": 10,
-          "competitor_strength": 79,
-          "median_competitor_views": 3752,
-          "checked_at": "2026-11-21T21:04:32+00:00",
+          "competitor_strength": 77,
+          "median_competitor_views": 2150,
+          "checked_at": "2026-11-21T21:17:26+00:00",
           "age_days": 0.0
         },
         "market_rank": 9
