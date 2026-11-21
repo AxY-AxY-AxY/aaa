@@ -1,0 +1,41 @@
+name: Initialize RankLab SEO integration feed
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/init-ranklab-seo-feed.yml']
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  initialize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and verify bridge feed from the latest measured snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 ranklab/generate_production_suggestions.py
+          python3 ranklab/xday_seo_bridge.py --input-json ranklab/seo-feed.json --market JP --limit 3 > /tmp/ranklab-proposals.json
+          python3 - <<'PY'
+          import json
+          x=json.load(open('ranklab/seo-feed.json'))
+          assert x['schema']=='xday.ranklab.seo-feed.v1'
+          print('SEO_FEED_VALID',len(x['actions']),x['generated_at'])
+          print('JP_VALIDATED',len(json.load(open('/tmp/ranklab-proposals.json'))))
+          PY
+      - name: Commit only generated SEO feed
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp ranklab/seo-feed.json /tmp/ranklab-seo-feed.json
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/ranklab-seo-feed.json ranklab/seo-feed.json
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add ranklab/seo-feed.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Initialize public RankLab SEO suggestions feed"
+            git push origin HEAD:main
+          fi
