@@ -1,0 +1,56 @@
+name: Verify RankLab V7 production proposal UI
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/verify-ranklab-v7.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - name: Test published site with Chromium
+      shell: bash
+      run: |
+        npm install --no-save playwright-core@1.58.0
+        node <<'JS'
+        const {chromium}=require('playwright-core');
+        const site='https://glowing-age-03qol.ship.place/';
+        (async()=>{
+          const b=await chromium.launch({executablePath:'/usr/bin/google-chrome',headless:true,args:['--no-sandbox']});
+          try{
+            const p=await b.newPage({viewport:{width:1366,height:900},acceptDownloads:true});
+            let errors=[];p.on('pageerror',e=>errors.push(e.message));
+            const resp=await p.goto(site,{waitUntil:'domcontentloaded',timeout:30000});
+            if(!resp?.ok())throw Error('page failed '+resp?.status());
+            await p.waitForFunction(()=>Number(document.querySelector('#actionProof')?.textContent)>0,{timeout:25000});
+            console.log('RANKLAB LIVE PROOF',await p.locator('#actionProof').innerText());
+            console.log('TARGETS',await p.locator('#planTotal').innerText());
+            console.log('NOW COUNT',await p.locator('#actionToday').innerText());
+            console.log('BRIDGE',await p.locator('#productionBoard').isVisible());
+            await p.locator('#queueAddTop3').click();
+            let count=await p.locator('.bridge-item').count();
+            console.log('PROPOSALS ADDED',count);
+            if(count<2)throw Error('fewer than 2 proposals');
+            const id=await p.locator('.bridge-item').first().getAttribute('data-proposal-id');
+            await p.locator('[data-queue-field="profile"]').first().selectOption('4');
+            await p.locator('[data-queue-field="format"]').first().selectOption('long');
+            await p.locator('#queueExport').click();
+            const saved=JSON.parse(await p.evaluate(()=>localStorage.getItem('xday_ranklab_production_proposals_v1')));
+            if(saved.length!==count||saved[0].profile!=='4'||saved[0].format!=='long')throw Error('queue persistence failed');
+            await p.reload({waitUntil:'domcontentloaded'});
+            await p.locator('[data-page="production"]').click();
+            if(await p.locator('.bridge-item').count()!==count)throw Error('lost proposals after refresh');
+            if(await p.locator('[data-queue-field="profile"]').first().inputValue()!=='4')throw Error('lost channel selection');
+            console.log('RELOAD PERSISTENCE OK',id);
+            const m=await b.newPage({viewport:{width:390,height:844}});
+            m.on('pageerror',e=>errors.push('mobile:'+e.message));
+            await m.goto(site,{waitUntil:'domcontentloaded',timeout:25000});
+            console.log('MOBILE OVERFLOW',await m.evaluate(()=>document.body.scrollWidth-innerWidth));
+            if(await m.evaluate(()=>document.body.scrollWidth-innerWidth)>5)throw Error('mobile horizontal overflow');
+            if(errors.length)throw Error('JS errors '+JSON.stringify(errors));
+            console.log('PASS: production queue and actual deployed page');
+          }finally{await b.close()}
+        })().catch(e=>{console.error(e);process.exitCode=1});
+        JS
