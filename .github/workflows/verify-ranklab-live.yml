@@ -27,7 +27,7 @@ jobs:
               await page.goto('https://nebula-cord-u83m9.ship.place/',{waitUntil:'domcontentloaded',timeout:30000});
               await page.waitForFunction(()=>Number(document.querySelector('#planTotal')?.textContent||0)>=230,{timeout:10000});
               console.log('CURATED KEYWORD COUNT:',await page.locator('#planTotal').innerText());
-              console.log('FIRST TARGET:',await page.locator('.plan-kw').first.innerText());
+              console.log('FIRST TARGET:',await page.locator('.plan-kw').first().innerText());
               console.log('INITIAL TARGET ROWS:',await page.locator('.plan-row').count());
               await page.locator('#planFocus').selectOption('Spoofer');
               console.log('SPOOFER FILTER:',await page.locator('#planSummary').innerText());
