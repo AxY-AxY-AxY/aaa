@@ -1,7 +1,7 @@
 {
   "schema": "xday.ranklab.production-proposals.v1",
-  "generated_at": "2026-11-21T21:17:48+00:00",
-  "source_snapshot_at": "2026-11-21T21:17:26+00:00",
+  "generated_at": "2026-11-21T21:21:21+00:00",
+  "source_snapshot_at": "2026-11-21T21:20:01+00:00",
   "note": "Autocompletion is a relative discoverability signal, NOT monthly search volume.",
   "status": "research_only_not_published",
   "handoff": {
@@ -49,7 +49,7 @@
           "competitor_sample": 10,
           "competitor_strength": 44,
           "median_competitor_views": 1444,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 1
@@ -77,7 +77,7 @@
           "competitor_sample": 10,
           "competitor_strength": 53,
           "median_competitor_views": 250,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 2
@@ -105,7 +105,7 @@
           "competitor_sample": 10,
           "competitor_strength": 64,
           "median_competitor_views": 609,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 3
@@ -133,7 +133,7 @@
           "competitor_sample": 10,
           "competitor_strength": 63,
           "median_competitor_views": 8332,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 4
@@ -161,7 +161,7 @@
           "competitor_sample": 10,
           "competitor_strength": 28,
           "median_competitor_views": 89,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 5
@@ -189,7 +189,7 @@
           "competitor_sample": 10,
           "competitor_strength": 38,
           "median_competitor_views": 475,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 6
@@ -217,7 +217,7 @@
           "competitor_sample": 10,
           "competitor_strength": 45,
           "median_competitor_views": 1150,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 7
@@ -245,7 +245,7 @@
           "competitor_sample": 10,
           "competitor_strength": 46,
           "median_competitor_views": 618,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 8
@@ -273,7 +273,7 @@
           "competitor_sample": 10,
           "competitor_strength": 54,
           "median_competitor_views": 67412,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 9
@@ -301,7 +301,7 @@
           "competitor_sample": 10,
           "competitor_strength": 55,
           "median_competitor_views": 6079,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 10
@@ -329,7 +329,7 @@
           "competitor_sample": 10,
           "competitor_strength": 66,
           "median_competitor_views": 17274,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 11
@@ -611,7 +611,7 @@
           "competitor_sample": 10,
           "competitor_strength": 40,
           "median_competitor_views": 900,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 1
@@ -639,7 +639,7 @@
           "competitor_sample": 10,
           "competitor_strength": 44,
           "median_competitor_views": 3635,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 2
@@ -667,7 +667,7 @@
           "competitor_sample": 10,
           "competitor_strength": 48,
           "median_competitor_views": 10554,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 3
@@ -695,7 +695,7 @@
           "competitor_sample": 10,
           "competitor_strength": 48,
           "median_competitor_views": 2450,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 4
@@ -723,7 +723,7 @@
           "competitor_sample": 10,
           "competitor_strength": 48,
           "median_competitor_views": 2677,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 5
@@ -751,7 +751,7 @@
           "competitor_sample": 10,
           "competitor_strength": 62,
           "median_competitor_views": 7423,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 6
@@ -779,7 +779,7 @@
           "competitor_sample": 10,
           "competitor_strength": 64,
           "median_competitor_views": 192469,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 7
@@ -807,7 +807,7 @@
           "competitor_sample": 10,
           "competitor_strength": 68,
           "median_competitor_views": 2520,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 8
@@ -1033,7 +1033,7 @@
           "competitor_sample": 10,
           "competitor_strength": 55,
           "median_competitor_views": 4898,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 1
@@ -1061,7 +1061,7 @@
           "competitor_sample": 10,
           "competitor_strength": 51,
           "median_competitor_views": 4859,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 2
@@ -1089,7 +1089,7 @@
           "competitor_sample": 10,
           "competitor_strength": 60,
           "median_competitor_views": 2470,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 3
@@ -1117,7 +1117,7 @@
           "competitor_sample": 10,
           "competitor_strength": 60,
           "median_competitor_views": 2445,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 4
@@ -1145,7 +1145,7 @@
           "competitor_sample": 10,
           "competitor_strength": 73,
           "median_competitor_views": 1554,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 5
@@ -1173,7 +1173,7 @@
           "competitor_sample": 10,
           "competitor_strength": 74,
           "median_competitor_views": 1745,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 6
@@ -1201,7 +1201,7 @@
           "competitor_sample": 10,
           "competitor_strength": 77,
           "median_competitor_views": 2809,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 7
@@ -1229,7 +1229,7 @@
           "competitor_sample": 10,
           "competitor_strength": 77,
           "median_competitor_views": 2367,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 8
@@ -1257,7 +1257,7 @@
           "competitor_sample": 10,
           "competitor_strength": 77,
           "median_competitor_views": 2150,
-          "checked_at": "2026-11-21T21:17:26+00:00",
+          "checked_at": "2026-11-21T21:20:01+00:00",
           "age_days": 0.0
         },
         "market_rank": 9

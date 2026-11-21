@@ -1,0 +1,129 @@
+{
+  "schema": "xday.ranklab.seo-feed.v1",
+  "generated_at": "2026-11-21T21:21:21+00:00",
+  "source_snapshot_at": "2026-11-21T21:20:01+00:00",
+  "source": "Google YouTube autocomplete and public competitor video samples",
+  "caveat": "Autocomplete appearances are not YouTube monthly search volumes.",
+  "mode": "metadata_suggestions_only",
+  "actions": [
+    {
+      "id": "ranklab-82ca3dafe07b",
+      "keyword": "ヴァロラント チート",
+      "market": "JP",
+      "product": "VALORANT",
+      "intent": "overview",
+      "priority": "this_week",
+      "market_rank": 1,
+      "proposed_title": "ヴァロラント チート｜特徴・操作感を紹介",
+      "opportunity_score_proxy": 65,
+      "evidence": {
+        "autocomplete_confirmed": true,
+        "suggestion_hits": 1,
+        "suggestion_probes": 2,
+        "competitor_sample": 10,
+        "competitor_strength": 44,
+        "median_competitor_views": 1444,
+        "checked_at": "2026-11-21T21:20:01+00:00",
+        "age_days": 0.0
+      },
+      "use": "SEO topic/title/description input for Coordinator only"
+    },
+    {
+      "id": "ranklab-7a791715418d",
+      "keyword": "VALORANT カラーボット",
+      "market": "JP",
+      "product": "Colorbot",
+      "intent": "overview",
+      "priority": "this_week",
+      "market_rank": 2,
+      "proposed_title": "VALORANT カラーボット｜特徴・操作感を紹介",
+      "opportunity_score_proxy": 64,
+      "evidence": {
+        "autocomplete_confirmed": true,
+        "suggestion_hits": 1,
+        "suggestion_probes": 2,
+        "competitor_sample": 10,
+        "competitor_strength": 53,
+        "median_competitor_views": 250,
+        "checked_at": "2026-11-21T21:20:01+00:00",
+        "age_days": 0.0
+      },
+      "use": "SEO topic/title/description input for Coordinator only"
+    },
+    {
+      "id": "ranklab-3d7f4e7dede3",
+      "keyword": "fortnite cheat gameplay",
+      "market": "US",
+      "product": "Fortnite",
+      "intent": "overview",
+      "priority": "this_week",
+      "market_rank": 1,
+      "proposed_title": "fortnite cheat gameplay｜特徴・操作感を紹介",
+      "opportunity_score_proxy": 63,
+      "evidence": {
+        "autocomplete_confirmed": true,
+        "suggestion_hits": 1,
+        "suggestion_probes": 2,
+        "competitor_sample": 10,
+        "competitor_strength": 55,
+        "median_competitor_views": 4898,
+        "checked_at": "2026-11-21T21:20:01+00:00",
+        "age_days": 0.0
+      },
+      "use": "SEO topic/title/description input for Coordinator only"
+    },
+    {
+      "id": "ranklab-d84ca653d483",
+      "keyword": "VALORANT HWID BAN",
+      "market": "JP",
+      "product": "Spoofer",
+      "intent": "troubleshooting",
+      "priority": "build_long_term",
+      "market_rank": 3,
+      "proposed_title": "VALORANT HWID BAN｜原因と仕組みを解説",
+      "opportunity_score_proxy": 66,
+      "evidence": {
+        "autocomplete_confirmed": true,
+        "suggestion_hits": 2,
+        "suggestion_probes": 2,
+        "competitor_sample": 10,
+        "competitor_strength": 64,
+        "median_competitor_views": 609,
+        "checked_at": "2026-11-21T21:20:01+00:00",
+        "age_days": 0.0
+      },
+      "use": "SEO topic/title/description input for Coordinator only"
+    },
+    {
+      "id": "ranklab-f8eb1c59b512",
+      "keyword": "フォートナイト チート",
+      "market": "JP",
+      "product": "Fortnite",
+      "intent": "overview",
+      "priority": "build_long_term",
+      "market_rank": 4,
+      "proposed_title": "フォートナイト チート｜特徴・操作感を紹介",
+      "opportunity_score_proxy": 56,
+      "evidence": {
+        "autocomplete_confirmed": true,
+        "suggestion_hits": 1,
+        "suggestion_probes": 2,
+        "competitor_sample": 10,
+        "competitor_strength": 63,
+        "median_competitor_views": 8332,
+        "checked_at": "2026-11-21T21:20:01+00:00",
+        "age_days": 0.0
+      },
+      "use": "SEO topic/title/description input for Coordinator only"
+    }
+  ],
+  "control": {
+    "keep_existing_coordinator": true,
+    "keep_existing_workers": true,
+    "keep_existing_daily_upload_caps": true,
+    "keep_own_channel_profile_and_QC": true,
+    "never_write_delivery_ledger_from_feed": true,
+    "deduplicate_before_any_production": true,
+    "skip_when_data_stale_or_network_fails": true
+  }
+}\n
