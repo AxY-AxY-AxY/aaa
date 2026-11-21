@@ -24,7 +24,7 @@ jobs:
               const page=await browser.newPage({viewport:{width:1280,height:900}});
               const errors=[];
               page.on('pageerror',error=>errors.push(error.message));
-              await page.goto('https://nebula-cord-u83m9.ship.place/',{waitUntil:'domcontentloaded',timeout:30000});
+              await page.goto('https://granite-stealer-8w5zc.ship.place/',{waitUntil:'domcontentloaded',timeout:30000});
               await page.waitForFunction(()=>Number(document.querySelector('#planTotal')?.textContent||0)>=230,{timeout:10000});
               console.log('CURATED KEYWORD COUNT:',await page.locator('#planTotal').innerText());
               console.log('FIRST TARGET:',await page.locator('.plan-kw').first().innerText());
@@ -58,7 +58,7 @@ jobs:
               console.log('PAGE ERRORS:',JSON.stringify(errors));
               const mobile=await browser.newPage({viewport:{width:390,height:844}});
               mobile.on('pageerror',e=>errors.push('mobile: '+e.message));
-              await mobile.goto('https://nebula-cord-u83m9.ship.place/',{waitUntil:'domcontentloaded',timeout:30000});
+              await mobile.goto('https://granite-stealer-8w5zc.ship.place/',{waitUntil:'domcontentloaded',timeout:30000});
               await mobile.waitForFunction(()=>Number(document.querySelector('#planTotal')?.textContent||0)>=230,{timeout:10000});
               console.log('MOBILE TARGETS:',await mobile.locator('.plan-row').count());
               console.log('MOBILE OVERFLOW:',await mobile.evaluate(()=>document.body.scrollWidth-window.innerWidth));
