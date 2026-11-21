@@ -117,7 +117,7 @@ def main():
           "skip_when_data_stale_or_network_fails": True
       }
     }
-    (ROOT/"seo-feed.json").write_text(json.dumps(feed,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    (ROOT/"seo-feed.json").write_text(json.dumps(feed,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("RankLab SEO feed actions:",len(feed["actions"]))
     print("RankLab production suggestions:",len(cards),data["counts"])
 if __name__=="__main__":main()
