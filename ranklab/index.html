@@ -172,6 +172,12 @@
   .simple-bottom{padding:15px}.simple-bridge{align-items:stretch}.simple-bridge .btn{width:100%}
 }
 
+
+/* V9: word-only workflow; legacy production UI retained internally but never shown */
+#page-production,#productionBoard,[data-page="production"],[data-jump="production"],
+#page-overview .action-production,#page-overview [data-action-copy]{display:none!important}
+.simple-card-reason{margin-bottom:8px}
+.simple-word-badge{font-size:12px;font-weight:800;color:#8be3cd}
 </style>
 </head>
 <body>
@@ -191,13 +197,13 @@
  <div class="sidebar-note"><strong>📡 データの状態</strong><p id="sideStatus">元ZIP未取込。検索順位の実測データは未表示。</p></div>
 </aside>
 <main class="main">
- <div class="top"><div><div class="eyebrow">XDAY / YOUTUBE SEARCH</div><h1 id="pageTitle">次の投稿を決める</h1><p id="pageDesc">どのKWを先に狙うか。商品との一致度・検索意図・実サジェストをひと目で。</p></div><div class="top-actions"><span id="liveBadge" class="pill amber">● 読込中</span><button type="button" id="importTop" class="btn primary">⚡ 今すぐ調査</button></div></div>
+ <div class="top"><div><div class="eyebrow">XDAY / YOUTUBE SEARCH</div><h1 id="pageTitle">SEOキーワードを選ぶ</h1><p id="pageDesc">今の動画に合う言葉を探す。実サジェストと競合の強さを確認。</p></div><div class="top-actions"><span id="liveBadge" class="pill amber">● 読込中</span><button type="button" id="importTop" class="btn primary">⚡ 今すぐ調査</button></div></div>
  <div id="sourceBanner" class="banner" style="display:none"><div><strong>🟢 検索APIから実際に候補と競合を取得</strong><p>初期リストはXDAYの商品・検索意図から編集した候補です。サジェスト取得済みと未確認を区別します。検索ボリュームは計測していません。</p></div><button class="btn small" type="button" data-jump="overview">取得フォームへ →</button></div>
  <section id="page-overview" class="page">
 <section id="simpleStart" class="simple-shell" aria-labelledby="simpleTitle">
- <div class="simple-head"><div class="simple-eyebrow">XDAY / NEXT VIDEO PLANNER</div>
-  <h2 id="simpleTitle">次に狙うキーワードは、この順番。</h2>
-  <p>検索候補の実測と競合動画を比較。動画のSEOテーマを選んで、既存Codexの制作枠へ引き継ぎます。</p>
+ <div class="simple-head"><div class="simple-eyebrow">XDAY / SEO KEYWORDS ONLY</div>
+  <h2 id="simpleTitle">既存動画に使うSEOワード</h2>
+  <p>動画の企画は今までどおり。ここでは検索候補と競合を見て、動画の内容に合う単語だけを選びます。</p>
  </div>
  <div class="simple-filters">
   <label>どの市場？<select id="simpleMarket" class="select"><option value="JP">日本</option><option value="US">海外（英語）</option><option value="KR">韓国</option><option value="all">すべて</option></select></label>
@@ -206,13 +212,13 @@
  <div class="simple-results" id="simpleCards" aria-live="polite"></div>
  <div class="simple-bottom">
   <div class="simple-primary-actions">
-   <button type="button" class="btn primary" id="simpleAdd">この上位候補を制作リストへ</button>
+   <button type="button" class="btn primary" id="simpleAdd">上位3ワードをコピー</button>
    <button type="button" class="btn" id="simpleRefresh">未調査KWを追加調査</button>
   </div>
   <div class="simple-note" id="simpleEvidenceNote">サジェスト出現は月間検索回数ではありません。取得日時と競合サンプル数も確認できます。</div>
   <div class="simple-bridge">
-   <div><h3>Codex自動投稿とつなぐ</h3><p>SEO候補の自動更新URLは用意済み。既存の制作Coordinatorに一度読み込ませる設定が必要です。新しい投稿Workerは増やしません。</p></div>
-   <button type="button" class="btn primary" id="simpleConnect">Codex連携指示をコピー</button>
+   <div><h3>Codexへ検索ワードだけ渡す</h3><p>既存の自動投稿はそのまま。完成済み動画の内容に合うキーワードをSEO用に渡すだけです。テーマ・制作順・タイトル案は変更しません。</p></div>
+   <button type="button" class="btn primary" id="simpleConnect">キーワード連携の指示をコピー</button>
   </div>
   <div class="simple-toast" id="simpleToast" role="status"></div>
  </div>
@@ -223,9 +229,9 @@
   <section id="decisionBoard" class="action-board" aria-labelledby="decisionTitle">
    <div class="action-intro">
     <div class="action-overline"><span>● SEARCH STRATEGY 7.0 · PRODUCTION BRIDGE</span><span class="action-flag">検索データの根拠付き</span></div>
-    <h2 id="decisionTitle">次の投稿テーマをここで決める。</h2>
+    <h2 id="decisionTitle">検索キーワードを詳しく比較する。</h2>
     <p>まず検索候補で見つかったワードを選び、次に競合上位動画を比較。<strong>検索候補に出た回数だけでも、再生数が少ないだけでも決めません。</strong></p>
-    <div class="action-top"><div><b id="actionProof">0</b><span>検索候補＋競合を確認</span></div><div><b id="actionToday">0</b><span>今週の制作候補</span></div><div><b id="actionResearch">0</b><span>需要・競合の追加調査</span></div></div>
+    <div class="action-top"><div><b id="actionProof">0</b><span>検索候補＋競合を確認</span></div><div><b id="actionToday">0</b><span>根拠のあるKW</span></div><div><b id="actionResearch">0</b><span>需要・競合の追加調査</span></div></div>
     <div class="action-note" id="actionUpdated">取得日時を確認しています。</div>
    </div>
    <div class="action-filters">
@@ -233,9 +239,9 @@
     <label>対象商品 <select class="select" id="actionProduct"><option value="all">全商品</option><option value="VALORANT">VALORANT</option><option value="Fortnite">Fortnite</option><option value="APEX">APEX</option><option value="Spoofer">HWID / Spoofer</option><option value="Colorbot">Colorbot</option></select></label>
     <button class="btn primary" type="button" id="actionRun">🔎 次の10KWを調査</button>
    </div>
-   <div class="action-stages" role="group" aria-label="制作候補の分類">
-    <button class="action-stage active" type="button" data-action-stage="now">今週から狙う <span id="actionNowCount" class="small">検索確認＋競合を比較</span></button>
-    <button class="action-stage" type="button" data-action-stage="build">中期で伸ばす <span id="actionBuildCount" class="small">需要はあるが競合が強め</span></button>
+   <div class="action-stages" role="group" aria-label="キーワードの計測状況">
+    <button class="action-stage active" type="button" data-action-stage="now">比較的競合が弱い <span id="actionNowCount" class="small">検索確認＋競合を比較</span></button>
+    <button class="action-stage" type="button" data-action-stage="build">競合が強い <span id="actionBuildCount" class="small">需要はあるが競合が強め</span></button>
     <button class="action-stage" type="button" data-action-stage="research">追加調査する <span id="actionUnknownCount" class="small">検索需要を未確認</span></button>
     <button class="action-stage" type="button" data-action-stage="all">全部比較する <span class="small">根拠付きの一覧</span></button>
    </div>
@@ -682,7 +688,7 @@ function actionGroupRows(){
 }
 function actionCard(k,i,stage){const a=actionEvidence(k),c=a.entry?.competition||{},s=a.entry?.suggestion||{},tier=stage==='now'?'今週の候補':stage==='build'?'中期の候補':'追加調査';
  const links=a.entry?.topVideos||[];
- const rankTitle=stage==='now'?`今週の${i+1}本目`:stage==='build'?`中期の${i+1}候補`:i+1+'番目の調査候補';
+ const rankTitle=stage==='now'?`優先ワード ${i+1}`:stage==='build'?`競合強め ${i+1}`:i+1+'番目の調査候補';
  const sug=a.checked?a.observed?`${a.hits} / ${a.checked} 回`:'未確認':'未取得';
  const median=a.compOk&&a.median!=null?displayNum(a.median)+' 再生':'データ不足';
  const comp=a.compOk?`競合強度 ${a.strength}/100`:'競合未取得';
@@ -693,8 +699,8 @@ function actionCard(k,i,stage){const a=actionEvidence(k),c=a.entry?.competition|
  <header><span class="action-place"><span class="count">${i+1}</span>${rankTitle}</span><span class="action-flag">${esc(FOCUS_LABEL[focusOf(k)]||k.game)} · ${planMarket(k)}</span></header>
  <h3>${esc(k.keyword)}</h3><p class="desc">${esc(a.reason)}</p>
  <div class="action-metrics"><div><b>${sug}</b><small>検索候補の出現（回数 / 試行）</small></div><div><b>${median}</b><small>競合上位10件の中央値 · ${comp}</small></div></div>
- <div class="action-production"><span>提案タイトル · ${actionFormat(k)}</span>${esc(title)}</div>
- <div class="action-actions"><button class="btn primary small" data-queue-add="${esc(k.keyword)}" data-queue-market="${planMarket(k)}">制作候補に追加</button><button class="btn small" data-action-investigate="${esc(k.keyword)}" data-region="${planMarket(k)}">競合を確認</button><button class="btn small" data-action-copy="${esc(title)}">タイトルをコピー</button><a class="btn small ghost" href="${urlSearch(k.keyword)}" target="_blank" rel="noopener noreferrer">YT検索 ↗</a></div>
+ <div class="action-production"><span>旧制作タイトル · ${actionFormat(k)}</span>${esc(title)}</div>
+ <div class="action-actions"><button class="btn primary small" data-queue-add="${esc(k.keyword)}" data-queue-market="${planMarket(k)}">KWをコピー</button><button class="btn small" data-action-investigate="${esc(k.keyword)}" data-region="${planMarket(k)}">競合を確認</button><button class="btn small" data-action-copy="${esc(title)}">タイトルをコピー</button><a class="btn small ghost" href="${urlSearch(k.keyword)}" target="_blank" rel="noopener noreferrer">YT検索 ↗</a></div>
  ${sampleLinks?`<div class="action-actions">${sampleLinks}</div>`:''}
  <div class="action-foot">取得 ${stamp} · ${a.confidence} · ${a.compOk&&a.exact!=null?`タイトル一致 ${Math.round(a.exact*a.sample)}/${a.sample}件 · `:''}${a.score==null?'優先指数なし（需要確認待ち）':'参考指数 '+a.score+'/100（検索回数ではありません）'}</div>
  </article>`;
@@ -825,51 +831,71 @@ else{liveStatus('✅ 保存済みの'+state.videos.length+'件を表示。最新
 const SEO_FEED_URL='https://raw.githubusercontent.com/AxY-AxY-AxY/aaa/main/ranklab/seo-feed.json';
 const SEO_HELPER_URL='https://raw.githubusercontent.com/AxY-AxY-AxY/aaa/main/ranklab/xday_seo_bridge.py';
 const simpleMarket=$('simpleMarket'),simpleProduct=$('simpleProduct');
+function simplePicks(){
+ actionUi.market=simpleMarket.value;actionUi.product=simpleProduct.value;
+ const g=actionGroupRows();
+ return {g,picks:[...g.now,...g.build].slice(0,3)};
+}
 function renderSimple(){
- if(!simpleMarket)return;
- actionUi.market=simpleMarket.value; actionUi.product=simpleProduct.value;
- const g=actionGroupRows(),picked=[...g.now,...g.build].slice(0,3);
- $('simpleCards').innerHTML=picked.length?picked.map((k,i)=>{
-   const x=actionEvidence(k),market=planMarket(k),label=x.stage==='now'?'今週狙う':'中期候補';
-   const median=x.compOk&&x.median!=null?displayNum(x.median)+' 再生':'未取得';
-   const src=x.checkedAt?new Date(x.checkedAt).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'}):'未取得';
-   const strength=x.strength!=null?x.strength+'/100':'未計測';
-   return '<article class="simple-card"><div class="simple-card-top"><span class="simple-card-rank"><b>'+(i+1)+'</b>'+esc(label)+'</span><span class="simple-card-label">'+esc(FOCUS_LABEL[focusOf(k)]||k.game)+' · '+esc(market)+'</span></div>'+
-   '<h3>'+esc(k.keyword)+'</h3><p class="simple-card-reason">'+esc(x.reason)+'</p>'+
-   '<div class="simple-signals"><div class="simple-signal"><span>検索需要の根拠</span><strong>サジェスト '+x.hits+'/'+x.checked+'回</strong><span>検索回数そのものではありません</span></div>'+
-   '<div class="simple-signal"><span>競合の強さ</span><strong>'+strength+'</strong><span>上位'+x.sample+'本・再生中央値 '+median+'</span></div></div>'+
+ const {g,picks}=simplePicks();
+ $('simpleCards').innerHTML=picks.length?picks.map((k,i)=>{
+  const x=actionEvidence(k),market=planMarket(k);
+  const median=x.compOk&&x.median!=null?displayNum(x.median)+'回':'未取得';
+  const strength=x.compOk?x.strength+'/100':'未計測';
+  const observed=x.observed?'検索候補 '+x.hits+'/'+x.checked+'回':'検索候補未確認';
+  const reason=x.compOk?'上位'+x.sample+'件の競合を確認。再生中央値 '+median+'、競合強度 '+strength+'。':'検索候補と競合の追加調査が必要です。';
+  const src=x.checkedAt?new Date(x.checkedAt).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'}):'未取得';
+  return '<article class="simple-card"><div class="simple-card-top">'+
+   '<span class="simple-card-rank"><b>'+(i+1)+'</b><span class="simple-word-badge">SEOワード</span></span>'+
+   '<span class="simple-card-label">'+esc(FOCUS_LABEL[focusOf(k)]||k.game)+' · '+esc(market)+'</span></div>'+
+   '<h3>'+esc(k.keyword)+'</h3><p class="simple-card-reason">'+esc(reason)+'</p>'+
+   '<div class="simple-signals"><div class="simple-signal"><span>検索候補の出現</span><strong>'+esc(observed)+'</strong>'+
+   '<span>月間検索回数ではありません</span></div><div class="simple-signal"><span>競合の強さ</span>'+
+   '<strong>'+strength+'</strong><span>相対値 · 100ほど競合が強い</span></div></div>'+
    '<div class="simple-card-bottom"><div class="simple-card-actions">'+
-   '<button class="btn primary" type="button" data-queue-add="'+esc(k.keyword)+'" data-queue-market="'+market+'">このKWで動画を企画</button>'+
-   '<button class="btn" type="button" data-action-investigate="'+esc(k.keyword)+'" data-region="'+market+'">競合を詳しく見る</button></div>'+
-   '<span class="simple-stamp">最終確認 '+esc(src)+'</span></div></article>';
- }).join(''):'<div class="bridge-empty">この市場・商品の検索データを確認中です。「未調査KWを追加調査」から収集できます。</div>';
- const total=g.now.length+g.build.length;
- $('simpleAdd').disabled=total===0;
- $('simpleEvidenceNote').textContent='調査済み '+total+'件、追加確認 '+g.research.length+'件。順位はサジェストの出現率と競合10動画の相対比較で算定。月間検索回数は未取得です。';
+   '<button class="btn primary" type="button" data-simple-copy="'+esc(k.keyword)+'">このワードをコピー</button>'+
+   '<button class="btn" type="button" data-action-investigate="'+esc(k.keyword)+'" data-region="'+market+'">検索結果を確認</button></div>'+
+   '<span class="simple-stamp">最終調査 '+esc(src)+'</span></div></article>';
+ }).join(''):'<div class="bridge-empty">この商品では検索・競合を確認したKWがまだありません。追加調査で収集できます。</div>';
+ $('simpleAdd').disabled=picks.length===0;
+ $('simpleEvidenceNote').textContent='現在の条件：実測に基づく候補 '+(g.now.length+g.build.length)+'件、追加調査 '+g.research.length+'件。検索候補の出現は実際の月間検索回数ではありません。';
+}
+async function copySeoWords(text,what='キーワード'){
+ try{await navigator.clipboard.writeText(text);$('simpleToast').textContent=what+'をコピーしました。既存の動画に合う言葉だけ使用できます。';return true}
+ catch(error){$('simpleToast').textContent='クリップボードへの書き込みに失敗しました。キーワード欄から選択してコピーしてください。';return false}
 }
 const oldRender=render;
 render=function(){oldRender();renderSimple()};
 simpleMarket.addEventListener('change',()=>{renderSimple();});
 simpleProduct.addEventListener('change',()=>{renderSimple();});
-$('simpleAdd').addEventListener('click',()=>{actionUi.market=simpleMarket.value;actionUi.product=simpleProduct.value;queueTop3();switchPage('production');});
+$('simpleAdd').addEventListener('click',()=>copySeoWords(simplePicks().picks.map(k=>k.keyword).join('\n'),'上位キーワード'));
 $('simpleRefresh').addEventListener('click',()=>{actionUi.market=simpleMarket.value;actionUi.product=simpleProduct.value;runActionResearch().then(()=>renderSimple());});
 $('simpleDeep').addEventListener('click',()=>{const page=$('page-overview');const opened=page.classList.toggle('show-deep');$('simpleDeep').setAttribute('aria-expanded',String(opened));$('simpleDeep').textContent=opened?'詳細を閉じる ▴':'詳しい順位・競合動画・全キーワードを表示 ▾';});
 document.addEventListener('click',e=>{if(e.target.closest('#simpleStart [data-action-investigate]'))$('page-overview').classList.add('show-deep')},true);
 $('simpleConnect').addEventListener('click',async()=>{
- const guide='XDAY既存Codex自動投稿へRankLabのSEO提案を1回だけ接続してください。\n\n'+
- '作業場所: C:\\Users\\admin\\Desktop\\AIカンパニー\n既存Coordinater: tools/xday_daily_supply.py\n'+
- 'SEO候補URL: '+SEO_FEED_URL+'\n取込ヘルパー: '+SEO_HELPER_URL+'\n\n'+
- '1. 現在のCoordinator/Worker・08:00/22:00の定期処理・投稿台帳を読み取り、どこで動画テーマとtitle/description/tagsを決めているかを特定。\n'+
- '2. 既存のテーマ選定部分にRankLabのSEO候補の読取を追加。公開済みのYouTube動画、作成中の制作ID、予約済み枠と重複する候補は除外。\n'+
- '3. URLから取得した提案は企画/SEO入力として扱う。既存のチャンネル識別、QC、投稿時間、横1本+Shorts2本/日、結果不明時の再送禁止を維持。新しいWorker/Schedulerを作らず、二重投稿を回避。\n'+
- '4. 検索ボリュームは未測定。キーワード、サジェスト出現、競合10本の再生中央値・動画タイトル一致率を根拠にSEOタイトル・説明冒頭・タグを生成。未確認の安全性や検出回避を断定しない。\n'+
- '5. dry-runで複数候補を取得し、重複除外、割当確認、existing QCと正式キューのreadbackを検証。稼働中の投稿Workerを止めたり、既存台帳をリセットしたりしない。\n';
- try{await navigator.clipboard.writeText(guide);$('simpleToast').textContent='連携指示をコピーしました。既存Codexチャットに一度貼り付けると、Coordinatorへの組込み作業を開始できます。'}
- catch(e){$('simpleToast').textContent='コピーがブロックされました。右下の制作キューページからCodex向け指示をコピーできます。'}
+ const guide='XDAYの既存Codex自動投稿に、RankLabの「キーワードのみ」を付与してください。テーマ選定は既存のまま変更しません。\n\n'+
+ 'キーワードJSON: '+SEO_FEED_URL+'\n読込ヘルパー: '+SEO_HELPER_URL+'\n既存の処理: tools/xday_daily_supply.py\n\n'+
+ '1. 現在の動画の製品・対象市場が確定した後のSEOメタデータ生成工程だけに、RankLabのKW読込を追加する。\n'+
+ '2. JSONのschema=xday.ranklab.keyword-feed.v1、mode=keywords_onlyを検証。動画の製品・市場と一致するstatus=verifiedの単語だけを抽出する。\n'+
+ '3. ヘルパーは --market JP --product VALORANT のように対象を指定すると、検索ワードの文字列配列だけを返す。\n'+
+ '4. 動画テーマ、制作内容、タイトル案、制作順、チャンネル、横動画とShortsの本数、08:00/22:00処理、投稿キューとWorkerは既存のまま保持。KWによって新しい動画を作らない。\n'+
+ '5. 既存の動画内容と一致するKWをSEOメタデータ用の入力として利用し、重複する単語は除外。月間検索回数は未取得なので数値を推測で埋めない。\n'+
+ '6. 接続後はdry-runで現在の動画の対象市場と製品が一致するKWだけ返ることを検証。RankLabの取得失敗時は既存のSEO処理をそのまま使用する。\n';
+ await copySeoWords(guide,'Codex連携指示');
 });
+document.addEventListener('click',e=>{
+ const single=e.target.closest('[data-simple-copy]');
+ const legacy=e.target.closest('[data-queue-add]');
+ if(single||legacy){
+  e.preventDefault();e.stopImmediatePropagation();
+  copySeoWords(single?single.dataset.simpleCopy:legacy.dataset.queueAdd,'SEOワード');
+ }
+ const forbidden=e.target.closest('[data-page="production"],[data-jump="production"],#queueAddTop3,#queueAddRecommended');
+ if(forbidden){e.preventDefault();e.stopImmediatePropagation();switchPage('overview')}
+},true);
 (function simplifyMenu(){
  const nav=q('.nav');if(!nav)return;
- const labels={overview:'🏠 次に狙うKW',priority:'📊 KW比較',production:'🚀 SEO制作キュー'};
+ const labels={overview:'🔑 SEOワード',priority:'📊 KW比較'};
  for(const [id,name] of Object.entries(labels)){const btn=nav.querySelector('[data-page="'+id+'"]');if(btn){const chip=btn.querySelector('.bridge-chip');btn.textContent=name;if(chip)btn.appendChild(chip)}}
  const more=document.createElement('details');more.className='simple-nav-more';
  more.innerHTML='<summary>その他の機能・SMM</summary><div class="nav-more-links"></div>';
