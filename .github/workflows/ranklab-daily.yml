@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - "ranklab/collect_research.py"
+      - "ranklab/generate_production_suggestions.py"
       - ".github/workflows/ranklab-daily.yml"
   schedule:
     - cron: "19 20 * * *"
@@ -23,14 +24,16 @@ jobs:
           persist-credentials: true
       - name: Collect publicly available autocomplete and competitor video data
         run: python3 -u ranklab/collect_research.py
+      - name: Convert ranked keywords to production proposals
+        run: python3 -u ranklab/generate_production_suggestions.py
       - name: Commit source-backed measurements
         shell: bash
         run: |
           set -euo pipefail
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add ranklab/research-data.json
+          git add ranklab/research-data.json ranklab/production-suggestions.json
           if ! git diff --cached --quiet; then
-            git commit -m "Refresh RankLab YouTube keyword research snapshot"
+            git commit -m "Refresh RankLab research and production proposals"
             git push origin HEAD:main
           fi
