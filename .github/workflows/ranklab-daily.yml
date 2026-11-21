@@ -32,7 +32,7 @@ jobs:
           set -euo pipefail
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add ranklab/research-data.json ranklab/production-suggestions.json
+          git add ranklab/research-data.json ranklab/production-suggestions.json ranklab/seo-feed.json
           if ! git diff --cached --quiet; then
             git commit -m "Refresh RankLab research and production proposals"
             git fetch origin main
