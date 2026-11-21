@@ -1,0 +1,53 @@
+name: Verify XDAY RankLab opportunity model and SMM page
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/ranklab-v5-test.yml"]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Run Chrome end-to-end checks
+        run: |
+          npm install --no-save playwright-core@1.58.0
+          node <<'JS'
+          const {chromium}=require('playwright-core');
+          (async()=>{
+            const b=await chromium.launch({executablePath:'/usr/bin/google-chrome',headless:true,args:['--no-sandbox']});
+            try{
+              const page=await b.newPage({viewport:{width:1440,height:900}});
+              const errors=[];
+              page.on('pageerror',e=>errors.push(e.message));
+              await page.goto('https://glitter-lens-79zt8.ship.place/',{waitUntil:'domcontentloaded',timeout:25000});
+              await page.waitForFunction(()=>Number(document.querySelector('#oppCovered')?.textContent||0)>=15,{timeout:30000});
+              console.log('DATA COVERAGE:',await page.locator('#oppCovered').innerText());
+              console.log('UNMEASURED:',await page.locator('#oppMissing').innerText());
+              console.log('FIRST OPPORTUNITY:',await page.locator('.opp-head').first().innerText());
+              console.log('TOP20 ROWS:',await page.locator('.opp-row').count());
+              console.log('SOURCE STATUS:',await page.locator('#oppStatus').innerText());
+              await page.locator('#oppMarket').selectOption('US');
+              console.log('US COVERAGE:',await page.locator('#oppCovered').innerText());
+              await page.locator('#oppSort').selectOption('easy');
+              console.log('EASYEST TARGET:',await page.locator('.opp-head').first().innerText());
+              await page.locator('#oppMarket').selectOption('all');
+              await page.locator('[data-page="smm"]').click();
+              console.log('SMM CARDS:',await page.locator('.smm-card').count());
+              if(await page.locator('.smm-card').count()!==4)throw Error('SMM comparison missing');
+              if((await page.locator('.smm-card a[href^="https"]').count())!==4)throw Error('Source links missing');
+              await page.locator('[data-page="overview"]').click();
+              console.log('CANDIDATES:',await page.locator('#planTotal').innerText());
+              const mobile=await b.newPage({viewport:{width:390,height:844},deviceScaleFactor:1});
+              mobile.on('pageerror',e=>errors.push('mobile:'+e.message));
+              await mobile.goto('https://glitter-lens-79zt8.ship.place/',{waitUntil:'domcontentloaded',timeout:25000});
+              await mobile.waitForFunction(()=>Number(document.querySelector('#oppCovered')?.textContent||0)>=15,{timeout:30000});
+              console.log('MOBILE OVERFLOW:',await mobile.evaluate(()=>document.documentElement.scrollWidth-innerWidth));
+              console.log('JS ERRORS:',JSON.stringify(errors));
+              if(errors.length)process.exitCode=1;
+              if(await page.locator('.opp-row').count()<10)process.exitCode=1;
+              await mobile.close();
+            }finally{await b.close()}
+          })().catch(e=>{console.error(e);process.exitCode=1});
+          JS
