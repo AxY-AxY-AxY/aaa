@@ -126,4 +126,4 @@
     "deduplicate_before_any_production": true,
     "skip_when_data_stale_or_network_fails": true
   }
-}\n
+}
