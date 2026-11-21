@@ -40,7 +40,7 @@ jobs:
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
-            cp "$SNAP"/research-data.json "$SNAP"/"$SNAP"/seo-feed.json ranklab/
+            cp "$SNAP"/research-data.json "$SNAP"/seo-feed.json ranklab/
             git add ranklab/research-data.json ranklab/seo-feed.json
             if git diff --cached --quiet; then pushed=true; break; fi
             git commit -m "Refresh RankLab research and keyword-only SEO feed"
