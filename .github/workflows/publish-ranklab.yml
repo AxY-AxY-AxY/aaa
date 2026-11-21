@@ -1,0 +1,27 @@
+name: Publish XDAY RankLab
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-ranklab.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v4
+      - name: Publish RankLab
+        shell: bash
+        run: |
+          set -euo pipefail
+          response=$(curl --fail-with-body --silent --show-error --retry 2 --max-time 60 -X POST https://ship.page/deploy -H 'Content-Type: text/html' --data-binary @ranklab/index.html)
+          url=$(jq -r '.url // empty' <<< "$response")
+          expires=$(jq -r '.expires_at // "unspecified"' <<< "$response")
+          if [[ ! "$url" =~ ^https://[a-z0-9-]+\.ship\.place/$ ]]; then echo "Deploy response had no valid URL"; exit 1; fi
+          printf 'RankLab URL: %s\nExpires at: %s\n' "$url" "$expires"
+          printf '## XDAY RankLab\n\n%s\n\nExpires: %s\n' "$url" "$expires" >> "$GITHUB_STEP_SUMMARY"
