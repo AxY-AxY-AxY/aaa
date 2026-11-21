@@ -1,5 +1,4 @@
-name: Initialize RankLab SEO integration feed
-# Re-run against repaired JSON generator and current source
+name: Initialize RankLab keyword-only feed
 on:
   push:
     branches: [main]
@@ -9,23 +8,28 @@ permissions: {contents: write}
 jobs:
   initialize:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 4
     steps:
       - uses: actions/checkout@v4
-      - name: Build and verify bridge feed from the latest measured snapshot
+      - name: Generate and validate ONLY keyword data
         shell: bash
         run: |
           set -euo pipefail
-          python3 ranklab/generate_production_suggestions.py
-          python3 ranklab/xday_seo_bridge.py --input-json ranklab/seo-feed.json --market JP --limit 3 > /tmp/ranklab-proposals.json
+          python3 -u ranklab/build_keyword_feed.py
+          python3 ranklab/xday_seo_bridge.py --input-json ranklab/seo-feed.json --market JP --product VALORANT --limit 5 > /tmp/ranklab-keywords.json
           python3 - <<'PY'
           import json
-          x=json.load(open('ranklab/seo-feed.json'))
-          assert x['schema']=='xday.ranklab.seo-feed.v1'
-          print('SEO_FEED_VALID',len(x['actions']),x['generated_at'])
-          print('JP_VALIDATED',len(json.load(open('/tmp/ranklab-proposals.json'))))
+          feed=json.load(open('ranklab/seo-feed.json',encoding='utf-8'))
+          words=json.load(open('/tmp/ranklab-keywords.json',encoding='utf-8'))
+          assert feed['schema']=='xday.ranklab.keyword-feed.v1'
+          assert feed['mode']=='keywords_only'
+          assert all(set(r.keys()).issuperset({'keyword','market','product'}) for r in feed['keywords'])
+          assert all('proposed_title' not in r and 'intent' not in r for r in feed['keywords'])
+          assert all(isinstance(x,str) for x in words)
+          print('SEO_KEYWORDS_VALID',len(feed['keywords']),'VERIFIED',feed['counts']['verified'])
+          print('JP_VALORANT_VALID',json.dumps(words,ensure_ascii=False))
           PY
-      - name: Commit only generated SEO feed
+      - name: Publish keyword feed without changing posting queue
         shell: bash
         run: |
           set -euo pipefail
@@ -37,6 +41,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git add ranklab/seo-feed.json
           if ! git diff --cached --quiet; then
-            git commit -m "Initialize public RankLab SEO suggestions feed"
+            git commit -m "Switch RankLab output to keyword-only SEO data"
             git push origin HEAD:main
           fi
