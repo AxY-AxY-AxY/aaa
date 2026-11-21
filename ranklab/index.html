@@ -34,6 +34,86 @@
 .smm-intro{margin:0 0 18px;color:#bdcfe3}.smm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.smm-card{border:1px solid #314864;border-radius:17px;background:#112138;padding:19px}.smm-card h3{font-size:20px;margin:0 0 8px}.smm-card .smm-top{display:flex;justify-content:space-between;gap:10px;align-items:start}.smm-card .rate{font-weight:900;font-size:27px;color:#bbd8ff;white-space:nowrap}.smm-card .rate small{display:block;font-size:11px;font-weight:500;color:#9db3cb}.smm-card p{color:#bdd0e1;margin:7px 0 10px;font-size:14px}.smm-data{font-size:13px;color:#d3e1f4;background:#09172a;padding:11px;border-radius:10px;margin:10px 0;line-height:1.8}.smm-foot{font-size:12px;color:#97b5ce;margin-top:12px}.smm-note{font-size:14px;color:#bdcde2;margin-bottom:13px}
 @media(max-width:850px){.smm-grid{grid-template-columns:1fr}.opp-row{grid-template-columns:42px minmax(0,1fr)}.opp-side{grid-column:2;text-align:left}.opp-buttons{justify-content:flex-start}}
 @media(max-width:540px){.opportunity{padding:14px;border-radius:16px}.opp-kpis{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.opp-kpis>div{padding:9px 7px;font-size:11px}.opp-kpis strong{font-size:24px}.opp-row{padding:11px;gap:9px}.opp-head{font-size:17px}.opp-toolbar .btn{width:100%}.opp-bar>span{min-width:37px}}
+
+/* XDAY RankLab 6.0: action-first, evidence-led discovery */
+:root{--decision:#0e2034;--decision-border:#335574;--decision-accent:#66ddc7}
+.action-board{border-radius:24px;overflow:hidden;border:1px solid #42698b;background:linear-gradient(140deg,#122d46 0%,#0d1b2e 57%,#102039 100%);box-shadow:0 18px 44px #020a1673;margin-bottom:24px}
+.action-intro{padding:25px 28px 13px;border-bottom:1px solid #ffffff12}
+.action-overline{display:flex;gap:9px;align-items:center;flex-wrap:wrap;color:#74f2cf;font-size:12px;font-weight:850;letter-spacing:.09em;text-transform:uppercase}
+.action-intro h2{margin:8px 0 8px;font-size:clamp(26px,3.5vw,36px);letter-spacing:-.035em;line-height:1.26;color:#fff}
+.action-intro p{font-size:15px;max-width:840px;color:#c4d8ea;margin:0 0 12px;line-height:1.7}
+.action-note{color:#a9c1db;font-size:12px;margin:6px 0 0}
+.action-top{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:18px 0 8px}
+.action-top>div{border-radius:13px;border:1px solid #375474;background:#0a192c9c;padding:13px 15px;min-height:78px}
+.action-top b{display:block;font-weight:900;font-size:27px;color:#f2faff;line-height:1.15}
+.action-top span{display:block;font-size:12px;color:#b2c8dc;margin-top:4px}
+.action-filters{padding:18px 28px 12px;display:flex;align-items:end;flex-wrap:wrap;gap:12px}
+.action-filters label{color:#c6dcf0;font-size:13px;font-weight:700;display:grid;gap:6px;flex:1;min-width:170px}
+.action-filters .select{width:100%;min-height:44px;background:#10243a;color:#fff}
+.action-filters .btn{min-height:44px;font-weight:760}
+.action-stages{padding:7px 28px 0;display:flex;align-items:stretch;flex-wrap:wrap;gap:10px}
+.action-stage{flex:1;min-width:150px;text-align:left;border:1px solid #3c5b78;background:#11263f;color:#c8d9e8;border-radius:13px;padding:12px 14px;font-weight:800;transition:background .18s,border-color .18s}
+.action-stage .small{display:block;font-size:12px;opacity:.76;font-weight:550;margin-top:4px}
+.action-stage.active{background:#214c62;border-color:#76e8cc;color:#f3fffb;box-shadow:inset 0 0 0 1px #76e8cc33}
+.action-body{padding:15px 28px 20px}
+.action-context{color:#b8cde0;font-size:13px;padding:5px 0 15px;line-height:1.5;min-height:31px}
+.action-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.action-hero{grid-column:span 2;background:linear-gradient(110deg,#193a51,#102e3e);border-color:#5aaba4!important}
+.action-card{border:1px solid #395772;border-radius:17px;background:#11243b;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.action-card header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.action-place{display:inline-flex;align-items:center;gap:8px;font-weight:850;color:#a7ead9;font-size:13px}
+.action-place .count{display:grid;place-items:center;width:29px;height:29px;border-radius:10px;background:#2f726b;color:#f1fffa;font-size:15px}
+.action-flag{font-size:12px;border:1px solid #446682;border-radius:99px;padding:4px 8px;color:#d4e5f7;white-space:nowrap}
+.action-card h3{margin:0;color:#fff;font-size:clamp(19px,2.1vw,24px);line-height:1.35;overflow-wrap:anywhere;letter-spacing:-.03em}
+.action-card .desc{font-size:13px;color:#c2d9e9;line-height:1.65;margin:0}
+.action-metrics{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.action-metrics>div{background:#071a2d;border:1px solid #324a65;border-radius:11px;padding:10px;min-width:0}
+.action-metrics b{font-size:19px;color:#e4fbff;line-height:1.35;display:block;overflow-wrap:anywhere}
+.action-metrics small{display:block;font-size:11px;color:#a8c1d7;margin-top:2px}
+.action-production{background:#0b1c30;border-left:3px solid #72dccb;padding:10px 12px;border-radius:0 9px 9px 0;line-height:1.55;font-size:13px;color:#e5f4ff}
+.action-production span{display:block;color:#99cbcd;font-size:11px;font-weight:900;letter-spacing:.08em;margin-bottom:4px}
+.action-actions{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-top:auto}
+.action-actions .btn{font-size:13px;min-height:39px}
+.action-foot{color:#96aec6;font-size:11px;line-height:1.45}
+.action-empty{grid-column:span 2;border:1px dashed #50657c;padding:23px;border-radius:12px;color:#bcd0df;background:#102136}
+.action-bottom{background:#0a1829;border-top:1px solid #29425e;padding:15px 28px;color:#b2c5d8;font-size:12px;line-height:1.65}
+.action-bottom summary{cursor:pointer;font-weight:720;color:#c3ebf9}
+.action-bottom p{margin:7px 0 0}
+.action-advanced{border:1px solid #304962;border-radius:17px;margin:15px 0 20px;background:#0f2032;overflow:hidden}
+.action-advanced summary{cursor:pointer;padding:18px 21px;display:flex;gap:9px;align-items:center;font-size:17px;font-weight:850;color:#dbecff}
+.action-advanced[open] summary{border-bottom:1px solid #29445d}
+.action-advanced>section,.action-advanced>div{margin:15px!important}
+.action-advanced .opportunity{display:none!important}
+.action-advanced #planBoard{border:0;background:transparent;padding:3px;margin:10px!important;box-shadow:none}
+.action-extra-link{font-size:12px;color:#b5c9dd;margin-top:4px}
+@media(max-width:900px){.action-intro,.action-filters,.action-stages,.action-body,.action-bottom{padding-left:18px;padding-right:18px}}
+@media(max-width:680px){.action-top{gap:7px}.action-top>div{padding:10px}.action-top b{font-size:23px}.action-top span{font-size:11px}.action-grid{grid-template-columns:1fr}.action-hero{grid-column:span 1}.action-card{padding:15px}.action-stages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.action-stage{min-width:0;padding:11px;font-size:13px}.action-filters label{min-width:125px}.action-filters .btn{width:100%}.action-intro h2{font-size:27px}.action-advanced summary{font-size:15px}}
+
+
+/* RankLab 7: production intake, separate from delivery ledger */
+.bridge-board{border:1px solid #42648a;border-radius:20px;background:#102237;margin:16px 0 26px;overflow:hidden}
+.bridge-top{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:22px}
+.bridge-top h2{font-size:clamp(20px,2vw,25px);margin:0 0 6px}
+.bridge-top p{font-size:14px;color:#bfd1e2;margin:0;max-width:650px}
+.bridge-actions{display:flex;gap:10px;flex-wrap:wrap}
+.bridge-meta{padding:10px 22px;border-top:1px solid #27405c;color:#a3bacc;font-size:12px}
+.bridge-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:0 22px 20px}
+.bridge-step{background:#0b1b30;border:1px solid #2d4563;border-radius:13px;padding:12px}
+.bridge-step b{color:#92e7d3;font-size:14px}
+.bridge-step p{margin:4px 0 0;color:#b3c5d8;font-size:12px}
+.bridge-queue{display:grid;gap:12px;margin:18px 0}
+.bridge-item{border:1px solid #314c66;border-radius:14px;padding:17px;background:#14283f;display:grid;gap:13px}
+.bridge-title{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;flex-wrap:wrap}
+.bridge-title strong{font-size:18px;color:#fff}
+.bridge-title small{display:block;color:#a4bfd8;font-size:12px;margin-top:5px}
+.bridge-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+.bridge-controls label{display:grid;gap:5px;min-width:160px;flex:1;color:#bcd0e3;font-size:12px;font-weight:700}
+.bridge-controls select{width:100%}
+.bridge-status{padding:11px 15px;border:1px solid #355679;border-radius:12px;background:#0e2033;color:#b8d8e7;font-size:13px;margin:11px 0}
+.bridge-empty{padding:28px 20px;text-align:center;color:#a9c0d5;border:1px dashed #496483;border-radius:13px}
+.bridge-chip{font-size:12px;border-radius:8px;padding:5px 9px;background:#2a455a;color:#d2e5f7;font-weight:700}
+.bridge-queue-hint{font-size:13px;color:#afc8df}
+@media(max-width:700px){.bridge-steps{grid-template-columns:1fr}.bridge-board .bridge-top{padding:17px}.bridge-steps{padding:0 17px 15px}.bridge-meta{padding:10px 17px}.bridge-controls label{min-width:120px}.bridge-actions .btn{flex:1}}
 </style>
 </head>
 <body>
@@ -44,6 +124,7 @@
   <button type="button" data-page="overview" class="active"><span>🏠</span> ダッシュボード</button>
   <button type="button" data-page="keywords"><span>🔎</span> 全キーワード</button>
   <button type="button" data-page="priority"><span>🎯</span> 優先順位</button>
+  <button type="button" data-page="production"><span>🚀</span> 制作キュー <b id="bridgeNavCount" class="bridge-chip">0</b></button>
   <button type="button" data-page="competitors"><span>📺</span> 競合動画</button>
   <button type="button" data-page="smm"><span>🧰</span> 検索ビューSMM比較</button>
   <button type="button" data-page="source"><span>📥</span> データ取込</button>
@@ -52,9 +133,45 @@
  <div class="sidebar-note"><strong>📡 データの状態</strong><p id="sideStatus">元ZIP未取込。検索順位の実測データは未表示。</p></div>
 </aside>
 <main class="main">
- <div class="top"><div><div class="eyebrow">XDAY / YOUTUBE SEARCH</div><h1 id="pageTitle">XDAYが次に狙う検索ワード</h1><p id="pageDesc">どのKWを先に狙うか。商品との一致度・検索意図・実サジェストをひと目で。</p></div><div class="top-actions"><span id="liveBadge" class="pill amber">● データ未取込</span><button type="button" id="importTop" class="btn primary">⚡ 今すぐ調査</button></div></div>
- <div id="sourceBanner" class="banner"><div><strong>🟢 検索APIから実際に候補と競合を取得</strong><p>初期リストはXDAYの商品・検索意図から編集した候補です。サジェスト取得済みと未確認を区別します。検索ボリュームは計測していません。</p></div><button class="btn small" type="button" data-jump="overview">取得フォームへ →</button></div>
+ <div class="top"><div><div class="eyebrow">XDAY / YOUTUBE SEARCH</div><h1 id="pageTitle">次の投稿を決める</h1><p id="pageDesc">どのKWを先に狙うか。商品との一致度・検索意図・実サジェストをひと目で。</p></div><div class="top-actions"><span id="liveBadge" class="pill amber">● 読込中</span><button type="button" id="importTop" class="btn primary">⚡ 今すぐ調査</button></div></div>
+ <div id="sourceBanner" class="banner" style="display:none"><div><strong>🟢 検索APIから実際に候補と競合を取得</strong><p>初期リストはXDAYの商品・検索意図から編集した候補です。サジェスト取得済みと未確認を区別します。検索ボリュームは計測していません。</p></div><button class="btn small" type="button" data-jump="overview">取得フォームへ →</button></div>
  <section id="page-overview" class="page">
+
+  <section id="decisionBoard" class="action-board" aria-labelledby="decisionTitle">
+   <div class="action-intro">
+    <div class="action-overline"><span>● SEARCH STRATEGY 7.0 · PRODUCTION BRIDGE</span><span class="action-flag">検索データの根拠付き</span></div>
+    <h2 id="decisionTitle">次の投稿テーマをここで決める。</h2>
+    <p>まず検索候補で見つかったワードを選び、次に競合上位動画を比較。<strong>検索候補に出た回数だけでも、再生数が少ないだけでも決めません。</strong></p>
+    <div class="action-top"><div><b id="actionProof">0</b><span>検索候補＋競合を確認</span></div><div><b id="actionToday">0</b><span>今週の制作候補</span></div><div><b id="actionResearch">0</b><span>需要・競合の追加調査</span></div></div>
+    <div class="action-note" id="actionUpdated">取得日時を確認しています。</div>
+   </div>
+   <div class="action-filters">
+    <label>対象市場 <select class="select" id="actionMarket"><option value="JP">日本語 / 日本</option><option value="US">English / US</option><option value="KR">한국어 / 한국</option><option value="all">全市場を表示</option></select></label>
+    <label>対象商品 <select class="select" id="actionProduct"><option value="all">全商品</option><option value="VALORANT">VALORANT</option><option value="Fortnite">Fortnite</option><option value="APEX">APEX</option><option value="Spoofer">HWID / Spoofer</option><option value="Colorbot">Colorbot</option></select></label>
+    <button class="btn primary" type="button" id="actionRun">🔎 次の10KWを調査</button>
+   </div>
+   <div class="action-stages" role="group" aria-label="制作候補の分類">
+    <button class="action-stage active" type="button" data-action-stage="now">今週から狙う <span id="actionNowCount" class="small">検索確認＋競合を比較</span></button>
+    <button class="action-stage" type="button" data-action-stage="build">中期で伸ばす <span id="actionBuildCount" class="small">需要はあるが競合が強め</span></button>
+    <button class="action-stage" type="button" data-action-stage="research">追加調査する <span id="actionUnknownCount" class="small">検索需要を未確認</span></button>
+    <button class="action-stage" type="button" data-action-stage="all">全部比較する <span class="small">根拠付きの一覧</span></button>
+   </div>
+   <div class="action-body"><div id="actionContext" class="action-context">調査済みキーワードを比較しています。</div><div id="actionList" class="action-grid" aria-live="polite"></div></div>
+   <div class="action-bottom" id="actionProgress" role="status">GoogleのYouTube検索候補と競合上位動画のデータを読み込み中。</div>
+   <div class="action-bottom"><details><summary>「検索が多い」「競合が弱い」はどう判定している？</summary><p>検索需要の実測回数は取得できていません。需要はYouTube向けGoogleサジェストへの出現回数と位置、競合はInvidious検索結果の上位10本の再生中央値・タイトル一致率・更新状況を表示します。競合強度0〜100は独自の相対比較値です。サジェストに出なかったワードは「0回検索」ではなく「今回の方法では未確認」とします。今週／中期の区分は制作順の仮説で、掲載順位・売上を保証するものではありません。</p></details></div>
+  </section>
+
+
+  <section id="productionBoard" class="bridge-board" aria-labelledby="bridgeHeader">
+   <div class="bridge-top"><div><span class="eyebrow">RANKLAB → VIDEO COORDINATOR</span><h2 id="bridgeHeader">🚀 狙うKWを、動画の制作候補へ</h2><p>優先候補を選ぶだけでタイトル案・競合データを制作ブリーフにまとめます。実際の動画制作・公開は既存Coordinator/Workerが担当します。</p></div>
+    <div class="bridge-actions"><button id="queueAddTop3" class="btn primary" type="button">上位3KWを制作候補に追加</button><button class="btn" type="button" data-jump="production">制作キューを見る <span id="bridgeCount">0</span>件</button></div>
+   </div>
+   <div class="bridge-steps"><div class="bridge-step"><b>1　検索・競合で選定</b><p>データを確認したKWだけ優先表示</p></div><div class="bridge-step"><b>2　制作候補を保存</b><p>横動画・Shortsの企画とタイトルを保持</p></div><div class="bridge-step"><b>3　既存Coordinatorへ引継ぎ</b><p>チャンネル照合・重複判定・QC後に既存投稿キューへ</p></div></div>
+   <div id="bridgeOverviewStatus" class="bridge-meta">接続状況：ブラウザ内の制作候補キュー。既存投稿システムとの自動送受信は未接続。</div>
+  </section>
+
+  <details id="advancedOverview" class="action-advanced"><summary>🧭 全234件の候補・競合調査・詳しいデータを見る</summary>
+
 
   <section id="opportunityBoard" class="opportunity" aria-labelledby="oppTitle">
    <div class="plan-head"><div><span class="eyebrow">REAL SEARCH SIGNALS × COMPETITOR STRENGTH</span><h2 id="oppTitle">🏆 検索需要と競合から選ぶ、今狙うKW</h2><p>「人気そう」だけで選ばず、<strong>需要の根拠 × 競合の強さ × XDAY適合</strong>の3要素で比較。データ未取得はランキングから分けます。</p></div><div><span class="pill green">● 取得元を表示</span></div></div>
@@ -94,9 +211,24 @@
   <div class="stats"><div class="stat"><span class="icon">🔑</span><div class="label">掲載キーワード</div><div class="number" id="statKw">0</div><div class="meta" id="statKwNote">初期候補を読み込み中</div></div><div class="stat"><span class="icon">📺</span><div class="label">取得した競合動画</div><div class="number" id="statVideos">0</div><div class="meta">自社チャンネルは自動的に除外</div></div><div class="stat"><span class="icon">💡</span><div class="label">サジェストの追加候補</div><div class="number" id="statCandidates">0</div><div class="meta">候補と実測KWは区別</div></div><div class="stat"><span class="icon">🎯</span><div class="label">優先順位算定済み</div><div class="number" id="statRanked">0</div><div class="meta">検索APIから競合取得済み</div></div></div>
   <div class="grid2"><section class="panel"><div class="panel-pad"><div class="section-head"><div><h2>🔥 次に狙うキーワード</h2><p>製品との一致度を最優先。調査済みは競合も反映</p></div><button class="btn small ghost" type="button" data-jump="priority">すべて表示 →</button></div><div id="topKeywords"></div></div></section><section class="panel"><div class="panel-pad"><div class="section-head"><div><h2>🚀 使い始める</h2><p>動画IDを手動登録する必要はありません</p></div></div><div class="steps"><div class="step"><b>1</b><div><strong>検索語を入れる</strong><p>Fortnite / VALORANT / APEX、日本語・英語・韓国語。</p></div></div><div class="step"><b>2</b><div><strong>🔎 競合を取得</strong><p>検索APIからタイトル・順位・再生数を収集。動画IDは自動。</p></div></div><div class="step"><b>3</b><div><strong>優先順位を確認</strong><p>競合の相対的な強さを比較し、KWを選ぶ。</p></div></div></div><button class="btn primary" style="width:100%;margin-top:16px" id="quickLive">⚡ 上から10件を自動調査</button></div></section></div>
   <div class="section"><div class="section-head"><div><h2>🧭 ゲーム別キーワード</h2><p>初期候補と取込済みキーワードをまとめて探索</p></div></div><div id="gameOverview" class="grid2"></div></div>
+  </details>
  </section>
  <section id="page-keywords" class="page hidden"><div class="section-head"><div><h2>🔎 キーワード発掘</h2><p>英語・日本語・韓国語の候補を整理。生成候補は検索数を保証しません。</p></div></div><div class="panel"><div class="toolbar"><input class="search" id="kwSearch" aria-label="キーワードを検索" placeholder="例: Fortnite cheat / VALORANT チート"><select class="select" id="kwGame"><option value="all">🎮 全ゲーム</option><option>VALORANT</option><option>Fortnite</option><option>APEX</option><option>Spoofer</option><option>Colorbot</option><option value="Other">その他</option></select><select class="select" id="kwSort"><option value="priority">優先度順</option><option value="name">五十音・ABC順</option><option value="measured">計測データあり</option></select><button class="btn small primary" id="expandKw">💡 実際のサジェストを取得</button></div><div id="kwList"></div></div><p class="note">📌 実データはGoogleのYouTube検索サジェストとInvidiousの検索APIから取得。検索ボリュームとは異なります。</p></section>
  <section id="page-priority" class="page hidden"><div class="section-head"><div><h2>🎯 狙う順番</h2><p>XDAYの商品適合性・検索意図を優先。競合の実データは補助指標</p></div></div><div class="banner"><div><strong>スコアの意味</strong><p>XDAYの商品適合性・検索意図・継続性を編集スコア化。競合データ取得後に調整。検索数・公式ランキングではありません。</p></div><span class="pill">0〜100点</span></div><div class="panel"><div class="toolbar"><input class="search" id="prioritySearch" placeholder="KWで絞り込み"><select class="select" id="priorityGame"><option value="all">全ゲーム</option><option>VALORANT</option><option>Fortnite</option><option>APEX</option><option>Spoofer</option><option>Colorbot</option><option value="Other">その他</option></select><select class="select" id="prioritySort"><option value="score">優先スコア高い順</option><option value="easy">競合が弱い順</option><option value="alpha">キーワード順</option></select><button class="btn small" id="exportPriority">⬇ CSV出力</button></div><div id="priorityTable"></div></div></section>
+
+ <section id="page-production" class="page hidden">
+  <div class="section-head"><div><h2>🚀 制作・投稿連携キュー</h2><p>キーワードを動画企画に変換。ここでの追加は公開予約や投稿完了ではありません。</p></div></div>
+  <div class="bridge-board">
+   <div class="bridge-top"><div><span class="eyebrow">PROPOSALS · NOT PUBLISHED</span><h2>制作候補 <span id="queueTotal">0</span>件</h2><p>候補はこの端末のブラウザ内に保存。既存Windows制作Coordinatorへの取込は専用JSONを使います。</p></div>
+   <div class="bridge-actions"><button class="btn primary" id="queueExport" type="button">制作指示JSONを保存</button><button class="btn" id="queueCopy" type="button">Codex連携指示をコピー</button></div></div>
+   <div class="bridge-meta">#4 / #5 の投稿プロファイル・横1＋Shorts2/日・08:00/22:00 JSTの既存処理・唯一Writerを維持。制作IDや正式キュー登録はCoordinator側で行います。</div>
+  </div>
+  <div id="queueStatus" class="bridge-status" role="status">ブラウザ内の制作候補を読み込み中。</div>
+  <div id="productionQueue" class="bridge-queue"></div>
+  <div class="bridge-actions"><button class="btn" id="queueAddRecommended" type="button">上位3KWをまとめて選ぶ</button><button class="btn ghost" id="queueClear" type="button">候補をすべて削除</button></div>
+  <div class="note">正式投稿にはMP4完成・総合QC・投稿先ID照合・SHA-256・重複判定・投稿時刻が必要です。ブラウザ内で制作候補を選んだだけでは投稿は開始しません。</div>
+ </section>
+
  <section id="page-competitors" class="page hidden"><div class="section-head"><div><h2>📺 競合動画一覧</h2><p>自分の動画を除外し、キーワード別に上位競合を表示</p></div></div><div class="panel"><div class="toolbar"><input class="search" id="videoSearch" placeholder="キーワード / タイトル / チャンネル検索"><select class="select" id="videoSort"><option value="rank">検索順位が高い順</option><option value="views">再生数が多い順</option><option value="recent">公開日が新しい順</option></select><button class="btn small" id="exportVideos">⬇ CSV出力</button></div><div id="videosTable"></div></div></section>
 
  <section id="page-smm" class="page hidden">
@@ -299,7 +431,7 @@ async function runAutoDiscover(){if(collecting)return;lockLive(true);$('planDisc
 const renderScore=m=>m.score==null?'<span class="muted">未計測</span>':`<span class="score ${m.score>=70?'high':m.score>=45?'mid':''}" title="${m.observed?'競合由来の推定値':'取込ファイルの値'}">${Math.round(m.score)}</span>`;
 function scored(){return state.keywords.map(k=>({...k,m:metrics(k)}))}
 function sortPriority(a,b){return planSort(a,b)}
-function render(){const seen=state.keywords.filter(k=>!k.seed).length;
+function render(){const seen=state.keywords.filter(k=>!k.seed).length;renderDecision();
 $('statKw').textContent=displayNum(state.keywords.length);$('statKwNote').textContent=seen+'件発掘 / '+(state.keywords.length-seen)+'件編集候補';$('statVideos').textContent=displayNum(state.videos.filter(v=>!isOwn(v)).length);$('statCandidates').textContent=displayNum(state.candidates.length);$('statRanked').textContent=displayNum(scored().filter(k=>evidenceStats(k).complete).length);
 $('liveBadge').className='pill '+(state.imported?'green':'amber');$('liveBadge').textContent=state.imported?'● '+state.sourceName+' を保存':'● 編集候補を表示中';$('sideStatus').textContent=state.imported?state.sourceName+' / 最終更新 '+state.stamp+'。結果はブラウザ内に保存。':'商品別に編集した候補を掲載。検索数は未計測。';$('footerStatus').textContent=state.imported?'ブラウザ保存 · '+state.stamp:'候補は編集スコア / API取得で更新';$('saveSnapshot').disabled=!state.imported;
 renderOpportunity();renderPlan();renderTop();renderGames();renderKeywords();renderPriority();renderVideos();}
@@ -309,7 +441,7 @@ function langTag(lang){const l=String(lang||'').toLowerCase();return `<span clas
 function renderKeywords(){let rows=scored().filter(k=>(state.kwGame==='all'||k.game===state.kwGame||focusOf(k)===state.kwGame)&&normalizedKw(k.keyword).includes(normalizedKw(state.kwQuery)));if(state.kwSort==='name')rows.sort((a,b)=>a.keyword.localeCompare(b.keyword,'ja'));else if(state.kwSort==='measured')rows.sort((a,b)=>Number(b.m.observed)-Number(a.m.observed)||planSort(a,b));else rows.sort(planSort);$('kwList').innerHTML=rows.length?`<div class="table-wrap"><table><thead><tr><th>キーワード</th><th>商品</th><th>言語</th><th>データ</th><th>適合度</th><th>確認</th></tr></thead><tbody>${rows.map(k=>`<tr><td class="td-title">${esc(k.keyword)}<div class="sub">${esc(planReason(k))}</div></td><td><span class="tag">${esc(FOCUS_LABEL[focusOf(k)]||k.game)}</span></td><td>${langTag(k.lang)}</td><td class="muted">${k.m.observed?'📊 競合調査済':k.suggestSeen||k.source==='youtube-suggest'||k.source==='suggest'?'✅ 実サジェスト':'📝 編集候補'}</td><td><span class="score ${planScore(k)>=88?'high':'mid'}">${planScore(k)}</span></td><td><button class="btn small primary" data-plan-query="${esc(k.keyword)}" data-plan-region="${planMarket(k)}">競合を見る</button></td></tr>`).join('')}</tbody></table></div>`:`<div class="empty"><strong>一致するキーワードは0件</strong><p>検索語やゲームを変更してください。</p></div>`}
 function renderPriority(){let rows=scored().filter(k=>(state.priorityGame==='all'||focusOf(k)===state.priorityGame||k.game===state.priorityGame)&&normalizedKw(k.keyword).includes(normalizedKw(state.priorityQuery)));if(state.prioritySort==='alpha')rows.sort((a,b)=>a.keyword.localeCompare(b.keyword,'ja'));else if(state.prioritySort==='easy')rows.sort((a,b)=>Number(!a.m.observed)-Number(!b.m.observed)||(a.m.difficulty??101)-(b.m.difficulty??101));else rows.sort(planSort);$('priorityTable').innerHTML=rows.length?`<div class="table-wrap"><table><thead><tr><th>順番</th><th>キーワード・意図</th><th>対象</th><th>サジェスト</th><th>競合</th><th>適合度</th><th>確認</th></tr></thead><tbody>${rows.map((k,i)=>`<tr><td><span class="order">${i+1}</span></td><td class="td-title">${esc(k.keyword)}<div class="sub">${intentLabels[intentOf(k)]}</div></td><td><span class="tag">${esc(FOCUS_LABEL[focusOf(k)]||k.game)}</span></td><td>${k.suggestSeen||k.source==='suggest'||k.source==='youtube-suggest'?'✅ 確認':'<span class="muted">未確認</span>'}</td><td>${k.m.observed?k.m.videoCount+'件 / 難易度 '+k.m.difficulty:'<span class="muted">未調査</span>'}</td><td><span class="score ${evidenceStats(k).score>=62?'high':'mid'}" title="需要＋競合の調査済のみ機会指数">${evidenceStats(k).complete?evidenceStats(k).score:'—'}</span></td><td><button class="btn small primary" data-plan-query="${esc(k.keyword)}" data-plan-region="${planMarket(k)}">調査</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty"><strong>条件に一致するキーワードがありません</strong></div>'}
 function renderVideos(){let rows=state.videos.filter(v=>!isOwn(v)&&[v.title,v.keyword,v.channel].some(s=>normalizedKw(s).includes(normalizedKw(state.videoQuery))));if(state.videoSort==='views')rows.sort((a,b)=>(b.views??-1)-(a.views??-1));else if(state.videoSort==='recent')rows.sort((a,b)=>Date.parse(b.published||0)-Date.parse(a.published||0));else rows.sort((a,b)=>(a.rank??999)-(b.rank??999));$('videosTable').innerHTML=rows.length?`<div class="table-wrap"><table><thead><tr><th>順位</th><th>競合動画</th><th>キーワード</th><th>チャンネル</th><th class="right">再生数</th><th>外部リンク</th></tr></thead><tbody>${rows.slice(0,1000).map(v=>`<tr><td>${v.rank==null?'<span class="muted">未取得</span>':'#'+v.rank}</td><td class="td-title">${esc(v.title)}</td><td>${esc(v.keyword||'未割当')}</td><td>${esc(v.channel)}</td><td class="right">${v.views==null?'<span class="muted">--</span>':displayNum(v.views)}</td><td>${urlVideo(v)==='#'?'<span class="muted">IDなし</span>':`<a class="btn small ghost" href="${esc(urlVideo(v))}" target="_blank" rel="noopener">動画 ↗</a>`}</td></tr>`).join('')}</tbody></table></div>`:`<div class="empty"><span class="emoji">📺</span><strong>競合動画は未取込</strong><p>ホームで検索キーワードを指定すると、競合動画のタイトル・順位・再生数を取得します。自分の動画IDの登録は不要です。</p><button class="btn small primary" data-jump="overview">⚡ 今すぐ取得</button></div>`}
-const titles={overview:['XDAYが次に狙う検索ワード','商品との一致度をもとに候補を整理。検索サジェストと競合は必要なKWから取得。'],keywords:['全キーワード一覧','XDAYの商品別・言語別に候補を一覧。取得済みと未計測を区別。'],priority:['制作の優先順','検索需要の信号48%・競合の弱さ42%・商品適合10%で順位付け。'],competitors:['競合だけを比較する。','自分のチャンネルを除外した検索結果。'],source:['手元のデータも取り込む。','オンライン取得が基本。CSV / JSON / ZIPはオプション。'],guide:['設定と使い方。','自社チャンネル除外と優先度の算定方法。'],smm:['検索ビューSMMサービス','公開サービス名・価格・最低数量と提供元を比較。']};
+const titles={overview:['XDAYが次に狙う検索ワード','実際の検索候補と競合動画を照合。制作の順番を3段階で表示。'],keywords:['全キーワード一覧','XDAYの商品別・言語別に候補を一覧。取得済みと未計測を区別。'],priority:['制作の優先順','検索需要の信号48%・競合の弱さ42%・商品適合10%で順位付け。'],production:['RankLab → 制作候補キュー','狙うキーワードを選び、制作ブリーフとして既存Coordinatorへ引き継ぐ。'],competitors:['競合だけを比較する。','自分のチャンネルを除外した検索結果。'],source:['手元のデータも取り込む。','オンライン取得が基本。CSV / JSON / ZIPはオプション。'],guide:['設定と使い方。','自社チャンネル除外と優先度の算定方法。'],smm:['検索ビューSMMサービス','公開サービス名・価格・最低数量と提供元を比較。']};
 function switchPage(page){state.page=page;all('.page').forEach(x=>x.classList.toggle('hidden',x.id!=='page-'+page));all('[data-page]').forEach(x=>{x.classList.toggle('active',x.dataset.page===page);x.setAttribute('aria-current',x.dataset.page===page?'page':'false')});$('pageTitle').textContent=titles[page][0];$('pageDesc').textContent=titles[page][1];$('sourceBanner').classList.toggle('hidden',page==='source');window.scrollTo({top:0,behavior:'smooth'})}
 function csvString(rows,cols){const val=s=>'"'+String(s??'').replace(/"/g,'""')+'"';return '\ufeff'+[cols.join(','),...rows.map(r=>cols.map(c=>val(r[c])).join(','))].join('\r\n')}
 function download(name,content,type='text/plain;charset=utf-8'){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
@@ -416,6 +548,160 @@ async function runBatch(size){if(collecting)return;lockLive(true);let success=0,
  }catch(e){liveStatus('❌ '+e.message,'err')}finally{lockLive(false)}}
 function expandKw(){runSuggest(($('kwSearch').value||'').trim()||$('liveQuery').value)}
 
+
+// Search strategy 6: three action lanes; numeric rank never inferred from missing demand.
+const actionUi={market:'JP',product:'all',stage:'now',researching:false};
+function actionEvidence(k){
+ const e=latestEvidence(k),s=e?.suggestion||{},c=e?.competition||{};
+ const checked=Number(s.checked||0),hits=Number(s.hits||0),sample=Number(c.sample||0),strength=Number(c.strength);
+ const observed=checked>0&&hits>0,compOk=sample>=5&&c.strength!=null&&Number.isFinite(strength);
+ const date=Date.parse(e?.checkedAt||'');const age=Number.isFinite(date)?(Date.now()-date)/86400000:Infinity;
+ let stage='research';
+ if(observed&&compOk&&age<=21)stage=strength<=58?'now':'build';
+ const best=s.bestRank==null?11:Math.max(1,Math.min(11,Number(s.bestRank)));
+ const demandSignal=observed?Math.min(100,48+(hits/Math.max(1,checked))*22+(11-best)*2):null;
+ const fit=bound(planScore(k));
+ const score=(observed&&compOk)?Math.round(.42*demandSignal+.43*(100-strength)+.15*fit):null;
+ const exactRate=Number.isFinite(Number(c.exactRate))?Number(c.exactRate):null;
+ const reason=!e?'まだデータがありません。まず検索候補と競合動画を取得します。':
+  !observed?'今回の接頭語テストではサジェスト一致を確認できませんでした。検索数ゼロという意味ではありません。':
+  !compOk?'サジェスト出現を確認。競合動画の取得件数が不足しています。':
+  strength>58?'サジェストで確認済み。競合上位の厚みがあるため、先に関連テーマを積み上げる枠です。':
+  'サジェストで確認済み。競合上位の再生規模を比較し、今回の計測では先行候補に分類しました。';
+ return {entry:e,observed,compOk,stage,score,strength:compOk?strength:null,hits,checked,sample,
+   bestRank:s.bestRank,median:c.medianViews,exact:exactRate,
+   checkedAt:e?.checkedAt||null,age,reason,confidence:checked>=2&&sample>=10&&age<=7?'相対比較:標準':'相対比較:暫定'};
+}
+function actionSort(a,b){let x=actionEvidence(a),y=actionEvidence(b);
+ if(x.score!=null&&y.score!=null){return y.score-x.score||x.strength-y.strength||a.keyword.localeCompare(b.keyword,'ja')}
+ if((x.score!=null)!==(y.score!=null))return x.score!=null?-1:1;
+ if(x.observed!==y.observed)return x.observed?-1:1;
+ if(x.compOk!==y.compOk)return x.compOk?-1:1;
+ return planScore(b)-planScore(a)||a.keyword.localeCompare(b.keyword,'ja')
+}
+function actionTitle(k){const kw=String(k.keyword||'').trim(),intent=intentOf(k),focus=focusOf(k);
+ if(intent==='howto')return kw+'｜設定の流れと確認ポイント';
+ if(intent==='compare')return kw+'｜特徴と違いを比較';
+ if(intent==='problem')return kw+'｜原因と仕組みを解説';
+ if(intent==='buy')return kw+'｜機能と料金の見方';
+ if(focus==='Colorbot')return kw+'｜操作感・特徴を紹介';
+ if(focus==='Spoofer')return kw+'｜仕組みと種類を整理';
+ return kw+'｜仕組みと代表的な機能を解説'
+}
+function actionFormat(k){const intent=intentOf(k);
+ return intent==='compare'?'比較動画 3〜5分':intent==='problem'?'解説動画 2〜4分':intent==='howto'?'手順動画 2〜4分':intent==='feature'?'ショート 30〜45秒':'解説動画 2〜4分'
+}
+function actionGroupRows(){
+ let rows=scored().filter(k=>(actionUi.market==='all'||planMarket(k)===actionUi.market)&&(actionUi.product==='all'||focusOf(k)===actionUi.product));
+ rows=rows.sort(actionSort);
+ const now=rows.filter(k=>actionEvidence(k).stage==='now');const build=rows.filter(k=>actionEvidence(k).stage==='build');const research=rows.filter(k=>actionEvidence(k).stage==='research');
+ return {rows,now,build,research};
+}
+function actionCard(k,i,stage){const a=actionEvidence(k),c=a.entry?.competition||{},s=a.entry?.suggestion||{},tier=stage==='now'?'今週の候補':stage==='build'?'中期の候補':'追加調査';
+ const links=a.entry?.topVideos||[];
+ const rankTitle=stage==='now'?`今週の${i+1}本目`:stage==='build'?`中期の${i+1}候補`:i+1+'番目の調査候補';
+ const sug=a.checked?a.observed?`${a.hits} / ${a.checked} 回`:'未確認':'未取得';
+ const median=a.compOk&&a.median!=null?displayNum(a.median)+' 再生':'データ不足';
+ const comp=a.compOk?`競合強度 ${a.strength}/100`:'競合未取得';
+ const stamp=a.checkedAt?new Date(a.checkedAt).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'}):'未調査';
+ const title=actionTitle(k);
+ const sampleLinks=links.slice(0,2).filter(v=>/^[A-Za-z0-9_-]{11}$/.test(v.videoId||'')).map(v=>`<a href="https://www.youtube.com/watch?v=${esc(v.videoId)}" target="_blank" rel="noopener noreferrer" class="btn small ghost">${esc(String(v.title||'競合動画').slice(0,22))} ↗</a>`).join('');
+ return `<article class="action-card ${i===0&&stage==='now'?'action-hero':''}">
+ <header><span class="action-place"><span class="count">${i+1}</span>${rankTitle}</span><span class="action-flag">${esc(FOCUS_LABEL[focusOf(k)]||k.game)} · ${planMarket(k)}</span></header>
+ <h3>${esc(k.keyword)}</h3><p class="desc">${esc(a.reason)}</p>
+ <div class="action-metrics"><div><b>${sug}</b><small>検索候補の出現（回数 / 試行）</small></div><div><b>${median}</b><small>競合上位10件の中央値 · ${comp}</small></div></div>
+ <div class="action-production"><span>提案タイトル · ${actionFormat(k)}</span>${esc(title)}</div>
+ <div class="action-actions"><button class="btn primary small" data-queue-add="${esc(k.keyword)}" data-queue-market="${planMarket(k)}">制作候補に追加</button><button class="btn small" data-action-investigate="${esc(k.keyword)}" data-region="${planMarket(k)}">競合を確認</button><button class="btn small" data-action-copy="${esc(title)}">タイトルをコピー</button><a class="btn small ghost" href="${urlSearch(k.keyword)}" target="_blank" rel="noopener noreferrer">YT検索 ↗</a></div>
+ ${sampleLinks?`<div class="action-actions">${sampleLinks}</div>`:''}
+ <div class="action-foot">取得 ${stamp} · ${a.confidence} · ${a.compOk&&a.exact!=null?`タイトル一致 ${Math.round(a.exact*a.sample)}/${a.sample}件 · `:''}${a.score==null?'優先指数なし（需要確認待ち）':'参考指数 '+a.score+'/100（検索回数ではありません）'}</div>
+ </article>`;
+}
+function renderDecision(){const g=actionGroupRows(),eligible=g.rows.filter(k=>actionEvidence(k).observed&&actionEvidence(k).compOk).length;
+ $('actionProof').textContent=String(eligible);$('actionToday').textContent=String(g.now.length);$('actionResearch').textContent=String(g.research.length);
+ $('actionNowCount').textContent=g.now.length+'件 · 検索と競合を確認';
+ $('actionBuildCount').textContent=g.build.length+'件 · 競合が強め';
+ $('actionUnknownCount').textContent=g.research.length+'件 · 追加調査が必要';
+ const last=g.rows.map(k=>actionEvidence(k).checkedAt).filter(Boolean).sort().at(-1);
+ $('actionUpdated').textContent='計測対象 '+g.rows.length+'件 · '+(last?'最新のデータ '+new Date(last).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'定期計測データの取得待ち')+' · 月間検索回数は未取得';
+ const rows=actionUi.stage==='all'?g.rows:actionUi.stage==='now'?g.now:actionUi.stage==='build'?g.build:g.research;
+ const sub={now:'サジェストで実際に表示されたワードを、競合の弱さと合わせて選定。最初の3件から制作できます。',build:'サジェストに出る一方、競合が強めのワード。関連する短いテーマを先に積み上げます。',research:'未確認は「需要ゼロ」ではありません。データを取得してから制作順を判断します。',all:'検索確認の有無を最優先し、次に競合強度・自社製品との一致度を比較します。'};
+ $('actionContext').textContent=sub[actionUi.stage]+'　'+rows.length+'件';
+ const max=actionUi.stage==='all'?14:actionUi.stage==='research'?10:8;
+ $('actionList').innerHTML=rows.length?rows.slice(0,max).map((k,i)=>actionCard(k,i,actionUi.stage)).join(''):
+ '<div class="action-empty">この条件で確度の高い候補はまだありません。市場・商品を変えるか、「次の10KWを調査」で候補を増やせます。</div>';
+ all('[data-action-stage]').forEach(b=>b.classList.toggle('active',b.dataset.actionStage===actionUi.stage));
+}
+function actionResearchQueue(){const g=actionGroupRows();const queue=g.research.filter(k=>!actionEvidence(k).observed).sort((a,b)=>{
+ const x=actionEvidence(a),y=actionEvidence(b);
+ const p=k=>Number(k.suggestSeen||k.source==='youtube-suggest'||k.source==='suggest')*30+Number(actionEvidence(k).compOk)*20+planScore(k)*.4;
+ return p(b)-p(a)||a.keyword.localeCompare(b.keyword,'ja')
+ });
+ // Diversify products; avoid an endless run on one game.
+ const result=[],seen=new Set(),byFocus={};for(const k of queue){const f=focusOf(k);if((byFocus[f]||0)>=3)continue;const key=normalizedKw(k.keyword)+'|'+planMarket(k);if(seen.has(key))continue;seen.add(key);result.push(k);byFocus[f]=(byFocus[f]||0)+1;if(result.length>=10)break}
+ return result;
+}
+async function runActionResearch(){if(collecting||actionUi.researching)return;
+ const q=actionResearchQueue();if(!q.length){$('actionProgress').textContent='追加調査する候補がありません。';return}
+ actionUi.researching=true;lockLive(true);$('actionRun').disabled=true;let ok=0,failed=0;
+ try{for(let i=0;i<q.length;i++){const k=q[i];$('actionProgress').textContent=`🔎 ${i+1}/${q.length}件を調査：${k.keyword}（成功 ${ok}件）`;
+  try{await fetchOne(k.keyword,planMarket(k));ok++}catch(e){failed++;console.warn('Keyword research failed',k.keyword,e.message)}
+  if(i<q.length-1)await delay(350)}
+  $('actionProgress').textContent=`調査終了：${ok}件成功、${failed}件失敗。結果をランクに反映しました。`;
+ }finally{actionUi.researching=false;lockLive(false);$('actionRun').disabled=false;render()}}
+$('actionMarket').addEventListener('change',e=>{actionUi.market=e.target.value;renderDecision()});
+$('actionProduct').addEventListener('change',e=>{actionUi.product=e.target.value;renderDecision()});
+all('[data-action-stage]').forEach(b=>b.addEventListener('click',()=>{actionUi.stage=b.dataset.actionStage;renderDecision()}));
+$('actionRun').addEventListener('click',runActionResearch);
+document.addEventListener('click',async e=>{const b=e.target.closest('[data-action-investigate],[data-action-copy]');if(!b)return;
+ if(b.dataset.actionInvestigate){$('advancedOverview').open=true;$('liveRegion').value=b.dataset.region||'JP';$('liveQuery').value=b.dataset.actionInvestigate;runOne(b.dataset.actionInvestigate);$('liveConsole').scrollIntoView({behavior:'smooth',block:'start'})}
+ else if(b.dataset.actionCopy){try{await navigator.clipboard.writeText(b.dataset.actionCopy);$('actionProgress').textContent='タイトルをコピーしました：'+b.dataset.actionCopy}catch(e){$('actionProgress').textContent='コピーに失敗したため、タイトルを選択してコピーしてください。'}}
+});
+
+
+// Dedicated RankLab-to-production proposal queue. Never writes into the delivery ledger.
+const QUEUE_KEY='xday_ranklab_production_proposals_v1';
+let productionProposals=[];
+try{const saved=JSON.parse(localStorage.getItem(QUEUE_KEY));if(Array.isArray(saved))productionProposals=saved.filter(x=>x&&typeof x.keyword==='string'&&typeof x.id==='string').slice(0,120)}catch(e){}
+function productionId(keyword,market){const s=normalizedKw(keyword)+'|'+market;let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return 'ranklab-'+(h>>>0).toString(16).padStart(8,'0')}
+function selectProductionKeyword(keyword,market){const target=normalizedKw(keyword);return scored().find(k=>normalizedKw(k.keyword)===target&&planMarket(k)===market)}
+function makeProductionProposal(k){const e=actionEvidence(k);return {
+ id:productionId(k.keyword,planMarket(k)), keyword:k.keyword,market:planMarket(k),product:focusOf(k),intent:intentOf(k),
+ proposal_title:actionTitle(k),selected_at:new Date().toISOString(),updated_at:new Date().toISOString(),
+ profile:null,format:'bundle',status:'proposal',
+ research:{observed_in_autocomplete:!!e.observed,suggest_hits:e.hits,suggest_trials:e.checked,competitor_count:e.sample,competitor_strength:e.compOk?e.strength:null,median_competitor_views:e.median??null,reference_score:e.score??null,checked_at:e.checkedAt??null},
+ editorial_reason:e.reason
+};}
+function saveProductionProposals(){try{localStorage.setItem(QUEUE_KEY,JSON.stringify(productionProposals))}catch(e){console.warn('Production queue localStorage failed',e)}}
+function productionStatus(msg){$('queueStatus').textContent=msg;$('bridgeOverviewStatus').textContent=msg}
+function renderProductionQueue(){
+ const n=productionProposals.length;$('bridgeCount').textContent=n;$('bridgeNavCount').textContent=n;$('queueTotal').textContent=n;
+ $('productionQueue').innerHTML=n?productionProposals.map((p,i)=>`<article class="bridge-item" data-proposal-id="${esc(p.id)}">
+  <div class="bridge-title"><div><span class="bridge-chip">${i+1}. ${esc(p.product)} · ${esc(p.market)}</span><strong style="display:block;margin-top:7px">${esc(p.keyword)}</strong><small>${esc(p.proposal_title)}</small></div><span class="bridge-chip">制作候補 · ${p.research?.observed_in_autocomplete?'サジェスト確認済':'需要未確認'}</span></div>
+  <div class="bridge-controls"><label>投稿先の割当 <select data-queue-field="profile" data-id="${esc(p.id)}" class="select"><option value="">未割当（照合待ち）</option><option value="4" ${p.profile==='4'?'selected':''}>#4（Coordinatorが所有者確認）</option><option value="5" ${p.profile==='5'?'selected':''}>#5（Coordinatorが所有者確認）</option></select></label>
+  <label>制作内容 <select data-queue-field="format" data-id="${esc(p.id)}" class="select"><option value="bundle" ${p.format==='bundle'?'selected':''}>横1＋Shorts2</option><option value="long" ${p.format==='long'?'selected':''}>横動画1本</option><option value="shorts" ${p.format==='shorts'?'selected':''}>Shorts2本</option></select></label>
+  <button type="button" class="btn small ghost" data-queue-move="up" data-id="${esc(p.id)}" ${i===0?'disabled':''}>↑</button><button type="button" class="btn small ghost" data-queue-move="down" data-id="${esc(p.id)}" ${i===n-1?'disabled':''}>↓</button><button type="button" class="btn small ghost" data-queue-remove="${esc(p.id)}">削除</button></div>
+  <div class="bridge-queue-hint">競合 ${p.research?.competitor_count??0}件 · 中央値 ${p.research?.median_competitor_views==null?'未取得':displayNum(p.research.median_competitor_views)+'再生'} · 選定指数 ${p.research?.reference_score??'未評価'}（検索数ではありません）</div>
+ </article>`).join(''):'<div class="bridge-empty">制作候補がまだありません。最初の画面で「上位3KWを制作候補に追加」または候補カードの「制作候補に追加」を押します。</div>';
+}
+function queueAdd(k){const item=makeProductionProposal(k);const present=productionProposals.find(p=>p.id===item.id);if(present){productionStatus('既に制作候補に入っています：'+k.keyword);switchPage('production');renderProductionQueue();return false}productionProposals.push(item);saveProductionProposals();renderProductionQueue();productionStatus('制作候補に追加：'+k.keyword+'。投稿はまだ始まっていません。');return true}
+function queueTop3(){let g=actionGroupRows(),candidates=[...g.now,...g.build];let added=0;for(const k of candidates){if(added>=3)break;const id=productionId(k.keyword,planMarket(k));if(productionProposals.some(p=>p.id===id))continue;productionProposals.push(makeProductionProposal(k));added++}saveProductionProposals();renderProductionQueue();productionStatus('今週の根拠付き候補から'+added+'件を追加。制作案はブラウザに保存済み。外部投稿キューへの送信は未接続です。');switchPage('production')}
+function productionPayload(){return {schema:'xday.ranklab.production-proposals.v1',generated_at:new Date().toISOString(),source:'XDAY RankLab',workflow:'intake-only',constraints:{allowed_profiles:['4','5'],daily_per_profile:{long:1,shorts:2},existing_coordinator:'tools/xday_daily_supply.py',existing_qc:'tools/xday_daily_batch_qc.py',existing_publisher:'tools/xday_daily_publisher.py',timezone:'Asia/Tokyo',do_not_create_ready_queue:true,do_not_publish_without_qc:true},proposals:productionProposals.map((p,i)=>({...p,order:i+1,status:'proposal'}))}}
+function productionCodexBrief(){const payload=productionPayload();return `XDAY RankLabから動画制作候補を渡します。次のJSONは「企画候補」であり正式投稿キューではありません。\n\n既存の tools/xday_daily_supply.py / xday_daily_batch_qc.py / xday_daily_publisher.py と delivery-ledger.sqlite3 を使って取り込み、既存プロセス・キュー・制作ID・08:00/22:00 JST処理を維持してください。#4/#5で横1＋Shorts2/日の上限。投稿先チャンネルIDを照合し、未割当は確認待ち。既存のproduction_id/video_sha256/owner/日時の重複照合を先に実施。完成MP4・QC通過までready化・アップロードをしない。結果不明の送信は再送せず照合。YouTube.js 18.3.0→公式API fallbackの既存経路を維持。新規Writerや投稿Workerは増やさない。まず取込可否、候補数、QC待ち数、拒否と重複件数を報告してください。\n\n${JSON.stringify(payload,null,2)}`}
+async function copyProductionPrompt(){if(!productionProposals.length){productionStatus('先にKWを制作候補に追加してください。');return}const text=productionCodexBrief();try{await navigator.clipboard.writeText(text);productionStatus('Codex用の制作指示とJSONをコピーしました。既存Coordinatorへの投入はCodex側での照合が必要です。')}catch(e){download('xday-ranklab-codex-handoff.txt',text,'text/plain;charset=utf-8');productionStatus('クリップボードへの書き込みが失敗したため、連携指示TXTを保存しました。')}}
+$('queueAddTop3').addEventListener('click',queueTop3);
+$('queueAddRecommended').addEventListener('click',queueTop3);
+$('queueExport').addEventListener('click',()=>{if(!productionProposals.length){productionStatus('先にKWを制作候補に追加してください。');return}download('xday-ranklab-production-proposals.json',JSON.stringify(productionPayload(),null,2),'application/json;charset=utf-8');productionStatus('制作候補JSONを出力しました。正式投稿への取り込みはCoordinator側の照合後です。')});
+$('queueCopy').addEventListener('click',copyProductionPrompt);
+$('queueClear').addEventListener('click',()=>{if(!productionProposals.length)return;if(!confirm('ブラウザ内の制作候補をすべて削除しますか？投稿台帳・投稿済み動画は変更されません。'))return;productionProposals=[];saveProductionProposals();renderProductionQueue();productionStatus('ブラウザの制作候補を空にしました。')});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-queue-add],[data-queue-remove],[data-queue-move]');if(!b)return;
+ if(b.dataset.queueAdd){const k=selectProductionKeyword(b.dataset.queueAdd,b.dataset.queueMarket||'JP');if(!k){productionStatus('キーワードを特定できませんでした。画面を更新して再試行してください。');return}queueAdd(k)}
+ if(b.dataset.queueRemove){productionProposals=productionProposals.filter(p=>p.id!==b.dataset.queueRemove);saveProductionProposals();renderProductionQueue();productionStatus('制作候補を削除しました。')}
+ if(b.dataset.queueMove){const ix=productionProposals.findIndex(p=>p.id===b.dataset.id);const next=ix+(b.dataset.queueMove==='up'?-1:1);if(ix<0||next<0||next>=productionProposals.length)return;[productionProposals[ix],productionProposals[next]]=[productionProposals[next],productionProposals[ix]];saveProductionProposals();renderProductionQueue()}
+});
+document.addEventListener('change',e=>{const sel=e.target.closest('[data-queue-field]');if(!sel)return;const p=productionProposals.find(x=>x.id===sel.dataset.id);if(!p)return;const f=sel.dataset.queueField;const v=sel.value;if(f==='profile'){p.profile=['4','5'].includes(v)?v:null}else if(f==='format'){p.format=['bundle','long','shorts'].includes(v)?v:'bundle'}p.updated_at=new Date().toISOString();saveProductionProposals();renderProductionQueue();productionStatus('制作候補の設定を保存しました。公開予約ではありません。')});
+renderProductionQueue();
+productionStatus(productionProposals.length?'制作候補 '+productionProposals.length+'件をブラウザに保存中。外部投稿システムへの自動送信は未接続です。':'制作候補は空です。上位3件の自動選定から開始できます。');
+
 ['planFocus','planLang','planIntent','planEvidence'].forEach(id=>$(id).addEventListener('change',e=>{state[id==='planFocus'?'planFocus':id==='planLang'?'planLang':id==='planIntent'?'planIntent':'planEvidence']=e.target.value;state.planShown=20;renderPlan()}));
 $('planSearch').addEventListener('input',e=>{state.planSearch=e.target.value;state.planShown=20;renderPlan()});
 $('planMore').addEventListener('click',()=>{state.planShown+=30;renderPlan()});
@@ -424,7 +710,7 @@ $('planMore').addEventListener('click',()=>{state.planShown+=30;renderPlan()});
 $('planDiscover').addEventListener('click',runAutoDiscover);
 $('planCsv').addEventListener('click',()=>download('xday-keyword-plan.csv',csvString(recommendationRows().map((k,i)=>({order:i+1,keyword:k.keyword,product:focusOf(k),lang:k.lang,intent:intentLabels[intentOf(k)],opportunity_score:evidenceStats(k).score,demand_proxy:evidenceStats(k).demand,competition_strength:evidenceStats(k).strength,competitor_median_views:evidenceStats(k).entry?.competition?.medianViews??'',checked_at:evidenceStats(k).checkedAt??'',xday_fit:planScore(k),suggest_confirmed:k.suggestSeen||k.source==='suggest'||k.source==='youtube-suggest',competitors_observed:k.m.observed,reason:planReason(k)})),['order','keyword','product','lang','intent','opportunity_score','demand_proxy','competition_strength','competitor_median_views','checked_at','xday_fit','suggest_confirmed','competitors_observed','reason']),'text/csv;charset=utf-8'));
 document.addEventListener('click',async e=>{const target=e.target.closest('[data-plan-query],[data-plan-copy]');if(!target)return;
- if(target.dataset.planQuery){const keyword=target.dataset.planQuery;$('liveQuery').value=keyword;$('liveRegion').value=target.dataset.planRegion||'JP';switchPage('overview');$('liveConsole').scrollIntoView({behavior:'smooth',block:'start'});runOne(keyword)}
+ if(target.dataset.planQuery){const keyword=target.dataset.planQuery;$('liveQuery').value=keyword;$('liveRegion').value=target.dataset.planRegion||'JP';switchPage('overview');$('advancedOverview').open=true;$('liveConsole').scrollIntoView({behavior:'smooth',block:'start'});runOne(keyword)}
  else if(target.dataset.planCopy){try{await navigator.clipboard.writeText(target.dataset.planCopy);planMessage('✅ コピーしました：'+target.dataset.planCopy)}catch{planMessage('コピーに失敗。キーワードを選択してコピーしてください。')}}});
 $('liveFetch').addEventListener('click',()=>runOne());
 $('liveSuggest').addEventListener('click',()=>runSuggest());
@@ -434,7 +720,7 @@ $('liveQuery').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefau
 document.addEventListener('click',e=>{const el=e.target.closest('[data-live-keyword]');if(!el)return;e.preventDefault();const kw=el.dataset.liveKeyword;$('liveQuery').value=kw;switchPage('overview');runOne(kw)});
 all('[data-page]').forEach(b=>b.addEventListener('click',()=>switchPage(b.dataset.page)));
 document.addEventListener('click',e=>{const b=e.target.closest('[data-jump],[data-game]');if(!b)return;if(b.dataset.game){state.kwGame=b.dataset.game;$('kwGame').value=state.kwGame;switchPage('keywords');renderKeywords()}else switchPage(b.dataset.jump)});
-$('importTop').addEventListener('click',()=>{switchPage('overview');$('liveConsole').scrollIntoView({behavior:'smooth',block:'start'})});$('chooseFile').addEventListener('click',e=>{e.stopPropagation();$('fileInput').click()});$('drop').addEventListener('click',e=>{if(!e.target.closest('button'))$('fileInput').click()});$('drop').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('fileInput').click()}});
+$('importTop').addEventListener('click',()=>{switchPage('overview');$('advancedOverview').open=true;$('liveConsole').scrollIntoView({behavior:'smooth',block:'start'})});$('chooseFile').addEventListener('click',e=>{e.stopPropagation();$('fileInput').click()});$('drop').addEventListener('click',e=>{if(!e.target.closest('button'))$('fileInput').click()});$('drop').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('fileInput').click()}});
 const drop=$('drop');['dragover','dragenter'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('drag')}));['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('drag')}));drop.addEventListener('drop',async e=>{if(e.dataTransfer.files[0])await handle(e.dataTransfer.files[0])});$('fileInput').addEventListener('change',async e=>{if(e.target.files[0])await handle(e.target.files[0]);e.target.value=''});
 async function handle(file){$('importMessage').textContent='⏳ '+file.name+' を解析中…';try{await ingest(file)}catch(e){console.error(e);$('importMessage').textContent='❌ '+e.message}}
 $('kwSearch').addEventListener('input',e=>{state.kwQuery=e.target.value;renderKeywords()});$('kwGame').addEventListener('change',e=>{state.kwGame=e.target.value;renderKeywords()});$('kwSort').addEventListener('change',e=>{state.kwSort=e.target.value;renderKeywords()});$('expandKw').addEventListener('click',expandKw);
@@ -449,7 +735,7 @@ $('exportVideos').addEventListener('click',()=>download('ranklab-competitors.csv
 $('resetData').addEventListener('click',()=>{if(!confirm('取込データと追加したKWを初期化します。続行しますか？'))return;localStorage.removeItem(FILE_KEY);Object.assign(state,{keywords:SEEDS.slice(),videos:[],candidates:[],sourceName:'',imported:false,stamp:'',originalHtml:''});$('originalPanel').classList.add('hidden');$('importMessage').textContent='初期状態に戻しました。';render()});
 render();switchPage('overview');fetchResearchSnapshot();
 // First visit opens real data automatically instead of requiring ZIP import.
-if(!state.videos.length){setTimeout(()=>runOne('フォートナイト チート'),250)}
+if(!state.videos.length){liveStatus('📡 定期計測データを読み込み中。個別調査はボタンを押したときに実行します。')}
 else{liveStatus('✅ 保存済みの'+state.videos.length+'件を表示。最新の検索データは「競合を取得」で更新します。','ok')}
 })();
 </script>
