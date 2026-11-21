@@ -1,7 +1,7 @@
 {
   "schema": "xday.ranklab.production-proposals.v1",
-  "generated_at": "2026-11-21T21:21:21+00:00",
-  "source_snapshot_at": "2026-11-21T21:20:01+00:00",
+  "generated_at": "2026-11-21T21:22:14+00:00",
+  "source_snapshot_at": "2026-11-21T21:22:10+00:00",
   "note": "Autocompletion is a relative discoverability signal, NOT monthly search volume.",
   "status": "research_only_not_published",
   "handoff": {
@@ -49,7 +49,7 @@
           "competitor_sample": 10,
           "competitor_strength": 44,
           "median_competitor_views": 1444,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 1
@@ -77,7 +77,7 @@
           "competitor_sample": 10,
           "competitor_strength": 53,
           "median_competitor_views": 250,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 2
@@ -105,7 +105,7 @@
           "competitor_sample": 10,
           "competitor_strength": 64,
           "median_competitor_views": 609,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 3
@@ -133,7 +133,7 @@
           "competitor_sample": 10,
           "competitor_strength": 63,
           "median_competitor_views": 8332,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 4
@@ -161,7 +161,7 @@
           "competitor_sample": 10,
           "competitor_strength": 28,
           "median_competitor_views": 89,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 5
@@ -189,7 +189,7 @@
           "competitor_sample": 10,
           "competitor_strength": 38,
           "median_competitor_views": 475,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 6
@@ -217,7 +217,7 @@
           "competitor_sample": 10,
           "competitor_strength": 45,
           "median_competitor_views": 1150,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 7
@@ -245,7 +245,7 @@
           "competitor_sample": 10,
           "competitor_strength": 46,
           "median_competitor_views": 618,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 8
@@ -273,7 +273,7 @@
           "competitor_sample": 10,
           "competitor_strength": 54,
           "median_competitor_views": 67412,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 9
@@ -301,7 +301,7 @@
           "competitor_sample": 10,
           "competitor_strength": 55,
           "median_competitor_views": 6079,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 10
@@ -329,7 +329,7 @@
           "competitor_sample": 10,
           "competitor_strength": 66,
           "median_competitor_views": 17274,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 11
@@ -611,7 +611,7 @@
           "competitor_sample": 10,
           "competitor_strength": 40,
           "median_competitor_views": 900,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 1
@@ -639,7 +639,7 @@
           "competitor_sample": 10,
           "competitor_strength": 44,
           "median_competitor_views": 3635,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 2
@@ -667,7 +667,7 @@
           "competitor_sample": 10,
           "competitor_strength": 48,
           "median_competitor_views": 10554,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 3
@@ -695,7 +695,7 @@
           "competitor_sample": 10,
           "competitor_strength": 48,
           "median_competitor_views": 2450,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 4
@@ -723,7 +723,7 @@
           "competitor_sample": 10,
           "competitor_strength": 48,
           "median_competitor_views": 2677,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 5
@@ -751,7 +751,7 @@
           "competitor_sample": 10,
           "competitor_strength": 62,
           "median_competitor_views": 7423,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 6
@@ -779,7 +779,7 @@
           "competitor_sample": 10,
           "competitor_strength": 64,
           "median_competitor_views": 192469,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 7
@@ -807,7 +807,7 @@
           "competitor_sample": 10,
           "competitor_strength": 68,
           "median_competitor_views": 2520,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 8
@@ -1033,10 +1033,38 @@
           "competitor_sample": 10,
           "competitor_strength": 55,
           "median_competitor_views": 4898,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
         "market_rank": 1
+      },
+      {
+        "proposal_id": "ranklab-f62f2408fba2",
+        "stage": "proposal",
+        "priority_group": "measure_first",
+        "keyword": "perm v1 spoofer",
+        "region": "US",
+        "product": "Spoofer",
+        "intent": "overview",
+        "suggested_title": "perm v1 spoofer｜特徴・操作感を紹介",
+        "suggested_package": {
+          "long": 1,
+          "shorts": 2
+        },
+        "target_channel_profile": null,
+        "priority_proxy": null,
+        "reason": "検索候補・競合を追加計測",
+        "evidence": {
+          "autocomplete_confirmed": false,
+          "suggestion_hits": 0,
+          "suggestion_probes": 2,
+          "competitor_sample": 10,
+          "competitor_strength": 43,
+          "median_competitor_views": 244,
+          "checked_at": "2026-11-21T21:22:10+00:00",
+          "age_days": 0.0
+        },
+        "market_rank": 2
       },
       {
         "proposal_id": "ranklab-66d190bdbf2b",
@@ -1061,10 +1089,10 @@
           "competitor_sample": 10,
           "competitor_strength": 51,
           "median_competitor_views": 4859,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
-        "market_rank": 2
+        "market_rank": 3
       },
       {
         "proposal_id": "ranklab-10a18aaa6412",
@@ -1089,10 +1117,10 @@
           "competitor_sample": 10,
           "competitor_strength": 60,
           "median_competitor_views": 2470,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
-        "market_rank": 3
+        "market_rank": 4
       },
       {
         "proposal_id": "ranklab-2174521a9a43",
@@ -1117,10 +1145,10 @@
           "competitor_sample": 10,
           "competitor_strength": 60,
           "median_competitor_views": 2445,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
-        "market_rank": 4
+        "market_rank": 5
       },
       {
         "proposal_id": "ranklab-24b2305e114f",
@@ -1145,10 +1173,10 @@
           "competitor_sample": 10,
           "competitor_strength": 73,
           "median_competitor_views": 1554,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
-        "market_rank": 5
+        "market_rank": 6
       },
       {
         "proposal_id": "ranklab-f4d36997329a",
@@ -1173,10 +1201,10 @@
           "competitor_sample": 10,
           "competitor_strength": 74,
           "median_competitor_views": 1745,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
-        "market_rank": 6
+        "market_rank": 7
       },
       {
         "proposal_id": "ranklab-25d4d12396b2",
@@ -1201,10 +1229,10 @@
           "competitor_sample": 10,
           "competitor_strength": 77,
           "median_competitor_views": 2809,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
-        "market_rank": 7
+        "market_rank": 8
       },
       {
         "proposal_id": "ranklab-da6190477982",
@@ -1229,10 +1257,10 @@
           "competitor_sample": 10,
           "competitor_strength": 77,
           "median_competitor_views": 2367,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
-        "market_rank": 8
+        "market_rank": 9
       },
       {
         "proposal_id": "ranklab-9e39bcbd5b9d",
@@ -1257,10 +1285,10 @@
           "competitor_sample": 10,
           "competitor_strength": 77,
           "median_competitor_views": 2150,
-          "checked_at": "2026-11-21T21:20:01+00:00",
+          "checked_at": "2026-11-21T21:22:10+00:00",
           "age_days": 0.0
         },
-        "market_rank": 9
+        "market_rank": 10
       },
       {
         "proposal_id": "ranklab-4b68b1ff27cf",
@@ -1288,7 +1316,7 @@
           "checked_at": "2026-11-21T20:35:50+00:00",
           "age_days": 0.0
         },
-        "market_rank": 10
+        "market_rank": 11
       },
       {
         "proposal_id": "ranklab-8071d0759bab",
@@ -1316,7 +1344,7 @@
           "checked_at": "2026-11-21T20:35:50+00:00",
           "age_days": 0.0
         },
-        "market_rank": 11
+        "market_rank": 12
       },
       {
         "proposal_id": "ranklab-715639b6b0d1",
@@ -1327,34 +1355,6 @@
         "product": "Fortnite",
         "intent": "overview",
         "suggested_title": "fortnite full cheat｜特徴・操作感を紹介",
-        "suggested_package": {
-          "long": 1,
-          "shorts": 2
-        },
-        "target_channel_profile": null,
-        "priority_proxy": null,
-        "reason": "検索候補・競合を追加計測",
-        "evidence": {
-          "autocomplete_confirmed": false,
-          "suggestion_hits": 0,
-          "suggestion_probes": 2,
-          "competitor_sample": 0,
-          "competitor_strength": null,
-          "median_competitor_views": null,
-          "checked_at": "2026-11-21T20:35:50+00:00",
-          "age_days": 0.0
-        },
-        "market_rank": 12
-      },
-      {
-        "proposal_id": "ranklab-f62f2408fba2",
-        "stage": "proposal",
-        "priority_group": "measure_first",
-        "keyword": "perm v1 spoofer",
-        "region": "US",
-        "product": "Spoofer",
-        "intent": "overview",
-        "suggested_title": "perm v1 spoofer｜特徴・操作感を紹介",
         "suggested_package": {
           "long": 1,
           "shorts": 2

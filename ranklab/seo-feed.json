@@ -1,7 +1,7 @@
 {
   "schema": "xday.ranklab.seo-feed.v1",
-  "generated_at": "2026-11-21T21:21:21+00:00",
-  "source_snapshot_at": "2026-11-21T21:20:01+00:00",
+  "generated_at": "2026-11-21T21:22:14+00:00",
+  "source_snapshot_at": "2026-11-21T21:22:10+00:00",
   "source": "Google YouTube autocomplete and public competitor video samples",
   "caveat": "Autocomplete appearances are not YouTube monthly search volumes.",
   "mode": "metadata_suggestions_only",
@@ -23,7 +23,7 @@
         "competitor_sample": 10,
         "competitor_strength": 44,
         "median_competitor_views": 1444,
-        "checked_at": "2026-11-21T21:20:01+00:00",
+        "checked_at": "2026-11-21T21:22:10+00:00",
         "age_days": 0.0
       },
       "use": "SEO topic/title/description input for Coordinator only"
@@ -45,7 +45,7 @@
         "competitor_sample": 10,
         "competitor_strength": 53,
         "median_competitor_views": 250,
-        "checked_at": "2026-11-21T21:20:01+00:00",
+        "checked_at": "2026-11-21T21:22:10+00:00",
         "age_days": 0.0
       },
       "use": "SEO topic/title/description input for Coordinator only"
@@ -67,7 +67,7 @@
         "competitor_sample": 10,
         "competitor_strength": 55,
         "median_competitor_views": 4898,
-        "checked_at": "2026-11-21T21:20:01+00:00",
+        "checked_at": "2026-11-21T21:22:10+00:00",
         "age_days": 0.0
       },
       "use": "SEO topic/title/description input for Coordinator only"
@@ -89,7 +89,7 @@
         "competitor_sample": 10,
         "competitor_strength": 64,
         "median_competitor_views": 609,
-        "checked_at": "2026-11-21T21:20:01+00:00",
+        "checked_at": "2026-11-21T21:22:10+00:00",
         "age_days": 0.0
       },
       "use": "SEO topic/title/description input for Coordinator only"
@@ -111,7 +111,7 @@
         "competitor_sample": 10,
         "competitor_strength": 63,
         "median_competitor_views": 8332,
-        "checked_at": "2026-11-21T21:20:01+00:00",
+        "checked_at": "2026-11-21T21:22:10+00:00",
         "age_days": 0.0
       },
       "use": "SEO topic/title/description input for Coordinator only"
