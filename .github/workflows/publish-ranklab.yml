@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/publish-ranklab.yml'
+      - 'ranklab/index.html'
   workflow_dispatch:
 
 permissions:
