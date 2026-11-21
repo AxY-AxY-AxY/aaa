@@ -1,0 +1,63 @@
+name: Test RankLab V8 intuitive UI and SEO integration
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/ranklab-v8-test.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+    - name: Test actual public site
+      run: |
+        npm install --no-save playwright-core@1.58.0
+        node <<'JS'
+        const {chromium}=require('playwright-core');
+        const URL='https://amusing-era-8gbi2.ship.place/';
+        (async()=>{
+          const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',headless:true,args:['--no-sandbox']});
+          try{
+            const ctx=await browser.newContext({viewport:{width:1280,height:900},permissions:['clipboard-read','clipboard-write']});
+            const page=await ctx.newPage();let errors=[];
+            page.on('pageerror',e=>errors.push(e.message));
+            const resp=await page.goto(URL,{waitUntil:'domcontentloaded',timeout:30000});
+            if(!resp.ok())throw Error('Site HTTP '+resp.status());
+            await page.waitForFunction(()=>document.querySelectorAll('.simple-card').length>=1,{timeout:30000});
+            await page.waitForTimeout(1500);
+            const cards=await page.locator('.simple-card').count();
+            console.log('DEFAULT CARDS',cards);
+            console.log('HEADLINE',await page.locator('#simpleTitle').innerText());
+            console.log('FIRST',await page.locator('.simple-card h3').first().innerText());
+            if(cards<1||cards>3)throw Error('Incorrect simple-card count');
+            if(await page.locator('#decisionBoard').isVisible())throw Error('Complex old dashboard visible by default');
+            await page.locator('#simpleDeep').click();
+            if(!await page.locator('#decisionBoard').isVisible())throw Error('Details toggle did not reveal evidence');
+            await page.locator('#simpleDeep').click();
+            if(await page.locator('#decisionBoard').isVisible())throw Error('Details toggle did not hide evidence');
+            await page.locator('#simpleMarket').selectOption('US');
+            await page.locator('#simpleProduct').selectOption('Fortnite');
+            console.log('US FORTNITE',await page.locator('.simple-card h3').allInnerTexts());
+            await page.locator('#simpleProduct').selectOption('all');
+            await page.locator('#simpleMarket').selectOption('JP');
+            await page.locator('#simpleConnect').click();
+            const copy=await page.evaluate(()=>navigator.clipboard.readText());
+            console.log('COPIED LENGTH',copy.length);
+            if(!copy.includes('xday_daily_supply.py')||!copy.includes('seo-feed.json'))throw Error('Codex setup prompt missing integration point');
+            await page.locator('#simpleAdd').click();
+            console.log('QUEUE ITEMS',await page.locator('.bridge-item').count());
+            if(await page.locator('.bridge-item').count()<1)throw Error('No production queue candidates added');
+            if(!await page.locator('#page-production').isVisible())throw Error('Not navigated to production queue');
+            const mobile=await browser.newContext({viewport:{width:390,height:844}});
+            const mob=await mobile.newPage();mob.on('pageerror',e=>errors.push('mobile:'+e.message));
+            await mob.goto(URL,{waitUntil:'domcontentloaded',timeout:30000});
+            await mob.waitForFunction(()=>document.querySelectorAll('.simple-card').length>=1,{timeout:30000});
+            console.log('MOBILE OVERFLOW',await mob.evaluate(()=>document.body.scrollWidth-window.innerWidth));
+            if(await mob.evaluate(()=>document.body.scrollWidth-window.innerWidth)>4)throw Error('mobile overflow');
+            console.log('PAGE ERRORS',JSON.stringify(errors));
+            if(errors.length)throw Error('script errors');
+            console.log('PASS: V8 simple dashboard, old details toggling, Codex handoff, queue, mobile');
+          }finally{await browser.close()}
+        })().catch(e=>{console.error(e);process.exitCode=1});
+        JS
