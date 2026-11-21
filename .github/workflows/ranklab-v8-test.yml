@@ -15,14 +15,14 @@ jobs:
         npm install --no-save playwright-core@1.58.0
         node <<'JS'
         const {chromium}=require('playwright-core');
-        const URL='https://amusing-era-8gbi2.ship.place/';
+        const SITE_URL='https://amusing-era-8gbi2.ship.place/';
         (async()=>{
           const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',headless:true,args:['--no-sandbox']});
           try{
             const ctx=await browser.newContext({viewport:{width:1280,height:900},permissions:['clipboard-read','clipboard-write']});
             const page=await ctx.newPage();let errors=[];
             page.on('pageerror',e=>errors.push(e.message));
-            const resp=await page.goto(URL,{waitUntil:'domcontentloaded',timeout:30000});
+            const resp=await page.goto(SITE_URL,{waitUntil:'domcontentloaded',timeout:30000});
             if(!resp.ok())throw Error('Site HTTP '+resp.status());
             await page.waitForFunction(()=>document.querySelectorAll('.simple-card').length>=1,{timeout:30000});
             await page.waitForTimeout(1500);
@@ -51,7 +51,7 @@ jobs:
             if(!await page.locator('#page-production').isVisible())throw Error('Not navigated to production queue');
             const mobile=await browser.newContext({viewport:{width:390,height:844}});
             const mob=await mobile.newPage();mob.on('pageerror',e=>errors.push('mobile:'+e.message));
-            await mob.goto(URL,{waitUntil:'domcontentloaded',timeout:30000});
+            await mob.goto(SITE_URL,{waitUntil:'domcontentloaded',timeout:30000});
             await mob.waitForFunction(()=>document.querySelectorAll('.simple-card').length>=1,{timeout:30000});
             console.log('MOBILE OVERFLOW',await mob.evaluate(()=>document.body.scrollWidth-window.innerWidth));
             if(await mob.evaluate(()=>document.body.scrollWidth-window.innerWidth)>4)throw Error('mobile overflow');
