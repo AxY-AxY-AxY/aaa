@@ -114,6 +114,64 @@
 .bridge-chip{font-size:12px;border-radius:8px;padding:5px 9px;background:#2a455a;color:#d2e5f7;font-weight:700}
 .bridge-queue-hint{font-size:13px;color:#afc8df}
 @media(max-width:700px){.bridge-steps{grid-template-columns:1fr}.bridge-board .bridge-top{padding:17px}.bridge-steps{padding:0 17px 15px}.bridge-meta{padding:10px 17px}.bridge-controls label{min-width:120px}.bridge-actions .btn{flex:1}}
+
+/* RankLab 8: simple, decision-first interaction layer */
+.simple-shell{margin:0 0 16px;background:#12243a;border:1px solid #395a78;border-radius:22px;overflow:hidden;box-shadow:0 15px 38px #02091845}
+.simple-head{padding:24px 25px 17px;background:linear-gradient(120deg,#1d3958,#11243b 75%);border-bottom:1px solid #2f4864}
+.simple-eyebrow{color:#8bc7ff;font-weight:850;font-size:12px;letter-spacing:.10em}
+.simple-head h2{font-size:clamp(25px,2.6vw,34px);line-height:1.25;margin:6px 0;color:#fff}
+.simple-head p{font-size:15px;line-height:1.6;color:#c2d6e8;margin:0}
+.simple-filters{padding:17px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:end}
+.simple-filters label{display:grid;gap:5px;flex:1 1 190px;font-size:13px;font-weight:750;color:#cbd8e6}
+.simple-filters .select{width:100%;font-size:15px;min-height:48px;background:#0d1f34}
+.simple-results{display:grid;gap:12px;padding:0 24px 18px}
+.simple-card{background:#0b1b2f;border:1px solid #344f6a;border-radius:16px;padding:17px 18px;min-width:0}
+.simple-card:first-child{border-color:#64b6aa;background:linear-gradient(110deg,#16364a,#0d2138)}
+.simple-card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.simple-card-rank{display:inline-flex;gap:9px;align-items:center;font-size:13px;font-weight:800;color:#a4ebd9}
+.simple-card-rank b{display:grid;place-items:center;border-radius:10px;background:#26695e;color:#fff;width:32px;height:32px;font-size:17px}
+.simple-card-label{font-size:12px;color:#b5c9dd;border:1px solid #38536e;border-radius:8px;padding:5px 9px}
+.simple-card h3{margin:10px 0 6px;font-size:clamp(19px,2.3vw,24px);color:#fff;line-height:1.4;overflow-wrap:anywhere}
+.simple-card-reason{font-size:13px;line-height:1.6;color:#d0e3ec;margin:4px 0 10px}
+.simple-signals{display:flex;gap:9px;flex-wrap:wrap}
+.simple-signal{border:1px solid #334f69;border-radius:10px;padding:9px 12px;background:#102840;flex:1 1 160px;min-width:0}
+.simple-signal span{font-size:11px;color:#aac2d7;display:block}
+.simple-signal strong{font-size:17px;color:#f1fbff;display:block;line-height:1.4;margin:2px 0}
+.simple-card-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}
+.simple-card-actions{display:flex;gap:8px;flex-wrap:wrap}
+.simple-card-actions .btn{font-size:14px;min-height:43px;padding:9px 13px}
+.simple-stamp{color:#90acc4;font-size:11px}
+.simple-bottom{padding:17px 24px 20px;border-top:1px solid #2e4966;background:#0b1a2e}
+.simple-primary-actions{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.simple-primary-actions .btn{min-height:47px;font-size:15px}
+.simple-note{font-size:12px;color:#a9bfd5;margin-top:10px;line-height:1.6}
+.simple-bridge{border:1px solid #355b72;border-radius:15px;background:#10273b;padding:16px;margin:12px 0 0;display:flex;gap:14px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.simple-bridge h3{font-size:16px;margin:0 0 5px;color:#e4f7ff}
+.simple-bridge p{font-size:13px;color:#b6ccda;line-height:1.6;margin:0}
+.simple-bridge .btn{min-height:45px;white-space:normal}
+.simple-toast{font-size:13px;color:#87efc9;margin-top:9px;min-height:20px}
+.simple-extra{margin:12px 0 24px}
+.simple-extra button{background:#12243a;border:1px solid #39556f;color:#d1e4f4;border-radius:12px;padding:12px 16px;font-weight:750;font-size:14px;cursor:pointer}
+#page-overview:not(.show-deep) #decisionBoard,
+#page-overview:not(.show-deep) #productionBoard,
+#page-overview:not(.show-deep) #advancedOverview{display:none!important}
+.simple-nav-more{border-top:1px solid #293c56;margin:8px 5px;padding:8px 4px}
+.simple-nav-more summary{font-size:14px;font-weight:750;color:#b4c7df;cursor:pointer;padding:12px 10px;list-style:none}
+.simple-nav-more summary::-webkit-details-marker{display:none}
+.simple-nav-more summary:after{content:" ＋";float:right}
+.simple-nav-more[open] summary:after{content:" −"}
+.simple-nav-more .nav-more-links{display:grid;gap:4px;padding-top:6px}
+.simple-nav-more .nav-more-links button{font-size:13px!important;padding:10px!important}
+@media(max-width:720px){
+  .simple-head{padding:19px 17px 14px}.simple-head h2{font-size:25px}
+  .simple-filters,.simple-results{padding-left:15px;padding-right:15px}
+  .simple-filters{gap:9px}.simple-filters label{flex-basis:calc(50% - 7px);min-width:120px}
+  .simple-card{padding:14px}.simple-signals{gap:6px}.simple-signal{flex-basis:calc(50% - 6px);padding:9px}
+  .simple-signal strong{font-size:15px}
+  .simple-card-actions,.simple-card-actions .btn,.simple-primary-actions,.simple-primary-actions .btn{width:100%}
+  .simple-bottom{padding:15px}.simple-bridge{align-items:stretch}.simple-bridge .btn{width:100%}
+}
+
 </style>
 </head>
 <body>
@@ -136,6 +194,31 @@
  <div class="top"><div><div class="eyebrow">XDAY / YOUTUBE SEARCH</div><h1 id="pageTitle">次の投稿を決める</h1><p id="pageDesc">どのKWを先に狙うか。商品との一致度・検索意図・実サジェストをひと目で。</p></div><div class="top-actions"><span id="liveBadge" class="pill amber">● 読込中</span><button type="button" id="importTop" class="btn primary">⚡ 今すぐ調査</button></div></div>
  <div id="sourceBanner" class="banner" style="display:none"><div><strong>🟢 検索APIから実際に候補と競合を取得</strong><p>初期リストはXDAYの商品・検索意図から編集した候補です。サジェスト取得済みと未確認を区別します。検索ボリュームは計測していません。</p></div><button class="btn small" type="button" data-jump="overview">取得フォームへ →</button></div>
  <section id="page-overview" class="page">
+<section id="simpleStart" class="simple-shell" aria-labelledby="simpleTitle">
+ <div class="simple-head"><div class="simple-eyebrow">XDAY / NEXT VIDEO PLANNER</div>
+  <h2 id="simpleTitle">次に狙うキーワードは、この順番。</h2>
+  <p>検索候補の実測と競合動画を比較。動画のSEOテーマを選んで、既存Codexの制作枠へ引き継ぎます。</p>
+ </div>
+ <div class="simple-filters">
+  <label>どの市場？<select id="simpleMarket" class="select"><option value="JP">日本</option><option value="US">海外（英語）</option><option value="KR">韓国</option><option value="all">すべて</option></select></label>
+  <label>何の商品？<select id="simpleProduct" class="select"><option value="all">すべて</option><option value="VALORANT">VALORANT</option><option value="Fortnite">Fortnite</option><option value="APEX">APEX</option><option value="Spoofer">HWID / Spoofer</option><option value="Colorbot">Colorbot</option></select></label>
+ </div>
+ <div class="simple-results" id="simpleCards" aria-live="polite"></div>
+ <div class="simple-bottom">
+  <div class="simple-primary-actions">
+   <button type="button" class="btn primary" id="simpleAdd">この上位候補を制作リストへ</button>
+   <button type="button" class="btn" id="simpleRefresh">未調査KWを追加調査</button>
+  </div>
+  <div class="simple-note" id="simpleEvidenceNote">サジェスト出現は月間検索回数ではありません。取得日時と競合サンプル数も確認できます。</div>
+  <div class="simple-bridge">
+   <div><h3>Codex自動投稿とつなぐ</h3><p>SEO候補の自動更新URLは用意済み。既存の制作Coordinatorに一度読み込ませる設定が必要です。新しい投稿Workerは増やしません。</p></div>
+   <button type="button" class="btn primary" id="simpleConnect">Codex連携指示をコピー</button>
+  </div>
+  <div class="simple-toast" id="simpleToast" role="status"></div>
+ </div>
+</section>
+<div class="simple-extra"><button type="button" id="simpleDeep" aria-expanded="false">詳しい順位・競合動画・全キーワードを表示 ▾</button></div>
+
 
   <section id="decisionBoard" class="action-board" aria-labelledby="decisionTitle">
    <div class="action-intro">
@@ -737,6 +820,65 @@ render();switchPage('overview');fetchResearchSnapshot();
 // First visit opens real data automatically instead of requiring ZIP import.
 if(!state.videos.length){liveStatus('📡 定期計測データを読み込み中。個別調査はボタンを押したときに実行します。')}
 else{liveStatus('✅ 保存済みの'+state.videos.length+'件を表示。最新の検索データは「競合を取得」で更新します。','ok')}
+
+/* RankLab 8: action-first UI. Source data and original analysis remain intact. */
+const SEO_FEED_URL='https://raw.githubusercontent.com/AxY-AxY-AxY/aaa/main/ranklab/seo-feed.json';
+const SEO_HELPER_URL='https://raw.githubusercontent.com/AxY-AxY-AxY/aaa/main/ranklab/xday_seo_bridge.py';
+const simpleMarket=$('simpleMarket'),simpleProduct=$('simpleProduct');
+function renderSimple(){
+ if(!simpleMarket)return;
+ actionUi.market=simpleMarket.value; actionUi.product=simpleProduct.value;
+ const g=actionGroupRows(),picked=[...g.now,...g.build].slice(0,3);
+ $('simpleCards').innerHTML=picked.length?picked.map((k,i)=>{
+   const x=actionEvidence(k),market=planMarket(k),label=x.stage==='now'?'今週狙う':'中期候補';
+   const median=x.compOk&&x.median!=null?displayNum(x.median)+' 再生':'未取得';
+   const src=x.checkedAt?new Date(x.checkedAt).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'}):'未取得';
+   const strength=x.strength!=null?x.strength+'/100':'未計測';
+   return '<article class="simple-card"><div class="simple-card-top"><span class="simple-card-rank"><b>'+(i+1)+'</b>'+esc(label)+'</span><span class="simple-card-label">'+esc(FOCUS_LABEL[focusOf(k)]||k.game)+' · '+esc(market)+'</span></div>'+
+   '<h3>'+esc(k.keyword)+'</h3><p class="simple-card-reason">'+esc(x.reason)+'</p>'+
+   '<div class="simple-signals"><div class="simple-signal"><span>検索需要の根拠</span><strong>サジェスト '+x.hits+'/'+x.checked+'回</strong><span>検索回数そのものではありません</span></div>'+
+   '<div class="simple-signal"><span>競合の強さ</span><strong>'+strength+'</strong><span>上位'+x.sample+'本・再生中央値 '+median+'</span></div></div>'+
+   '<div class="simple-card-bottom"><div class="simple-card-actions">'+
+   '<button class="btn primary" type="button" data-queue-add="'+esc(k.keyword)+'" data-queue-market="'+market+'">このKWで動画を企画</button>'+
+   '<button class="btn" type="button" data-action-investigate="'+esc(k.keyword)+'" data-region="'+market+'">競合を詳しく見る</button></div>'+
+   '<span class="simple-stamp">最終確認 '+esc(src)+'</span></div></article>';
+ }).join(''):'<div class="bridge-empty">この市場・商品の検索データを確認中です。「未調査KWを追加調査」から収集できます。</div>';
+ const total=g.now.length+g.build.length;
+ $('simpleAdd').disabled=total===0;
+ $('simpleEvidenceNote').textContent='調査済み '+total+'件、追加確認 '+g.research.length+'件。順位はサジェストの出現率と競合10動画の相対比較で算定。月間検索回数は未取得です。';
+}
+const oldRender=render;
+render=function(){oldRender();renderSimple()};
+simpleMarket.addEventListener('change',()=>{renderSimple();});
+simpleProduct.addEventListener('change',()=>{renderSimple();});
+$('simpleAdd').addEventListener('click',()=>{actionUi.market=simpleMarket.value;actionUi.product=simpleProduct.value;queueTop3();switchPage('production');});
+$('simpleRefresh').addEventListener('click',()=>{actionUi.market=simpleMarket.value;actionUi.product=simpleProduct.value;runActionResearch().then(()=>renderSimple());});
+$('simpleDeep').addEventListener('click',()=>{const page=$('page-overview');const opened=page.classList.toggle('show-deep');$('simpleDeep').setAttribute('aria-expanded',String(opened));$('simpleDeep').textContent=opened?'詳細を閉じる ▴':'詳しい順位・競合動画・全キーワードを表示 ▾';});
+document.addEventListener('click',e=>{if(e.target.closest('#simpleStart [data-action-investigate]'))$('page-overview').classList.add('show-deep')},true);
+$('simpleConnect').addEventListener('click',async()=>{
+ const guide='XDAY既存Codex自動投稿へRankLabのSEO提案を1回だけ接続してください。\n\n'+
+ '作業場所: C:\\Users\\admin\\Desktop\\AIカンパニー\n既存Coordinater: tools/xday_daily_supply.py\n'+
+ 'SEO候補URL: '+SEO_FEED_URL+'\n取込ヘルパー: '+SEO_HELPER_URL+'\n\n'+
+ '1. 現在のCoordinator/Worker・08:00/22:00の定期処理・投稿台帳を読み取り、どこで動画テーマとtitle/description/tagsを決めているかを特定。\n'+
+ '2. 既存のテーマ選定部分にRankLabのSEO候補の読取を追加。公開済みのYouTube動画、作成中の制作ID、予約済み枠と重複する候補は除外。\n'+
+ '3. URLから取得した提案は企画/SEO入力として扱う。既存のチャンネル識別、QC、投稿時間、横1本+Shorts2本/日、結果不明時の再送禁止を維持。新しいWorker/Schedulerを作らず、二重投稿を回避。\n'+
+ '4. 検索ボリュームは未測定。キーワード、サジェスト出現、競合10本の再生中央値・動画タイトル一致率を根拠にSEOタイトル・説明冒頭・タグを生成。未確認の安全性や検出回避を断定しない。\n'+
+ '5. dry-runで複数候補を取得し、重複除外、割当確認、existing QCと正式キューのreadbackを検証。稼働中の投稿Workerを止めたり、既存台帳をリセットしたりしない。\n';
+ try{await navigator.clipboard.writeText(guide);$('simpleToast').textContent='連携指示をコピーしました。既存Codexチャットに一度貼り付けると、Coordinatorへの組込み作業を開始できます。'}
+ catch(e){$('simpleToast').textContent='コピーがブロックされました。右下の制作キューページからCodex向け指示をコピーできます。'}
+});
+(function simplifyMenu(){
+ const nav=q('.nav');if(!nav)return;
+ const labels={overview:'🏠 次に狙うKW',priority:'📊 KW比較',production:'🚀 SEO制作キュー'};
+ for(const [id,name] of Object.entries(labels)){const btn=nav.querySelector('[data-page="'+id+'"]');if(btn){const chip=btn.querySelector('.bridge-chip');btn.textContent=name;if(chip)btn.appendChild(chip)}}
+ const more=document.createElement('details');more.className='simple-nav-more';
+ more.innerHTML='<summary>その他の機能・SMM</summary><div class="nav-more-links"></div>';
+ const bucket=more.querySelector('.nav-more-links');
+ for(const id of ['keywords','competitors','smm','source','guide']){const b=nav.querySelector('[data-page="'+id+'"]');if(b)bucket.appendChild(b)}
+ nav.appendChild(more);
+})();
+renderSimple();
+
 })();
 </script>
 </body></html>
