@@ -82,5 +82,42 @@ def main():
         "counts":{name:sum(p["priority_group"]==name for p in cards) for name in order},
         "markets":{k:groups[k] for k in sorted(groups)}}
     (ROOT/"production-suggestions.json").write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    # Stable, read-only metadata feed consumed by the existing XDAY Coordinator.
+    # This is not a new posting queue or a publishing command.
+    actions=[]
+    for region,rows in sorted(groups.items()):
+        for p in rows:
+            if p["priority_group"] == "measure_first":
+                continue
+            actions.append({
+                "id": p["proposal_id"], "keyword": p["keyword"], "market": region,
+                "product": p["product"], "intent": p["intent"],
+                "priority": p["priority_group"], "market_rank": p["market_rank"],
+                "proposed_title": p["suggested_title"],
+                "opportunity_score_proxy": p["priority_proxy"],
+                "evidence": p["evidence"],
+                "use": "SEO topic/title/description input for Coordinator only",
+            })
+    feed={
+      "schema": "xday.ranklab.seo-feed.v1",
+      "generated_at": data["generated_at"],
+      "source_snapshot_at": data["source_snapshot_at"],
+      "source": "Google YouTube autocomplete and public competitor video samples",
+      "caveat": "Autocomplete appearances are not YouTube monthly search volumes.",
+      "mode": "metadata_suggestions_only",
+      "actions": sorted(actions,key=lambda p:(
+          {"this_week":0,"build_long_term":1}.get(p["priority"],2),
+          -(p["opportunity_score_proxy"] or 0),p["market"],p["market_rank"])),
+      "control": {
+          "keep_existing_coordinator": True, "keep_existing_workers": True,
+          "keep_existing_daily_upload_caps": True,
+          "keep_own_channel_profile_and_QC": True,
+          "never_write_delivery_ledger_from_feed": True,
+          "deduplicate_before_any_production": True,
+          "skip_when_data_stale_or_network_fails": True
+      }
+    }
+    (ROOT/"seo-feed.json").write_text(json.dumps(feed,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    print("RankLab SEO feed actions:",len(feed["actions"]))
     print("RankLab production suggestions:",len(cards),data["counts"])
 if __name__=="__main__":main()
