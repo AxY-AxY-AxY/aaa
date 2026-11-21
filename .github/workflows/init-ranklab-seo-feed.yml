@@ -1,4 +1,5 @@
 name: Initialize RankLab SEO integration feed
+# Re-run against repaired JSON generator and current source
 on:
   push:
     branches: [main]
