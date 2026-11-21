@@ -35,5 +35,7 @@ jobs:
           git add ranklab/research-data.json ranklab/production-suggestions.json
           if ! git diff --cached --quiet; then
             git commit -m "Refresh RankLab research and production proposals"
+            git fetch origin main
+            git rebase origin/main
             git push origin HEAD:main
           fi
