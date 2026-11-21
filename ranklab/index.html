@@ -209,8 +209,8 @@ async function findCompetitors(keyword,region=searchRegion()){
  for(const origin of SEARCH_SOURCES){
   let controller=new AbortController();let timer=setTimeout(()=>controller.abort(),12500);
   try{
-   const qs=new URLSearchParams({q,type:'video',region,sort:'relevance'});
-   const response=await fetch(origin+'/api/v1/search?'+qs,{method:'GET',mode:'cors',signal:controller.signal,cache:'no-store'});
+   const qs=new URLSearchParams({q,type:'video',region});
+   const response=await fetch(origin+'/api/v1/search?'+qs,{method:'GET',mode:'cors',signal:controller.signal});
    if(!response.ok)throw new Error('HTTP '+response.status);
    const list=await response.json();if(!Array.isArray(list))throw new Error('形式の異なる応答');
    const videos=list.filter(v=>v&&v.type==='video'&&/^[A-Za-z0-9_-]{11}$/.test(v.videoId||''));
