@@ -1,8 +1,8 @@
 {
   "schema": "xday.ranklab.keyword-feed.v1",
   "mode": "keywords_only",
-  "generated_at": "2026-11-27T02:52:29+00:00",
-  "source_snapshot_at": "2026-11-27T02:52:22+00:00",
+  "generated_at": "2026-11-28T02:44:04+00:00",
+  "source_snapshot_at": "2026-11-28T02:43:55+00:00",
   "purpose": "Choose relevant SEO keywords for EXISTING video content; not video topics.",
   "methodology": "Autocomplete appearances are relative evidence, not monthly search volumes. Competitor strength is derived from a small public video sample.",
   "constraints": {
@@ -13,9 +13,9 @@
     "schedule_changes": false
   },
   "counts": {
-    "all": 167,
-    "verified": 13,
-    "investigate": 154
+    "all": 187,
+    "verified": 14,
+    "investigate": 173
   },
   "keywords": [
     {
@@ -70,6 +70,23 @@
       "rank": 3
     },
     {
+      "keyword": "ヴァロラント チート",
+      "market": "JP",
+      "product": "VALORANT",
+      "status": "verified",
+      "score_proxy": 66,
+      "evidence": {
+        "autocomplete_hits": 1,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": 4,
+        "competitor_sample": 10,
+        "competitor_strength": 43.0,
+        "competitor_median_views": 712,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 4
+    },
+    {
       "keyword": "VALORANT カラーボット",
       "market": "JP",
       "product": "Colorbot",
@@ -80,28 +97,28 @@
         "autocomplete_probes": 2,
         "autocomplete_best_rank": 1,
         "competitor_sample": 10,
-        "competitor_strength": 50.0,
-        "competitor_median_views": 257,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "competitor_strength": 49.0,
+        "competitor_median_views": 260,
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 4
+      "rank": 5
     },
     {
-      "keyword": "ヴァロラント チート",
-      "market": "JP",
-      "product": "VALORANT",
+      "keyword": "apex legends cheat showcase",
+      "market": "US",
+      "product": "APEX",
       "status": "verified",
-      "score_proxy": 65,
+      "score_proxy": 66,
       "evidence": {
         "autocomplete_hits": 1,
         "autocomplete_probes": 2,
-        "autocomplete_best_rank": 4,
+        "autocomplete_best_rank": 1,
         "competitor_sample": 10,
-        "competitor_strength": 44.0,
-        "competitor_median_views": 709,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "competitor_strength": 51.0,
+        "competitor_median_views": 2701,
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 5
+      "rank": 6
     },
     {
       "keyword": "fortnite cheat gameplay",
@@ -118,7 +135,7 @@
         "competitor_median_views": 4898,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 6
+      "rank": 7
     },
     {
       "keyword": "VALORANT HWID BAN",
@@ -135,7 +152,7 @@
         "competitor_median_views": 1501,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 7
+      "rank": 8
     },
     {
       "keyword": "apex legends anti recoil",
@@ -152,7 +169,7 @@
         "competitor_median_views": 23619,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 8
+      "rank": 9
     },
     {
       "keyword": "fortnite cheat review",
@@ -169,7 +186,7 @@
         "competitor_median_views": 12167,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 9
+      "rank": 10
     },
     {
       "keyword": "에이펙스 에임봇",
@@ -184,9 +201,9 @@
         "competitor_sample": 10,
         "competitor_strength": 53.0,
         "competitor_median_views": 35247,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 10
+      "rank": 11
     },
     {
       "keyword": "フォートナイト エイムボット",
@@ -203,24 +220,24 @@
         "competitor_median_views": 1179546,
         "checked_at": "2026-11-21T21:28:27+00:00"
       },
-      "rank": 11
+      "rank": 12
     },
     {
       "keyword": "フォートナイト チート",
       "market": "JP",
       "product": "Fortnite",
       "status": "verified",
-      "score_proxy": 55,
+      "score_proxy": 52,
       "evidence": {
         "autocomplete_hits": 1,
         "autocomplete_probes": 2,
         "autocomplete_best_rank": 5,
         "competitor_sample": 10,
-        "competitor_strength": 64.0,
-        "competitor_median_views": 11321,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "competitor_strength": 71.0,
+        "competitor_median_views": 289363,
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 12
+      "rank": 13
     },
     {
       "keyword": "VALORANT チート",
@@ -237,7 +254,7 @@
         "competitor_median_views": 261925,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 13
+      "rank": 14
     },
     {
       "keyword": "VALORANT VEXION",
@@ -254,7 +271,7 @@
         "competitor_median_views": 89,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 14
+      "rank": 15
     },
     {
       "keyword": "HWID スプーファー 比較",
@@ -271,7 +288,7 @@
         "competitor_median_views": 96,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 15
+      "rank": 16
     },
     {
       "keyword": "에이펙스 치트 구매",
@@ -286,9 +303,9 @@
         "competitor_sample": 10,
         "competitor_strength": 36.0,
         "competitor_median_views": 409,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 16
+      "rank": 17
     },
     {
       "keyword": "ヴァロラント チート おすすめ",
@@ -305,7 +322,7 @@
         "competitor_median_views": 440,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 17
+      "rank": 18
     },
     {
       "keyword": "ヴァロラント カラーボット",
@@ -322,7 +339,7 @@
         "competitor_median_views": 260,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 18
+      "rank": 19
     },
     {
       "keyword": "色認識 チート 設定",
@@ -339,7 +356,7 @@
         "competitor_median_views": 687,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 19
+      "rank": 20
     },
     {
       "keyword": "カラーボット 使い方",
@@ -356,7 +373,24 @@
         "competitor_median_views": 806,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 20
+      "rank": 21
+    },
+    {
+      "keyword": "ヴァロラント チート 比較",
+      "market": "JP",
+      "product": "VALORANT",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 39.0,
+        "competitor_median_views": 347,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 22
     },
     {
       "keyword": "VALORANT 色認識 エイム",
@@ -373,7 +407,7 @@
         "competitor_median_views": 694,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 21
+      "rank": 23
     },
     {
       "keyword": "apex legends colorbot settings",
@@ -390,7 +424,7 @@
         "competitor_median_views": 1407,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 22
+      "rank": 24
     },
     {
       "keyword": "perm v1 spoofer",
@@ -407,7 +441,7 @@
         "competitor_median_views": 244,
         "checked_at": "2026-11-21T21:28:27+00:00"
       },
-      "rank": 23
+      "rank": 25
     },
     {
       "keyword": "BAN解除 ツール",
@@ -424,7 +458,7 @@
         "competitor_median_views": 611,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 24
+      "rank": 26
     },
     {
       "keyword": "Vanguard スプーファー",
@@ -441,7 +475,7 @@
         "competitor_median_views": 2107,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 25
+      "rank": 27
     },
     {
       "keyword": "APEX チート 購入",
@@ -458,7 +492,7 @@
         "competitor_median_views": 2140,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 26
+      "rank": 28
     },
     {
       "keyword": "フォートナイト ESP",
@@ -473,9 +507,9 @@
         "competitor_sample": 10,
         "competitor_strength": 45.0,
         "competitor_median_views": 344,
-        "checked_at": "2026-11-26T02:53:06+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 27
+      "rank": 29
     },
     {
       "keyword": "フォートナイト チート 購入",
@@ -492,24 +526,7 @@
         "competitor_median_views": 1150,
         "checked_at": "2026-11-21T21:28:27+00:00"
       },
-      "rank": 28
-    },
-    {
-      "keyword": "apex colorbot settings",
-      "market": "US",
-      "product": "Colorbot",
-      "status": "investigate",
-      "score_proxy": null,
-      "evidence": {
-        "autocomplete_hits": 0,
-        "autocomplete_probes": 2,
-        "autocomplete_best_rank": null,
-        "competitor_sample": 10,
-        "competitor_strength": 46.0,
-        "competitor_median_views": 2888,
-        "checked_at": "2026-11-24T04:49:24+00:00"
-      },
-      "rank": 29
+      "rank": 30
     },
     {
       "keyword": "colorbot aim smoothing",
@@ -526,7 +543,7 @@
         "competitor_median_views": 1547,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 30
+      "rank": 31
     },
     {
       "keyword": "hwid spoofer vs vpn",
@@ -543,23 +560,6 @@
         "competitor_median_views": 2542,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 31
-    },
-    {
-      "keyword": "포트나이트 HWID 밴",
-      "market": "KR",
-      "product": "Spoofer",
-      "status": "investigate",
-      "score_proxy": null,
-      "evidence": {
-        "autocomplete_hits": 0,
-        "autocomplete_probes": 1,
-        "autocomplete_best_rank": null,
-        "competitor_sample": 10,
-        "competitor_strength": 48.0,
-        "competitor_median_views": 403,
-        "checked_at": "2026-11-25T03:34:02+00:00"
-      },
       "rank": 32
     },
     {
@@ -575,9 +575,26 @@
         "competitor_sample": 10,
         "competitor_strength": 48.0,
         "competitor_median_views": 2792,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
       "rank": 33
+    },
+    {
+      "keyword": "HWID スプーファー 設定",
+      "market": "JP",
+      "product": "Spoofer",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 49.0,
+        "competitor_median_views": 862,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 34
     },
     {
       "keyword": "발로란트 컬러봇",
@@ -591,10 +608,10 @@
         "autocomplete_best_rank": null,
         "competitor_sample": 10,
         "competitor_strength": 49.0,
-        "competitor_median_views": 2506,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "competitor_median_views": 2520,
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 34
+      "rank": 35
     },
     {
       "keyword": "에이펙스 치트",
@@ -611,7 +628,24 @@
         "competitor_median_views": 4906,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 35
+      "rank": 36
+    },
+    {
+      "keyword": "apex colorbot settings",
+      "market": "US",
+      "product": "Colorbot",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 49.0,
+        "competitor_median_views": 10380,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 37
     },
     {
       "keyword": "apex legends legit cheat",
@@ -628,7 +662,58 @@
         "competitor_median_views": 3579,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 36
+      "rank": 38
+    },
+    {
+      "keyword": "colorbot vs aimbot",
+      "market": "US",
+      "product": "Colorbot",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 49.0,
+        "competitor_median_views": 1355,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 39
+    },
+    {
+      "keyword": "포트나이트 HWID 밴",
+      "market": "KR",
+      "product": "Spoofer",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 1,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 50.0,
+        "competitor_median_views": 410,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 40
+    },
+    {
+      "keyword": "APEX チート 使い方",
+      "market": "JP",
+      "product": "APEX",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 52.0,
+        "competitor_median_views": 12149,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 41
     },
     {
       "keyword": "カラーボット おすすめ",
@@ -645,7 +730,7 @@
         "competitor_median_views": 76933,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 37
+      "rank": 42
     },
     {
       "keyword": "발로란트 색상 인식 에임봇",
@@ -660,9 +745,9 @@
         "competitor_sample": 10,
         "competitor_strength": 53.0,
         "competitor_median_views": 70064,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 38
+      "rank": 43
     },
     {
       "keyword": "HWID スプーファー",
@@ -676,10 +761,27 @@
         "autocomplete_best_rank": null,
         "competitor_sample": 10,
         "competitor_strength": 54.0,
-        "competitor_median_views": 812,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "competitor_median_views": 594,
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 39
+      "rank": 44
+    },
+    {
+      "keyword": "apex legends cheat",
+      "market": "US",
+      "product": "APEX",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 54.0,
+        "competitor_median_views": 4915,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 45
     },
     {
       "keyword": "apex legends cheats",
@@ -696,7 +798,7 @@
         "competitor_median_views": 4614,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 40
+      "rank": 46
     },
     {
       "keyword": "fortnite cheats on pc",
@@ -713,7 +815,7 @@
         "competitor_median_views": 2828,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 41
+      "rank": 47
     },
     {
       "keyword": "APEX チート 2026",
@@ -730,7 +832,7 @@
         "competitor_median_views": 6827,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 42
+      "rank": 48
     },
     {
       "keyword": "フォートナイト チート 比較",
@@ -747,7 +849,7 @@
         "competitor_median_views": 79387,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 43
+      "rank": 49
     },
     {
       "keyword": "フォートナイト チート 販売",
@@ -764,7 +866,24 @@
         "competitor_median_views": 8130,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 44
+      "rank": 50
+    },
+    {
+      "keyword": "fortnite cheats pc",
+      "market": "US",
+      "product": "Fortnite",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 56.0,
+        "competitor_median_views": 3335,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 51
     },
     {
       "keyword": "フォートナイト チート 2026",
@@ -781,7 +900,24 @@
         "competitor_median_views": 4936,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 45
+      "rank": 52
+    },
+    {
+      "keyword": "フォートナイト チート レビュー",
+      "market": "JP",
+      "product": "Fortnite",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 57.0,
+        "competitor_median_views": 189634,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 53
     },
     {
       "keyword": "발로란트 스푸퍼",
@@ -796,26 +932,9 @@
         "competitor_sample": 10,
         "competitor_strength": 58.0,
         "competitor_median_views": 2433,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 46
-    },
-    {
-      "keyword": "에이펙스 레전드 핵",
-      "market": "KR",
-      "product": "APEX",
-      "status": "investigate",
-      "score_proxy": null,
-      "evidence": {
-        "autocomplete_hits": 0,
-        "autocomplete_probes": 1,
-        "autocomplete_best_rank": null,
-        "competitor_sample": 10,
-        "competitor_strength": 58.0,
-        "competitor_median_views": 7930,
-        "checked_at": "2026-11-27T02:52:22+00:00"
-      },
-      "rank": 47
+      "rank": 54
     },
     {
       "keyword": "apex legends cheat price",
@@ -832,24 +951,7 @@
         "competitor_median_views": 14119,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 48
-    },
-    {
-      "keyword": "APEX チート",
-      "market": "JP",
-      "product": "APEX",
-      "status": "investigate",
-      "score_proxy": null,
-      "evidence": {
-        "autocomplete_hits": 0,
-        "autocomplete_probes": 2,
-        "autocomplete_best_rank": null,
-        "competitor_sample": 10,
-        "competitor_strength": 59.0,
-        "competitor_median_views": 9138,
-        "checked_at": "2026-11-27T02:52:22+00:00"
-      },
-      "rank": 49
+      "rank": 55
     },
     {
       "keyword": "APEX チート 比較",
@@ -866,11 +968,28 @@
         "competitor_median_views": 185855,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 50
+      "rank": 56
     },
     {
-      "keyword": "apex legends cheat",
-      "market": "US",
+      "keyword": "에이펙스 레전드 핵",
+      "market": "KR",
+      "product": "APEX",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 1,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 59.0,
+        "competitor_median_views": 7941,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 57
+    },
+    {
+      "keyword": "APEX チート",
+      "market": "JP",
       "product": "APEX",
       "status": "investigate",
       "score_proxy": null,
@@ -879,11 +998,28 @@
         "autocomplete_probes": 2,
         "autocomplete_best_rank": null,
         "competitor_sample": 10,
-        "competitor_strength": 59.0,
-        "competitor_median_views": 4906,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "competitor_strength": 60.0,
+        "competitor_median_views": 9157,
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 51
+      "rank": 58
+    },
+    {
+      "keyword": "발로란트 치트",
+      "market": "KR",
+      "product": "VALORANT",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 60.0,
+        "competitor_median_views": 7549,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 59
     },
     {
       "keyword": "permanent hwid spoofer",
@@ -900,7 +1036,7 @@
         "competitor_median_views": 2445,
         "checked_at": "2026-11-21T21:28:27+00:00"
       },
-      "rank": 52
+      "rank": 60
     },
     {
       "keyword": "apex legends aimbot",
@@ -917,24 +1053,7 @@
         "competitor_median_views": 1950,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 53
-    },
-    {
-      "keyword": "발로란트 치트",
-      "market": "KR",
-      "product": "VALORANT",
-      "status": "investigate",
-      "score_proxy": null,
-      "evidence": {
-        "autocomplete_hits": 0,
-        "autocomplete_probes": 2,
-        "autocomplete_best_rank": null,
-        "competitor_sample": 10,
-        "competitor_strength": 62.0,
-        "competitor_median_views": 23638,
-        "checked_at": "2026-11-27T02:52:22+00:00"
-      },
-      "rank": 54
+      "rank": 61
     },
     {
       "keyword": "포트나이트 치트",
@@ -951,7 +1070,7 @@
         "competitor_median_views": 1142,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 55
+      "rank": 62
     },
     {
       "keyword": "one click spoofer",
@@ -968,7 +1087,7 @@
         "competitor_median_views": 1146,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 56
+      "rank": 63
     },
     {
       "keyword": "APEX チート 検証",
@@ -985,7 +1104,7 @@
         "competitor_median_views": 540863,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 57
+      "rank": 64
     },
     {
       "keyword": "포트나이트 핵",
@@ -1000,9 +1119,9 @@
         "competitor_sample": 10,
         "competitor_strength": 65.0,
         "competitor_median_views": 2500,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 58
+      "rank": 65
     },
     {
       "keyword": "fortnite cheat download",
@@ -1019,7 +1138,7 @@
         "competitor_median_views": 1994,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 59
+      "rank": 66
     },
     {
       "keyword": "フォートナイト チート 動画",
@@ -1036,7 +1155,7 @@
         "competitor_median_views": 1737236,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 60
+      "rank": 67
     },
     {
       "keyword": "포트나이트 에임봇",
@@ -1051,9 +1170,9 @@
         "competitor_sample": 10,
         "competitor_strength": 69.0,
         "competitor_median_views": 640841,
-        "checked_at": "2026-11-26T02:53:06+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 61
+      "rank": 68
     },
     {
       "keyword": "발로란트 핵",
@@ -1068,9 +1187,9 @@
         "competitor_sample": 10,
         "competitor_strength": 70.0,
         "competitor_median_views": 195280,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 62
+      "rank": 69
     },
     {
       "keyword": "fortnite cheats 2026",
@@ -1087,7 +1206,7 @@
         "competitor_median_views": 5564,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 63
+      "rank": 70
     },
     {
       "keyword": "valorant colorbot",
@@ -1100,11 +1219,11 @@
         "autocomplete_probes": 2,
         "autocomplete_best_rank": null,
         "competitor_sample": 10,
-        "competitor_strength": 71.0,
-        "competitor_median_views": 1565,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "competitor_strength": 74.0,
+        "competitor_median_views": 1370,
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 64
+      "rank": 71
     },
     {
       "keyword": "colorbot valorant",
@@ -1121,7 +1240,7 @@
         "competitor_median_views": 1745,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 65
+      "rank": 72
     },
     {
       "keyword": "apex cheat",
@@ -1138,7 +1257,7 @@
         "competitor_median_views": 2665,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 66
+      "rank": 73
     },
     {
       "keyword": "hwid spoofer",
@@ -1152,10 +1271,27 @@
         "autocomplete_best_rank": null,
         "competitor_sample": 10,
         "competitor_strength": 77.0,
-        "competitor_median_views": 3545,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "competitor_median_views": 2151,
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 67
+      "rank": 74
+    },
+    {
+      "keyword": "valorant cheat",
+      "market": "US",
+      "product": "VALORANT",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 10,
+        "competitor_strength": 77.0,
+        "competitor_median_views": 3914,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 75
     },
     {
       "keyword": "valorant esp cheat",
@@ -1172,7 +1308,7 @@
         "competitor_median_views": 2002,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 68
+      "rank": 76
     },
     {
       "keyword": "fortnite cheat",
@@ -1186,27 +1322,10 @@
         "autocomplete_best_rank": null,
         "competitor_sample": 10,
         "competitor_strength": 78.0,
-        "competitor_median_views": 3382,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "competitor_median_views": 2455,
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 69
-    },
-    {
-      "keyword": "valorant cheat",
-      "market": "US",
-      "product": "VALORANT",
-      "status": "investigate",
-      "score_proxy": null,
-      "evidence": {
-        "autocomplete_hits": 0,
-        "autocomplete_probes": 2,
-        "autocomplete_best_rank": null,
-        "competitor_sample": 10,
-        "competitor_strength": 79.0,
-        "competitor_median_views": 3659,
-        "checked_at": "2026-11-27T02:52:22+00:00"
-      },
-      "rank": 70
+      "rank": 77
     },
     {
       "keyword": "APEX BAN解除",
@@ -1223,7 +1342,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 71
+      "rank": 78
     },
     {
       "keyword": "APEX ESP",
@@ -1240,7 +1359,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 72
+      "rank": 79
     },
     {
       "keyword": "APEX エイムボット",
@@ -1257,7 +1376,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 73
+      "rank": 80
     },
     {
       "keyword": "APEX カラーボット",
@@ -1274,7 +1393,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 74
+      "rank": 81
     },
     {
       "keyword": "APEX コントローラー チート",
@@ -1291,7 +1410,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 75
+      "rank": 82
     },
     {
       "keyword": "APEX スプーファー",
@@ -1308,7 +1427,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 76
+      "rank": 83
     },
     {
       "keyword": "APEX チート PC",
@@ -1325,7 +1444,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 77
+      "rank": 84
     },
     {
       "keyword": "APEX チート おすすめ",
@@ -1342,10 +1461,10 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 78
+      "rank": 85
     },
     {
-      "keyword": "APEX チート 使い方",
+      "keyword": "APEX チート レビュー",
       "market": "JP",
       "product": "APEX",
       "status": "investigate",
@@ -1357,9 +1476,9 @@
         "competitor_sample": 0,
         "competitor_strength": null,
         "competitor_median_views": null,
-        "checked_at": "2026-11-27T02:52:22+00:00"
+        "checked_at": "2026-11-28T02:43:55+00:00"
       },
-      "rank": 79
+      "rank": 86
     },
     {
       "keyword": "APEX チート 価格",
@@ -1376,7 +1495,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 80
+      "rank": 87
     },
     {
       "keyword": "APEX チート 動画",
@@ -1393,7 +1512,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 81
+      "rank": 88
     },
     {
       "keyword": "APEX チート 設定",
@@ -1410,7 +1529,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 82
+      "rank": 89
+    },
+    {
+      "keyword": "APEX チート 販売",
+      "market": "JP",
+      "product": "APEX",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 90
     },
     {
       "keyword": "APEX プレミアム チート",
@@ -1427,7 +1563,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 83
+      "rank": 91
     },
     {
       "keyword": "EAC スプーファー",
@@ -1444,7 +1580,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 84
+      "rank": 92
     },
     {
       "keyword": "HWID BAN とは",
@@ -1461,7 +1597,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 85
+      "rank": 93
+    },
+    {
+      "keyword": "HWID スプーファー おすすめ",
+      "market": "JP",
+      "product": "Spoofer",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 94
     },
     {
       "keyword": "HWID スプーファー レビュー",
@@ -1478,7 +1631,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 86
+      "rank": 95
     },
     {
       "keyword": "HWID スプーファー 値段",
@@ -1495,7 +1648,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 87
+      "rank": 96
     },
     {
       "keyword": "HWID スプーファー 販売",
@@ -1512,7 +1665,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 88
+      "rank": 97
     },
     {
       "keyword": "PERM V2 スプーファー",
@@ -1529,7 +1682,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 89
+      "rank": 98
     },
     {
       "keyword": "VALORANT OBSIDIAN",
@@ -1546,7 +1699,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 90
+      "rank": 99
     },
     {
       "keyword": "VALORANT VECTOR",
@@ -1563,7 +1716,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 91
+      "rank": 100
     },
     {
       "keyword": "VALORANT カラーボット 設定",
@@ -1580,7 +1733,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 92
+      "rank": 101
     },
     {
       "keyword": "VALORANT チート ESP",
@@ -1597,7 +1750,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 93
+      "rank": 102
     },
     {
       "keyword": "Windows 11 スプーファー",
@@ -1614,7 +1767,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 94
+      "rank": 103
     },
     {
       "keyword": "カラーボット スムージング",
@@ -1631,7 +1784,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 95
+      "rank": 104
     },
     {
       "keyword": "カラーボット レビュー",
@@ -1648,7 +1801,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 96
+      "rank": 105
     },
     {
       "keyword": "カラーボット 導入",
@@ -1665,7 +1818,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 97
+      "rank": 106
     },
     {
       "keyword": "カラーボット 料金",
@@ -1682,7 +1835,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 98
+      "rank": 107
     },
     {
       "keyword": "フォートナイト BAN解除",
@@ -1699,7 +1852,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 99
+      "rank": 108
+    },
+    {
+      "keyword": "フォートナイト スプーファー",
+      "market": "JP",
+      "product": "Spoofer",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 109
     },
     {
       "keyword": "フォートナイト チート PC",
@@ -1716,7 +1886,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 100
+      "rank": 110
+    },
+    {
+      "keyword": "フォートナイト チート おすすめ",
+      "market": "JP",
+      "product": "Fortnite",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 111
     },
     {
       "keyword": "フォートナイト チート エイム",
@@ -1733,7 +1920,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 101
+      "rank": 112
     },
     {
       "keyword": "フォートナイト チート 検証",
@@ -1750,7 +1937,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 102
+      "rank": 113
     },
     {
       "keyword": "フォートナイト チート 機能",
@@ -1767,7 +1954,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 103
+      "rank": 114
     },
     {
       "keyword": "フォートナイト フル チート",
@@ -1784,7 +1971,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 104
+      "rank": 115
     },
     {
       "keyword": "ヴァロラント BAN解除",
@@ -1801,7 +1988,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 105
+      "rank": 116
     },
     {
       "keyword": "ヴァロラント エイムボット",
@@ -1818,7 +2005,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 106
+      "rank": 117
     },
     {
       "keyword": "ヴァロラント スプーファー",
@@ -1835,7 +2022,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 107
+      "rank": 118
     },
     {
       "keyword": "ヴァロラント チート 使い方",
@@ -1852,7 +2039,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 108
+      "rank": 119
     },
     {
       "keyword": "ヴァロラント チート 値段",
@@ -1869,7 +2056,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 109
+      "rank": 120
     },
     {
       "keyword": "ヴァロラント チート 導入",
@@ -1886,7 +2073,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 110
+      "rank": 121
     },
     {
       "keyword": "ヴァロラント チート 検証",
@@ -1903,7 +2090,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 111
+      "rank": 122
     },
     {
       "keyword": "ヴァロラント チート 販売",
@@ -1920,7 +2107,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 112
+      "rank": 123
+    },
+    {
+      "keyword": "ヴァロラント チート 購入",
+      "market": "JP",
+      "product": "VALORANT",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 124
     },
     {
       "keyword": "一時 スプーファー",
@@ -1937,7 +2141,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 113
+      "rank": 125
     },
     {
       "keyword": "永久 スプーファー",
@@ -1954,7 +2158,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 114
+      "rank": 126
     },
     {
       "keyword": "色認識 エイムボット",
@@ -1971,7 +2175,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 115
+      "rank": 127
     },
     {
       "keyword": "HWID 스푸퍼",
@@ -1988,7 +2192,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 116
+      "rank": 128
     },
     {
       "keyword": "발로란트 에임봇",
@@ -2005,7 +2209,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 117
+      "rank": 129
     },
     {
       "keyword": "발로란트 치트 구매",
@@ -2022,7 +2226,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 118
+      "rank": 130
     },
     {
       "keyword": "하드웨어 밴 해제",
@@ -2039,7 +2243,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 119
+      "rank": 131
     },
     {
       "keyword": "apex legends ban fix",
@@ -2056,7 +2260,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 120
+      "rank": 132
     },
     {
       "keyword": "apex legends cheat comparison",
@@ -2073,7 +2277,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 121
+      "rank": 133
     },
     {
       "keyword": "apex legends cheat review",
@@ -2090,7 +2294,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 122
+      "rank": 134
     },
     {
       "keyword": "apex legends cheat setup",
@@ -2107,7 +2311,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 123
+      "rank": 135
     },
     {
       "keyword": "apex legends cheat tutorial",
@@ -2124,7 +2328,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 124
+      "rank": 136
+    },
+    {
+      "keyword": "apex legends cheats 2026",
+      "market": "US",
+      "product": "APEX",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 137
     },
     {
       "keyword": "apex legends cheats pc",
@@ -2141,7 +2362,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 125
+      "rank": 138
     },
     {
       "keyword": "apex legends cheats settings",
@@ -2158,7 +2379,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 126
+      "rank": 139
     },
     {
       "keyword": "apex legends controller cheat",
@@ -2175,7 +2396,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 127
+      "rank": 140
     },
     {
       "keyword": "apex legends esp",
@@ -2192,7 +2413,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 128
+      "rank": 141
     },
     {
       "keyword": "apex legends hwid spoofer",
@@ -2209,7 +2430,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 129
+      "rank": 142
+    },
+    {
+      "keyword": "apex premium cheat",
+      "market": "US",
+      "product": "APEX",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 143
     },
     {
       "keyword": "colorbot settings tutorial",
@@ -2226,7 +2464,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 130
+      "rank": 144
     },
     {
       "keyword": "fortnite aimbot",
@@ -2243,7 +2481,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 131
+      "rank": 145
     },
     {
       "keyword": "fortnite cheat comparison",
@@ -2260,7 +2498,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 132
+      "rank": 146
     },
     {
       "keyword": "fortnite cheat how to use",
@@ -2277,7 +2515,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 133
+      "rank": 147
     },
     {
       "keyword": "fortnite cheat settings",
@@ -2294,7 +2532,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 134
+      "rank": 148
     },
     {
       "keyword": "fortnite cheat showcase",
@@ -2311,7 +2549,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 135
+      "rank": 149
     },
     {
       "keyword": "fortnite cheat tutorial",
@@ -2328,7 +2566,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 136
+      "rank": 150
+    },
+    {
+      "keyword": "fortnite cheats in creative",
+      "market": "US",
+      "product": "Fortnite",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 151
     },
     {
       "keyword": "fortnite external cheat",
@@ -2345,7 +2600,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 137
+      "rank": 152
     },
     {
       "keyword": "fortnite full cheat",
@@ -2362,7 +2617,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 138
+      "rank": 153
     },
     {
       "keyword": "fortnite hwid ban",
@@ -2379,7 +2634,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 139
+      "rank": 154
     },
     {
       "keyword": "fortnite hwid spoofer",
@@ -2396,7 +2651,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 140
+      "rank": 155
+    },
+    {
+      "keyword": "fortnite permanent spoofer",
+      "market": "US",
+      "product": "Spoofer",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 156
     },
     {
       "keyword": "fortnite tournament spoofer",
@@ -2413,7 +2685,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 141
+      "rank": 157
     },
     {
       "keyword": "fortnite wallhack",
@@ -2430,7 +2702,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 142
+      "rank": 158
+    },
+    {
+      "keyword": "hwid ban explained",
+      "market": "US",
+      "product": "Spoofer",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 159
     },
     {
       "keyword": "hwid spoofer 2026",
@@ -2447,7 +2736,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 143
+      "rank": 160
     },
     {
       "keyword": "hwid spoofer for gaming",
@@ -2464,7 +2753,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 144
+      "rank": 161
     },
     {
       "keyword": "hwid spoofer fortnite",
@@ -2481,7 +2770,24 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 145
+      "rank": 162
+    },
+    {
+      "keyword": "hwid spoofer valorant",
+      "market": "US",
+      "product": "Spoofer",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 163
     },
     {
       "keyword": "oneclick spoofer review",
@@ -2498,7 +2804,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 146
+      "rank": 164
     },
     {
       "keyword": "perm v2 spoofer",
@@ -2515,7 +2821,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 147
+      "rank": 165
     },
     {
       "keyword": "pixel aimbot valorant",
@@ -2532,7 +2838,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 148
+      "rank": 166
     },
     {
       "keyword": "pixel colorbot",
@@ -2549,7 +2855,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 149
+      "rank": 167
     },
     {
       "keyword": "spoofer price comparison",
@@ -2566,7 +2872,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 150
+      "rank": 168
     },
     {
       "keyword": "spoofer windows 11 25h2",
@@ -2583,7 +2889,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 151
+      "rank": 169
     },
     {
       "keyword": "temporary hwid spoofer",
@@ -2600,7 +2906,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 152
+      "rank": 170
     },
     {
       "keyword": "valorant aimbot settings",
@@ -2617,7 +2923,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 153
+      "rank": 171
     },
     {
       "keyword": "valorant cheat features",
@@ -2634,7 +2940,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 154
+      "rank": 172
     },
     {
       "keyword": "valorant cheat how to use",
@@ -2651,7 +2957,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 155
+      "rank": 173
     },
     {
       "keyword": "valorant cheat tutorial",
@@ -2668,7 +2974,41 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 156
+      "rank": 174
+    },
+    {
+      "keyword": "valorant cheats comparison",
+      "market": "US",
+      "product": "VALORANT",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 175
+    },
+    {
+      "keyword": "valorant cheats for pc",
+      "market": "US",
+      "product": "VALORANT",
+      "status": "investigate",
+      "score_proxy": null,
+      "evidence": {
+        "autocomplete_hits": 0,
+        "autocomplete_probes": 2,
+        "autocomplete_best_rank": null,
+        "competitor_sample": 0,
+        "competitor_strength": null,
+        "competitor_median_views": null,
+        "checked_at": "2026-11-28T02:43:55+00:00"
+      },
+      "rank": 176
     },
     {
       "keyword": "valorant colorbot mouse settings",
@@ -2685,7 +3025,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 157
+      "rank": 177
     },
     {
       "keyword": "valorant colorbot review",
@@ -2702,7 +3042,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 158
+      "rank": 178
     },
     {
       "keyword": "valorant colorbot setup",
@@ -2719,7 +3059,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 159
+      "rank": 179
     },
     {
       "keyword": "valorant colorbot showcase",
@@ -2736,7 +3076,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 160
+      "rank": 180
     },
     {
       "keyword": "valorant legit aimbot",
@@ -2753,7 +3093,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-23T00:55:57+00:00"
       },
-      "rank": 161
+      "rank": 181
     },
     {
       "keyword": "valorant obsidian cheat",
@@ -2770,7 +3110,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-26T02:53:06+00:00"
       },
-      "rank": 162
+      "rank": 182
     },
     {
       "keyword": "valorant spoofer review",
@@ -2787,7 +3127,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 163
+      "rank": 183
     },
     {
       "keyword": "valorant triggerbot vs colorbot",
@@ -2804,7 +3144,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-21T20:35:50+00:00"
       },
-      "rank": 164
+      "rank": 184
     },
     {
       "keyword": "valorant val 5",
@@ -2821,7 +3161,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-25T03:34:02+00:00"
       },
-      "rank": 165
+      "rank": 185
     },
     {
       "keyword": "valorant van 152",
@@ -2838,7 +3178,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-27T02:52:22+00:00"
       },
-      "rank": 166
+      "rank": 186
     },
     {
       "keyword": "valorant vector cheat",
@@ -2855,7 +3195,7 @@
         "competitor_median_views": null,
         "checked_at": "2026-11-24T04:49:24+00:00"
       },
-      "rank": 167
+      "rank": 187
     }
   ]
 }
